@@ -1,11 +1,10 @@
 <h2 id="criteria-title">{{this.model.title}}</h2>
 <ul>
-  <li>{{this.model.lintingExists}}</li>
-  <li>{{this.model.testingExists}}</li>
-  <li>{{this.model.devMustAuthor}}</li>
-  <li>{{this.model.manualTest}}</li>
+  <li>Automated Linting Status: {{this.model.lintingExists}}</li>
+  <li>Automated Testing Status: {{this.model.testingExists}}</li>
+  <li>Author Testing Status: {{this.model.devMustAuthor}}</li>
+  <li>Manual Testing Status: {{this.model.manualTest}}</li>
 </ul>
 <article aria-labelledby="criteria-title">
-  stuff here
-
+  {{this.model.content}}
 </article>
