@@ -2,10 +2,10 @@
   "name": "a11y-automation",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for a11y-automation goes here",
-  "repository": "",
+  "description": "a work in progress",
+  "repository": "https://github.com/MelSumner/a11y-automation",
   "license": "MIT",
-  "author": "",
+  "author": "Melanie Sumner <melaniersumner@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
