@@ -10,7 +10,6 @@ export default class CriteriaModel extends Model {
   testingExists = attr();
   devMustAuthor = attr();
   manualTest = attr();
-  criteria = attr();
   criteriaId = computed('id', function() {
     return this.id.split('-').slice(1).join('-');
   })
