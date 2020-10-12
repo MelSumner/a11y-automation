@@ -19,10 +19,10 @@ module.exports = {
     };
   },
 
-  fileMapTokens(options) {
+  fileMapTokens() {
     // Return custom tokens to be replaced in your files
     return {
-      __number__(options) {
+      __number__() {
         let existingFiles = readdirSync(join(process.cwd(), 'criterias'));
 
         let numbers = existingFiles.map((filename) => {

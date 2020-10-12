@@ -4,7 +4,7 @@ export default class CriteriaRoute extends Route {
   model(params) {
     let criteria = this.store.peekRecord('criteria', params.id);
     if(!criteria) {
-      this.transitionTo('index');
+      console.log('oops, criteria not found');
     }
     return criteria;
   }
