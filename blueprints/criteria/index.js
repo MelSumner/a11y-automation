@@ -32,7 +32,7 @@ module.exports = {
         let highestNumber = Math.max(...numbers);
 
         // Logic to determine value goes here
-        return (highestNumber + 1).toString().padStart(2, '0');
+        return (highestNumber + 1).toString().padStart(3, '0');
       }
     };
   },
