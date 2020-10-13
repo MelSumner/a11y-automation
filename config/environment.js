@@ -22,11 +22,11 @@ module.exports = function(environment) {
       // when it is created
 
     },
-    a11yAutomationTracker: {
-      title: 'Tracking accessibility rules and the ways they can be tested',
-      contactEmail: 'melaniersumner@gmail.com'
+    // a11yAutomationTracker: {
+    //   title: 'Tracking accessibility rules and the ways they can be tested',
+    //   contactEmail: 'melaniersumner@gmail.com'
 
-    }
+    // }
   };
 
   if (environment === 'development') {

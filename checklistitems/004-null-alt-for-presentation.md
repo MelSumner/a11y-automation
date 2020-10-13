@@ -1,5 +1,6 @@
 ---
 title: Null Alt Text for Presentation
+id: 004
 tags: WCAG 1.1.1
 # exists, couldExist, cannotExist
 lintingExists: exists

@@ -1,6 +1,6 @@
 import Model from '@ember-data/model';
 import { attr } from '@ember-data/model';
-import { computed } from '@ember/object';
+// import { computed } from '@ember/object';
 
 export default class checklistitemModel extends Model {
   @attr content;
@@ -10,6 +10,7 @@ export default class checklistitemModel extends Model {
   @attr testingExists;
   @attr devMustAuthor;
   @attr manualTest;
+  @attr id;
   // checklistitemName = computed('id', function() {
   //   return this.id.split('-').slice(1).join('-');
   // });

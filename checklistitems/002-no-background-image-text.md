@@ -1,5 +1,6 @@
 ---
 title: No Text in Background Images
+id: 002
 tags: WCAG 1.1.1
 # exists, couldExist, cannotExist
 lintingExists: cannotExist 
