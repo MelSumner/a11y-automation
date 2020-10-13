@@ -60,12 +60,12 @@
   "ember": {
     "edition": "octane"
   },
+  "dependencies": {
+    "broccoli-static-site-json": "^4.2.1"
+  },
   "ember-addon": {
     "paths": [
       "lib/content-generator"
     ]
-  },
-  "dependencies": {
-    "broccoli-static-site-json": "^4.2.1"
   }
 }
