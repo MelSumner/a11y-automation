@@ -5,5 +5,6 @@ export default class DetailsModel extends Model {
 
 @attr content;
 @attr tags;
+@attr id;
 
 }

@@ -1,12 +1,12 @@
 ---
 title: Non-Conforming Alternative
-id: 001
 tags: WCAG 1, Failure 19
 # exists, couldExist, cannotExist
 lintingExists: cannotExist 
 testingExists: couldExist
 devMustAuthor: couldExist
 manualTest: exists
+id: 001
 ---
 
 ## Point of Failure 
