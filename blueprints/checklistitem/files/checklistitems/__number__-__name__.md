@@ -1,6 +1,6 @@
 ---
-title: <% criteriaTitle %>
-tags: <% criteriaTags %>
+title: <% checklistitemTitle %>
+tags: <% checklistitemTags %>
 # exists, couldExist, cannotExist
 lintingExists: <% lintingExists %> 
 testingExists: <% testingExists %>

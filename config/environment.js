@@ -22,8 +22,8 @@ module.exports = function(environment) {
       // when it is created
 
     },
-    criteriaTracker: {
-      title: 'Tracking accessibility criteria and the ways they can be tested',
+    a11yAutomationTracker: {
+      title: 'Tracking accessibility rules and the ways they can be tested',
       contactEmail: 'melaniersumner@gmail.com'
 
     }

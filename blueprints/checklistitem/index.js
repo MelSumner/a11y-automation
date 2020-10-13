@@ -4,13 +4,13 @@ const { readdirSync } = require('fs');
 const { join } = require('path');
 
 module.exports = {
-  description: 'a blueprint to generate a new criteria markdown file',
+  description: 'a blueprint to generate a new checklist item markdown file',
 
   locals(options) {
     // Return custom template variables here.
     return {
-      criteriaTitle: options.title,
-      criteriaTags: options.tags,
+      checklistitemTitle: options.title,
+      checklistitemTags: options.tags,
       lintingExists: options.lintingExists,
       testingExists: options.testingExists,
       devMustAuthor: options.devMustAuthor,
@@ -23,7 +23,7 @@ module.exports = {
     // Return custom tokens to be replaced in your files
     return {
       __number__() {
-        let existingFiles = readdirSync(join(process.cwd(), 'criterias'));
+        let existingFiles = readdirSync(join(process.cwd(), 'checklistitems'));
 
         let numbers = existingFiles.map((filename) => {
           return parseInt(filename.split('-')[0])
