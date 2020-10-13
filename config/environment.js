@@ -20,7 +20,13 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+
+    },
+    // a11yAutomationTracker: {
+    //   title: 'Tracking accessibility rules and the ways they can be tested',
+    //   contactEmail: 'melaniersumner@gmail.com'
+
+    // }
   };
 
   if (environment === 'development') {
