@@ -7,5 +7,8 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.route('criteria', { path: '/criteria/:id' });
+  this.route('index');
+  this.route('checklistitems', function() {
+    this.route('checklistitem', { path: '/checklistitem/:checklistitem_id' });
+  });
 });
