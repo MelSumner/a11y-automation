@@ -11,10 +11,10 @@ module.exports = {
     return {
       title: options.title,
       tags: options.tags,
-      lintingExists: options.lintingExists,
-      testingExists: options.testingExists,
-      devMustAuthor: options.devMustAuthor,
-      manualTest: options.manualTest,
+      linting: options.linting,
+      testing: options.testing,
+      author: options.author,
+      manual: options.manual,
       id: options.id
     };
   },

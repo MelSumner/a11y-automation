@@ -1,10 +1,10 @@
 ---
 title: Non-Conforming Alternative
 tags: WCAG 1, Failure 19
-# exists, couldExist, cannotExist
-linting: cannotExist 
-testing: couldExist
-author: couldExist
+# exists, couldexist, cannotexist
+linting: cannotexist 
+testing: couldexist
+author: couldexist
 manual: exists
 id: 001
 ---

@@ -2,10 +2,10 @@
 title: <% title %>
 tags: <% tags %>
 # exists, couldExist, cannotExist
-lintingExists: <% lintingExists %> 
-testingExists: <% testingExists %>
-devMustAuthor: <% devMustAuthor %>
-manualTest: <% manualTest %>
+linting: <% linting %> 
+testing: <% testing %>
+author: <% author %>
+manual: <% manual %>
 ---
 
 Description goes here.

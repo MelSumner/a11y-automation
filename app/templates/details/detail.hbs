@@ -1,6 +1,11 @@
-<h2>{{@model.title}}</h2>
-<article>
-  article goes here
-  {{@model.content}}
+<h2 id="detail-title">{{@model.title}}</h2>
+<ul class="status-list">
+  <li class="status-listitem">Linting: <span class={{if (eq @model.linting "exists") "status-exists" "status-cannotexist"}}>{{@model.linting}}</span></li>
+  <li class="status-listitem">Testing: {{@model.testing}}</li>
+  <li class="status-listitem">Author: {{@model.author}}</li>
+  <li class="status-listitem">Manual: {{@model.manual}}</li>
+</ul>
+<article aria-labelledby="detail-title">
+  {{@model.html}}
 </article>
 {{outlet}}

@@ -59,3 +59,59 @@ footer {
   border-top: 1px solid rgb(207, 207, 207);
   text-align: center;
 }
+ul.status-list {
+  display: inline-flex;
+  list-style: none;
+  flex-flow: row wrap;
+  width: 100%;
+  margin: 0 auto 1em auto;
+  padding: 0;
+  .status-listitem {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 0.9em;
+    padding: 0.15em;
+    margin: 0 0.25em;
+  }
+}
+.status-exists {
+  background-color: #d4edda;
+  color: black;
+}
+.status-cannotexist {
+  background-color: #f8d7da;
+  color: black;
+}
+.status-couldexist {
+  background-color: fff3cd;
+  color: black;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0.5em;
+    li {
+      display: flex;
+      margin: 0;
+      padding: 0;
+      a {
+        display: flex;
+        padding: 0.5em;
+        color: white;
+        background-color: transparent;
+        &:hover, :focus {
+          color: rgb(230,204,34);
+        }
+      }
+    }
+  }
+}
