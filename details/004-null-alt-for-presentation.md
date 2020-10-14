@@ -2,10 +2,10 @@
 title: Null Alt Text for Presentation
 tags: WCAG 1.1.1
 # exists, couldExist, cannotExist
-lintingExists: exists
-testingExists: couldExist
-devMustAuthor: couldExist
-manualTest: exists
+linting: exists
+testing: couldExist
+author: couldExist
+manual: exists
 id: 004
 ---
 

@@ -1,51 +1,61 @@
 *, *:after {
   box-sizing: border-box;
 }
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: auto;
+}
 body {
-  font-size: 16px;
-  line-height: 1.2;
-  max-width: 100%
+  display: grid;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 7fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
-
-@supports (display: grid) {
+@media screen and (min-width:748px) {
   body {
-      display:grid;
-      grid-gap: 1.5vh;
-      min-height: 100vh;
-      grid-template-columns: 100%;
-      grid-template-rows: 10vh auto 10vh;
-      grid-template-areas: "header" "main" "footer"
-  }
-
-  @media screen and (min-width: 768px) {
-      body {
-          grid-template-columns:25% 75%;
-          grid-template-rows: 64px auto 5vh;
-          grid-template-areas: "header header" "main main" "footer footer"
-      }
-  }
-
-  @media screen and (min-width: 992px) {
-      body {
-          grid-template-columns:15% 85%;
-          grid-template-rows: 64px auto 5vh;
-          grid-template-areas: "header header" "main main" "footer footer"
-      }
-  }
-
-  header {
-      grid-area: header
-  }
-
-  main {
-      grid-area: main
-  }
-
-  footer {
-      grid-area: footer
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 }
+header { grid-area: 1 / 1 / 2 / 3; }
+aside  { grid-area: 2 / 1 / 3 / 3; }
+main   { grid-area: 3 / 1 / 4 / 3; }
+footer { grid-area: 4 / 1 / 5 / 3; }
 
+@media screen and (min-width: 748px) {
+  header { grid-area: 1 / 1 / 2 / 3; }
+  aside  { grid-area: 2 / 1 / 3 / 2; }
+  main   { grid-area: 2 / 2 / 3 / 3; }
+  footer { grid-area: 3 / 1 / 4 / 3; }
+}
+header {
+  background-color: rgb(51, 85, 139);
+  color: rgb(230,204,34);
+}
+header > h1 {
+  font-weight: normal;
+  padding: 0 0.25em;
+}
+@media screen and (min-width: 748px){
+  aside {
+    border-right: 1px solid rgb(207, 207, 207);
+  }
+}
 main {
-  min-height: 80vh
+  min-height: 80vh;
+  padding: 0.25em;
+}
+
+footer {
+  border-top: 1px solid rgb(207, 207, 207);
+  text-align: center;
 }

@@ -2,10 +2,10 @@
 title: Ignore Decorative Images
 tags: WCAG 1.1
 # exists, couldExist, cannotExist, mustExist
-lintingExists: exists 
-testingExists: cannotExist
-devMustAuthor: couldExist
-manualTest: mustExist
+linting: exists 
+testing: cannotExist
+author: couldExist
+manual: mustExist
 id: 003
 ---
 

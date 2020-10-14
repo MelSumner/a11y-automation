@@ -1,7 +1,15 @@
 import Route from '@ember/routing/route';
+import { inject as service } from '@ember/service';
+
 
 export default class DetailsDetailRoute extends Route {
-  model() {
-    console.log('detail route');
+  @service store;
+  model(params) {
+    let detail = this.store.peekAll('details', params.id);
+    if(!detail) {
+      console.log('sorry, no detail for this one ' + params.id);
+    }
+    return this.store.findRecord('detail', params.id);
+    
   }
 }

@@ -2,10 +2,10 @@
 title: No Text in Background Images
 tags: WCAG 1.1.1
 # exists, couldExist, cannotExist
-lintingExists: cannotExist 
-testingExists: cannotExist
-devMustAuthor: cannotExist
-manualTest: exists
+linting: cannotExist 
+testing: cannotExist
+author: cannotExist
+manual: exists
 id: 002
 ---
 
