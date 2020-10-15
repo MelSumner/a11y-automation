@@ -1,6 +1,5 @@
 import Route from '@ember/routing/route';
 import { inject as service } from '@ember/service';
-import { htmlSafe } from '@ember/template';
 
 export default class DetailsDetailRoute extends Route {
   @service store;
