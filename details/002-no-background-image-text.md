@@ -1,7 +1,6 @@
 ---
 title: No Text in Background Images
-tags: WCAG 1.1.1
-# exists, couldExist, cannotExist
+tags: WCAG 1.1.1, Failure 3, EN 301 549 9.1.1.1, Section 508 E207.2
 linting: cannotExist 
 testing: cannotExist
 author: cannotExist

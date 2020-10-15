@@ -1,7 +1,6 @@
 ---
 title: Ignore Decorative Images
-tags: WCAG 1.1
-# exists, couldExist, cannotExist, mustExist
+tags: WCAG 1.1.1, Failure 38
 linting: exists 
 testing: cannotExist
 author: couldExist

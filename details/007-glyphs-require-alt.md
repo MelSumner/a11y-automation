@@ -10,3 +10,16 @@ id: 007
 
 ## Point of Failure
 Text look-alikes such as glyphs or character entities should not be used to represent text without providing a text alternative.
+
+## Automation
+
+### Linting
+
+
+### Testing
+
+
+### Developer Authored Test
+
+
+### Manual Test

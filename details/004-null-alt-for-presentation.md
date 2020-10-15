@@ -1,6 +1,6 @@
 ---
 title: Null Alt Text for Presentation
-tags: WCAG 1.1.1
+tags: WCAG 1.1.1, Failure 39
 # exists, couldExist, cannotExist
 linting: exists
 testing: couldExist
