@@ -1,10 +1,8 @@
-<aside>
-  {{#each @model.detail as |d| }}
-    <LinkTo @route="detail" @model={{d.id}}>link</LinkTo>
-  {{else}}
-    Sorry, something went wrong.
-  {{/each}}
-</aside>
-<main>
-  {{outlet}}
-</main>
+{{!-- <nav>
+  <ul>
+    <li><LinkTo @route="index">Home</LinkTo></li>
+    <li role="separator"><span class="breadcrumb-separator">/</span></li>
+    <li><LinkTo @route="details">Details</LinkTo></li>
+  </ul>
+</nav> --}}
+{{outlet}}
