@@ -1,0 +1,12 @@
+---
+title: Glyphs Require Alt
+tags: WACG 1.1.1
+linting: couldexist
+testing: couldexist
+author: couldexist
+manual: mustexist
+id: 007
+---
+
+## Point of Failure
+Text look-alikes such as glyphs or character entities should not be used to represent text without providing a text alternative.

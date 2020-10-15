@@ -41,22 +41,22 @@ footer { grid-area: 4 / 1 / 5 / 3; }
   footer { grid-area: 3 / 1 / 4 / 3; }
 }
 header {
+  align-items: center;
   background-color: rgb(51, 85, 139);
   color: rgb(230,204,34);
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
-  align-items: center;
   min-height: 8vh;
+  width: 100%;
   h1 {
     display: flex;
     font-size: 1.5em;
+    font-weight: normal;
     justify-content: flex-start;
     line-height: 1;
-    width: 100%;
-    padding-left: 0.5em;
     margin: 0;
-    font-weight: normal;
+    padding-left: 0.5em;
+    width: 100%;
     a {
       background-color: rgb(51, 85, 139);
       color: rgb(230,204,34);
@@ -68,9 +68,10 @@ header {
   }
 }
 aside {
-  padding: 0;
   background-color: rgb(242,241,239);
   color: black;
+  height: 100vh;
+  padding: 0;
   p {
     padding-left: 0.5em;
     font-weight: bold;
@@ -78,6 +79,7 @@ aside {
 }
 main {
   min-height: 85vh;
+  min-height: fit-content;
   padding: 0.5em 1em;
   section {
     display: flex;
@@ -220,5 +222,6 @@ ul {
   }
 }
 p {
-  margin: 0.5em;
+  margin: 0 auto;
+  padding: 0 0.5em 0.5em 0.5em;
 }
