@@ -1,5 +1,5 @@
 <aside>
-  {{#each @model.details as |d| }}
+  {{#each @model.detail as |d| }}
     <LinkTo @route="detail" @model={{d.id}}>link</LinkTo>
   {{else}}
     Sorry, something went wrong.
