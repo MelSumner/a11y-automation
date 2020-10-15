@@ -1,1 +1,10 @@
-{{outlet}}
+<aside>
+  {{#each @model.details as |d| }}
+    <LinkTo @route="detail" @model={{d.id}}>link</LinkTo>
+  {{else}}
+    Sorry, something went wrong.
+  {{/each}}
+</aside>
+<main>
+  {{outlet}}
+</main>
