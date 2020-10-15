@@ -10,6 +10,7 @@ html, body {
   margin: auto;
 }
 body {
+  background-color: rgb(254,254,254);
   display: grid;
   font-family: 'Piazzolla', sans-serif;
   font-size: 18px;
@@ -46,6 +47,7 @@ header {
   flex-flow: row wrap;
   width: 100%;
   align-items: center;
+  min-height: 8vh;
   h1 {
     display: flex;
     font-size: 1.5em;
@@ -59,7 +61,7 @@ header {
 }
 main {
   min-height: 85vh;
-  padding: 0 0.25em 0.25em 0.25em;
+  padding: 0.5em 0.25em 0.25em 0.25em;
   section {
     display: flex;
     flex-flow: row wrap;

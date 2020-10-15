@@ -1,5 +1,7 @@
 <h2 id="detail-title">{{@model.title}}</h2>
-<ul class="status-list">
+<p id="automation-status-title">Automation Status:</p>
+<ul class="status-list" aria-labelledby="automation-status-title">
+  {{!-- TODO this is messy, I bet you can do better --}}
   <li class="status-listitem">Linting:
     {{#if (eq @model.linting "exists")}}
       <span class="status-exists">Exists</span>

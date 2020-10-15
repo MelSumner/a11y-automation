@@ -2,11 +2,11 @@
   <h1>Automated A11y Rule Tracker</h1>
 </header>
 <aside>
-  
-  {{#each @model.detail as |d| }}
-    <LinkTo @route="detail" @model={{d.id}}>link</LinkTo>
+  List of detail items:
+  {{#each @model as |listitem| }}
+    <LinkTo @route="detail" @model={{listitem.id}}>link</LinkTo>
   {{else}}
-    Sorry, something went wrong.
+    <p>Sorry, something went wrong.</p>
   {{/each}}
 </aside>
 <main>
