@@ -2,12 +2,14 @@
   <h1>Automated A11y Rule Tracker</h1>
 </header>
 <aside>
-  List of detail items:
+  <p id="detail-list-title">Itemized list of potential failures:</p>
+  <ul aria-labelledby="detail-list-title" class="detail-list">
   {{#each @model as |listitem| }}
-    <LinkTo @route="detail" @model={{listitem.id}}>link</LinkTo>
+    <li><LinkTo @route="details.detail" @model={{listitem.id}}>{{listitem.title}}</LinkTo></li>
   {{else}}
-    <p>Sorry, something went wrong.</p>
+    <li>Sorry, something went wrong.</li>
   {{/each}}
+  </ul>
 </aside>
 <main>
   {{outlet}}

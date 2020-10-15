@@ -4,7 +4,7 @@ import { inject as service } from '@ember/service';
 export default class DetailsDetailRoute extends Route {
   @service store;
   model(params) {
-    let detail = this.store.peekAll('details', params.id);
+    let detail = this.store.peekAll('detail', params.id);
     if(!detail) {
       console.log('sorry, no detail for this one ' + params.id);
     }
