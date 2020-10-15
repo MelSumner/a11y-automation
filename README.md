@@ -1,6 +1,7 @@
 # a11y-automation
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f7a9f162-0916-4ff3-8ecd-2047e26a6923/deploy-status)](https://app.netlify.com/sites/a11y-automation-tracker/deploys)
 
-This app is a work in progress.
+This app is a work in progress, and improvements and collaboration is welcome.
 
 It aims to track a few things: 
 - specific ways an app could fail digital accessibility success criteria (called `details` in this app)

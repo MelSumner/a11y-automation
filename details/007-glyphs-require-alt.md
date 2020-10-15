@@ -1,5 +1,5 @@
 ---
-title: Glyphs Require Alt
+title: Text Look-Alikes Require An Alt Attribute
 tags: WACG 1.1.1
 linting: couldexist
 testing: couldexist
