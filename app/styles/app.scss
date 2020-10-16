@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@400;700&display=swap');
+// TODO pull out some of these styles as imports for easier maintaining
 
 *, *:after {
   box-sizing: border-box;
@@ -21,6 +22,7 @@ body {
   grid-row-gap: 0px;
 }
 @media screen and (min-width:748px) {
+  // TODO update to use ems on the width instead of px, I think? Check current best practice. Update rest of media queries accordingly.
   body {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -97,6 +99,7 @@ main {
     }
   }
 }
+//TODO clean this up & flip the naming- should be list-status (don't forget to update the templates!)
 ul.status-list {
   display: inline-flex;
   flex-flow: row wrap;
@@ -186,6 +189,7 @@ nav {
   }
 }
 ul {
+  // TODO flip the naming - should be list-detail (don't forget to update the templates!)
   &.detail-list {
     display: flex;
     flex-flow: row wrap;
