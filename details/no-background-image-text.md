@@ -1,11 +1,11 @@
 ---
 title: No Text in Background Images
-tags: WCAG 1.1.1, Failure 3, EN 301 549 9.1.1.1, Section 508 E207.2
+tags: 
+  - wcag-1-1-1
 linting: cannotExist 
 testing: cannotExist
 author: cannotExist
 manual: mustexist
-id: 002
 ---
 
 ## Point of Failure 

@@ -1,4 +1,4 @@
-import Model, { attr } from '@ember-data/model';
+import Model, { attr, hasMany } from '@ember-data/model';
 
 export default class DetailModel extends Model {
   @attr author;
@@ -6,9 +6,9 @@ export default class DetailModel extends Model {
   @attr html;
   @attr linting;
   @attr manual;
-  @attr tags;
   @attr testing;
   @attr title;
+  @hasMany('tag') tags;
   
   @attr('id', {
     function() { return this.id.split('-').slice(1).join('-'); }

@@ -1,11 +1,10 @@
 ---
-title: <% title %>
-tags: <% tags %>
-linting: <% linting %> 
-testing: <% testing %>
-author: <% author %>
-manual: <% manual %>
-id: <% id %>
+title: <%= name %>
+tags: 
+linting: 
+testing: 
+author: 
+manual: 
 ---
 
 ## Point of Failure

@@ -1,11 +1,11 @@
 ---
 title: Missing Alt Attribute
-tags: WCAG 1.1.1
+tags: 
+  - wcag-1-1-1
 linting: exists
 testing: exists
 author: couldexist
 manual: exists
-id: 006
 ---
 
 ## Point of Failure

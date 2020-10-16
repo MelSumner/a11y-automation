@@ -1,11 +1,11 @@
 ---
 title: No Missing Alt Attribute
-tags: WCAG 1.1.1, Failure 65, Section 508 22.a
+tags: 
+  - wcag-1-1-1
 linting: exists
 testing: exists
 author: couldExist
 manual: exists
-id: 005
 ---
 
 ## Point of Failure
