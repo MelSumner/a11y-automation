@@ -1,12 +1,11 @@
 ---
 title: Null Alt Text for Presentation
-tags: WCAG 1.1.1, Failure 39
-# exists, couldExist, cannotExist
+tags: 
+  - wcag-1-1-1
 linting: exists
 testing: couldExist
 author: couldExist
 manual: mustexist
-id: 004
 ---
 ## Point of Failure
 The `alt` attribute must be null for any image that should be ignored by assistive tech

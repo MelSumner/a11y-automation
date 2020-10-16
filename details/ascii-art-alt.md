@@ -1,11 +1,11 @@
 ---
 title: ASCII Art Must Have Text Alternative
-tags: WCAG 1.1.1
+tags: 
+  - wcag-1-1-1
 linting: cannotexist 
 testing: cannotexist
 author: couldexist
 manual: mustexist
-id: 008
 ---
 
 ## Point of Failure

@@ -1,11 +1,11 @@
 ---
 title: Non-Conforming Alternative
-tags: WCAG 1, Failure 19
+tags: 
+  - wcag-1-1-1
 linting: cannotexist 
 testing: couldexist
 author: couldexist
 manual: mustexists
-id: 001
 ---
 
 ## Point of Failure 

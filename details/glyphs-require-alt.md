@@ -1,11 +1,11 @@
 ---
 title: Text Look-Alikes Require An Alt Attribute
-tags: WACG 1.1.1
+tags: 
+  - wcag-1-1-1
 linting: couldexist
 testing: couldexist
 author: couldexist
 manual: mustexist
-id: 007
 ---
 
 ## Point of Failure

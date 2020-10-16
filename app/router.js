@@ -10,4 +10,7 @@ Router.map(function() {
   this.route('details', function() {
     this.route('detail', { path: '/:id' });
   });
+  this.route('tags', function() {
+    this.route('tag', { path: '/:id' });
+  });
 });

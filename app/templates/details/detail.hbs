@@ -44,5 +44,16 @@
 <hr>
 <article aria-labelledby="detail-title">
   {{{@model.html}}}
+
+  <footer>
+    <p id="list-criteria-title">Relevant Criteria:</p>
+    <ul class="list-tags" aria-labelledby="list-criteria-title">
+      {{#each @model.tags as |tagitem| }}
+        <li><a href={{tagitem.url}}>{{tagitem.title}}</a></li>
+      {{else}}
+        <li>Sorry, something went wrong.</li>
+      {{/each}}
+  </ul>
+  </footer>
 </article>
 {{outlet}}
