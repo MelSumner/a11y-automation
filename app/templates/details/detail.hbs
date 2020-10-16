@@ -49,7 +49,13 @@
     <p id="list-criteria-title">Relevant Criteria:</p>
     <ul class="list-tags" aria-labelledby="list-criteria-title">
       {{#each @model.tags as |tagitem| }}
-        <li><a href={{tagitem.url}}>{{tagitem.title}}</a></li>
+        <li>
+          {{#if tagitem.url }}
+            <a href={{tagitem.url}}>{{tagitem.title}}</a>
+          {{else}}
+            {{tagitem.title}}
+          {{/if}}
+        </li>
       {{else}}
         <li>Sorry, something went wrong.</li>
       {{/each}}
