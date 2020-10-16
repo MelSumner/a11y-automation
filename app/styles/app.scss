@@ -75,6 +75,7 @@ aside {
   p {
     padding-left: 0.5em;
     font-weight: bold;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 }
 main {
@@ -234,9 +235,13 @@ article {
     margin-bottom: 0;
   }
   footer {
+    background-color: aliceblue;
+    color: black;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    margin-top: 2em;
+    padding: 1em;
     width: 100%;
     p {
       margin-bottom: 0;
