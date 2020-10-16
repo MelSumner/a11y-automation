@@ -234,7 +234,6 @@ article {
     margin-bottom: 0;
   }
   footer {
-    border: 1px solid red;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -244,9 +243,9 @@ article {
     }
     ul {
       &.list-tags {
+        list-style-position: outside;
         margin-top: 0;
         width: 100%;
-        list-style-position: outside;
       }
     }
   }
