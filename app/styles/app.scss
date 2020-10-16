@@ -99,6 +99,12 @@ main {
     }
   }
 }
+footer {
+  p {
+    padding-left: 0.25em;
+    text-align: center;
+  }
+}
 //TODO clean this up & flip the naming- should be list-status (don't forget to update the templates!)
 ul.status-list {
   display: inline-flex;
@@ -258,4 +264,10 @@ article {
       }
     }
   }
+}
+
+code {
+  background-color: #e8e8e8;
+  border-radius: 3px;
+  padding: 0px 4px;
 }
