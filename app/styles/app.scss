@@ -75,7 +75,6 @@ aside {
   }
 }
 main {
-  border: 1px solid red;
   padding: 0.5em 1em;
   section {
     display: flex;
@@ -93,10 +92,8 @@ main {
   }
 }
 footer {
-  border: 1px solid red;
   display: flex;
   flex-flow: row wrap;
-  // margin-top: 2em;
   justify-content: center;
   p {
     padding-left: 0.25em;
