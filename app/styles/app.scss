@@ -12,36 +12,30 @@ html, body {
 }
 body {
   background-color: rgb(254,254,254);
-  display: grid;
   font-family: 'Piazzolla', sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 7fr 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  min-height: 100%;
 }
-@media screen and (min-width:748px) {
-  // TODO update to use ems on the width instead of px, I think? Check current best practice. Update rest of media queries accordingly.
+
+@media screen and (min-width: 768px) {
   body {
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 8% auto 5%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer"
   }
-}
-header { grid-area: 1 / 1 / 2 / 3; }
-aside  { grid-area: 2 / 1 / 3 / 3; }
-main   { grid-area: 3 / 1 / 4 / 3; }
-footer { grid-area: 4 / 1 / 5 / 3; }
-
-@media screen and (min-width: 748px) {
   header { grid-area: 1 / 1 / 2 / 3; }
-  aside  { grid-area: 2 / 1 / 3 / 2; }
-  main   { grid-area: 2 / 2 / 3 / 3; }
-  footer { grid-area: 3 / 1 / 4 / 3; }
+  main { grid-area: 2 / 1 / 4 / 2; }
+  aside { grid-area: 2 / 2 / 4 / 3; }
+  footer { grid-area: 4 / 1 / 5 / 3; }
 }
+
 header {
   align-items: center;
   background-color: rgb(51, 85, 139);
@@ -72,7 +66,7 @@ header {
 aside {
   background-color: rgb(242,241,239);
   color: black;
-  height: 100vh;
+  height: auto;
   padding: 0;
   p {
     padding-left: 0.5em;
@@ -81,8 +75,7 @@ aside {
   }
 }
 main {
-  min-height: 85vh;
-  min-height: fit-content;
+  border: 1px solid red;
   padding: 0.5em 1em;
   section {
     display: flex;
@@ -100,6 +93,11 @@ main {
   }
 }
 footer {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  // margin-top: 2em;
+  justify-content: center;
   p {
     padding-left: 0.25em;
     text-align: center;
