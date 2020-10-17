@@ -1,6 +1,9 @@
 <header>
   <h1><a href="/">Automated A11y Rule Tracker</a></h1>
 </header>
+<main>
+  {{outlet}}
+</main>
 <aside>
   <p id="detail-list-title">Itemized list of potential failures:</p>
   <ul aria-labelledby="detail-list-title" class="detail-list">
@@ -11,9 +14,6 @@
   {{/each}}
   </ul>
 </aside>
-<main>
-  {{outlet}}
-</main>
 <footer>
   <p><small>See a an issue on this page? <a href="https://github.com/MelSumner/a11y-automation">Please file an issue in this app's GitHub repository</a></small></p>
 </footer>
