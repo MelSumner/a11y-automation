@@ -70,7 +70,9 @@ aside {
   background-color: rgb(242,241,239);
   color: black;
   height: auto;
+  overflow-x: scroll; // TODO idk if I should do this? is this ok to do?
   padding: 0;
+
   p {
     padding-left: 0.5em;
     font-weight: bold;
