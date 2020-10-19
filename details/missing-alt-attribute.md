@@ -11,3 +11,16 @@ manual: exists
 ## Point of Failure
 The `alt` attribute should not be missing on `<img>` elements, `<area>` elements, `<object>` elements, `<input type="image"/>` elements, or elements with the `role` of img (such as `<svg>`).
 
+## Automation
+
+### Linting
+See the [`ember-template-lint`](https://github.com/ember-template-lint/ember-template-lint) library for the `require-valid-alt` rule.
+
+### Testing
+See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `role-img-alt`, `input-image-alt`, `image-alt rules`.
+
+### Developer Authored Test
+TBD
+
+### Manual Test
+Review page and ensure the point of failure does not exist, inspecting the DOM where required.
