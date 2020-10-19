@@ -9,23 +9,36 @@ The app aims to track a few things:
 - automated testing methods available for each detail
 - manual testing methods, if they are required
 
-This is an Ember app, which  means you'll need to have Ember installed (`npm install -g ember-cli`) to contribute. Contributions are welcome, and come in many different flavors: 
+**This is an Ember app**, which  means you'll need to have Ember installed (`npm install -g ember-cli`) to contribute. Contributions are welcome, and come in many different flavors: 
 
 - filing bugs
-- filing new feature requests (such as a new rule)
-- submitting a PR to resolve an issue
-- improving the README or other files of this type
+- filing new feature requests
+- submitting a PR to resolve an issue, improve the styling, or add a new feature
+- improving the README or other documentation
+- adding art
 
-Issues that have been evaluated for ease of contribution will have the label `pr-welcome`. 
+Issues that have been evaluated for ease of contribution will have the label `pr-welcome`, but if you feel confident to participate as a professional, then please do so! PRs that align with the goals of the project will be reviewed.
 
-## Adding Data
+## Contributing
+To work on this app locally, follow these steps: 
 
-The data in this app is stored as individual `.md` files, which are then converted (automatically!) into `.json` for use in the application. This makes it easy to add a new rule item or tag- it's just adding a single `.md` file! Additionally, some generators have been created to make it even easier. 
+1. clone this repository -- `git clone https://github.com/MelSumner/a11y-automation.git`
+2. switch to this app's directory -- `cd a11y-automation` 
+3. run `npm install` to install missing dependencies
+4. run `ember s` to build the app. If it all works, it'll be available at `http://localhost:4200/` in your browser of choice.
 
-### Add a new detail
+The styles in this app are in the `app/styles/app.scss` file.
+
+To add assets (such as images or fonts) to the app, place them in the `public` folder.
+
+### Adding Data
+
+The data in this app is stored as individual `.md` files, which are then converted (automatically!) into `.json` for use in the application. This makes it fairly straightforward to add a new rule item or tag- it's done by adding a single `.md` file! Additionally, some generators have been created to make it even easier. 
+
+#### Add a new detail
 
 To add a new rule file, you can add one manually to the `details` folder, or you can use the generator to generate the file and put it in the correct location- `ember generate details rule-name` where `rule-name` is the name of the rule to be added. **Note: Only ONE new rule file should be submitted per pull request unless previously coordinated.**
 
-### Add a new tag
+#### Add a new tag
 
 To add a new tag file, you can add one manually to the `tags` folder, or you can use the generator file from the command line: `ember generate tags tag-name` where `tag-name` is a dasherized version of the criterion. For example, WCAG 1.1.1 becomes `wcag-1-1-1` and the entire command would look like this: `ember generate tags wcag-1-1-1`. Only ONE tag file should be generated per pull request unless previously coordinated.
