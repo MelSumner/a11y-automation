@@ -1,5 +1,12 @@
 import Model, { attr, hasMany } from '@ember-data/model';
 
+const STATUS_TEXTS = {
+  exists: 'Exists',
+  couldexist: 'Could Exist',
+  cannotexist: 'Cannot Exist',
+  mustexist: 'Must Exist',
+};
+
 export default class DetailModel extends Model {
   @attr author;
   @attr content;
@@ -13,4 +20,20 @@ export default class DetailModel extends Model {
   @attr('id', {
     function() { return this.id.split('-').slice(1).join('-'); }
   }) detailName;
+
+  get lintingText() {
+    return STATUS_TEXTS[this.linting];
+  }
+
+  get manualText() {
+    return STATUS_TEXTS[this.manual];
+  }
+
+  get testingText() {
+    return STATUS_TEXTS[this.testing];
+  }
+
+  get authorText() {
+    return STATUS_TEXTS[this.author];
+  }
 }
