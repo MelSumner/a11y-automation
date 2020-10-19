@@ -1,44 +1,17 @@
 <h2 id="detail-title">{{@model.title}}</h2>
 <p id="automation-status-title">Automation Status:</p>
 <ul class="status-list" aria-labelledby="automation-status-title">
-  {{!-- TODO this is messy, I bet you can do better --}}
   <li class="status-listitem">Linting:
-    {{#if (eq @model.linting "exists")}}
-      <span class="status-exists">Exists</span>
-    {{else if (eq @model.linting "couldexist")}}
-      <span class="status-couldexist">Could Exist</span>
-    {{else}}
-      <span class="status-cannotexist">Cannot Exist</span>
-    {{/if}}
+    <span class="status-{{@model.linting}}">{{@model.lintingText}}</span>
   </li>
   <li class="status-listitem">Testing:
-    {{#if (eq @model.testing "exists")}}
-      <span class="status-exists">Exists</span>
-    {{else if (eq @model.testing "couldexist")}}
-      <span class="status-couldexist">Could Exist</span>
-    {{else}}
-      <span class="status-cannotexist">Cannot Exist</span>
-    {{/if}}
+    <span class="status-{{@model.testing}}">{{@model.testingText}}</span>
   </li>
   <li class="status-listitem">Author: 
-    {{#if (eq @model.author "exists")}}
-      <span class="status-exists">Exists</span>
-    {{else if (eq @model.author "couldexist")}}
-      <span class="status-couldexist">Could Exist</span>
-    {{else}}
-      <span class="status-cannotexist">Cannot Exist</span>
-    {{/if}}
+    <span class="status-{{@model.author}}">{{@model.authorText}}</span>
   </li>
   <li class="status-listitem">Manual:
-    {{#if (eq @model.manual "exists")}}
-      <span class="status-exists">Exists</span>
-    {{else if (eq @model.manual "couldexist")}}
-      <span class="status-couldexist">Could Exist</span>
-    {{else if (eq @model.manual "cannotexist")}}
-      <span class="status-cannotexist">Cannot Exist</span>
-    {{else}}
-      <span class="status-mustexist">Must Exist</span>
-    {{/if}}
+    <span class="status-{{@model.manual}}">{{@model.manualText}}</span>
   </li>
 </ul>
 <hr>
