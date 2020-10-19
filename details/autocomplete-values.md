@@ -1,23 +1,23 @@
 ---
-title: Valid dl Elements
+title: Autocomplete Values
 tags: 
-  - wcag-1-3-1
+  - wcag-1-3-5
 linting: couldexist
 testing: exists
 author: couldexist
-manual: exists
+manual: couldexist
 ---
 
 ## Point of Failure
-Any `<dl>` elements must only contain `<dt>` and `<dd>` elements.
+Autocomplete attribute values should have valid values.
 
 ## Automation
 
 ### Linting
-Potentially Automatable.
+Potentially automatable.
 
 ### Testing
-See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `definition-list` rule.
+See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `autocomplete-valid` rule. 
 
 ### Developer Authored Test
 TBD

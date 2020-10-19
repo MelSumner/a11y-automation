@@ -1,7 +1,7 @@
 ---
-title: Valid dl Elements
+title: Orientation Lock
 tags: 
-  - wcag-1-3-1
+  - wcag-1-3-4
 linting: couldexist
 testing: exists
 author: couldexist
@@ -9,15 +9,15 @@ manual: exists
 ---
 
 ## Point of Failure
-Any `<dl>` elements must only contain `<dt>` and `<dd>` elements.
+Content should not have its orientation locked to portrait or landscape view.
 
 ## Automation
 
 ### Linting
-Potentially Automatable.
+Potentially automatable with a CSS linter.
 
 ### Testing
-See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `definition-list` rule.
+See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `css-orientation-lock` rule.
 
 ### Developer Authored Test
 TBD
