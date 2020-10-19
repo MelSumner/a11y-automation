@@ -45,7 +45,7 @@ To add a new tag file, you can add one manually to the `tags` folder, or you can
 
 ## Questions, Suggestions, or Concerns
 
-If you have any questions, suggestions or concerns, the best way to resolve them is to file an issue on this repo and I'll respond ASAP.
+If you have any questions, suggestions or concerns, the best way to resolve them is to file an issue on this repo and I'll respond ASAP. I'll also try to list questions I've already been asked, just in case you are wondering about it as well.
 
 ### Inclusion in Documentation
 Although this app currently only tracks linting from `ember-template-lint` and testing from `axe-core`, PRs are welcome to add additional linting and testing libraries. Please follow the format in the existing details to allow your PR to be accepted/merged more readily.
@@ -54,8 +54,8 @@ Although this app currently only tracks linting from `ember-template-lint` and t
 Why did I make this an app and not a spreadsheet?
 
 1. It's depressing to work with Excel and way more interesting to work with code
-2. It's faster for me to make this in an Ember app, plus receipts are handy
-3. I wanted an excuse to work with `broccoli-static-site-json` because it's an interesting lib to me
-4. Making this an open source repo means other people can contribute to it
-5. Making this an open source repo means other people can be inspired by the work that still needs to be done and maybe have some interesting ideas for how to solve them
+2. I wanted to work with `broccoli-static-site-json` because it's an interesting lib to me
+3. If it's an open source repo means other people can contribute to it, and it can live beyond only me
+4. Other developers can be inspired by the work that still needs to be done in the accessibility space
+5. Maybe other developers will figure out how we can lint or test for a failure item and help solve the problem too
 6. I prefer to do my work in the open where other people can learn from it and also contribute to it
