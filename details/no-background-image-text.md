@@ -2,9 +2,9 @@
 title: No Text in Background Images
 tags: 
   - wcag-1-1-1
-linting: cannotExist 
-testing: cannotExist
-author: cannotExist
+linting: cannotexist 
+testing: cannotexist
+author: cannotexist
 manual: mustexist
 ---
 

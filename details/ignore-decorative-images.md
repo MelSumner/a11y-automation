@@ -2,11 +2,10 @@
 title: Ignore Decorative Images
 tags: 
   - wcag-1-1-1
-  - failure-38
 linting: exists 
-testing: cannotExist
-author: couldExist
-manual: mustExist
+testing: cannotexist
+author: couldexist
+manual: mustexist
 ---
 ## Point of Failure
 Decorative images should be marked up in a way that allows assistive tech to ignore them

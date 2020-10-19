@@ -3,8 +3,8 @@ title: Null Alt Text for Presentation
 tags: 
   - wcag-1-1-1
 linting: exists
-testing: couldExist
-author: couldExist
+testing: couldexist
+author: couldexist
 manual: mustexist
 ---
 ## Point of Failure

@@ -2,7 +2,7 @@
 title: Faux Lists
 tags: 
   - wcag-1-3-1
-linting: cannot
+linting: cannotexist
 testing: exists
 author: couldexist
 manual: exists
