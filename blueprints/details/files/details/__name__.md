@@ -1,5 +1,5 @@
 ---
-title: <%= name %>
+title:
 tags: 
 linting: 
 testing: 
@@ -13,13 +13,13 @@ Description goes here.
 ## Automation
 
 ### Linting
-Describe
+TBD
 
 ### Testing
-Describe
+TBD
 
 ### Developer Authored Test
-Describe
+TBD
 
 ### Manual Test
-Describe
+TBD
