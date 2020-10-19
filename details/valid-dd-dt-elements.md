@@ -1,5 +1,5 @@
 ---
-title: Valid `<dt>`/`<dd>` Elements
+title: Valid dt/dd Elements
 tags: 
   - wcag-1-3-1
 linting: couldexist
