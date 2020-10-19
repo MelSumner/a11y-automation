@@ -13,10 +13,10 @@ Description goes here.
 ## Automation
 
 ### Linting
-TBD
+See `ember-template-lint` library for 
 
 ### Testing
-TBD
+See `axe-core` library for 
 
 ### Developer Authored Test
 TBD
