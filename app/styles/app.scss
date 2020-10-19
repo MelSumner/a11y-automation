@@ -218,8 +218,12 @@ ul {
         width: 100%;
         &:hover,
         &:focus {
-          background-color: rgb(51, 85, 139);;
+          background-color: rgb(51, 85, 139);
           color: rgb(230,204,34);
+        }
+        &.active {
+          background-color: rgb(230, 204, 34);
+          color: rgb(51, 85, 139);
         }
       }
     }
