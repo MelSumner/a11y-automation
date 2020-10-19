@@ -1,5 +1,5 @@
 ---
-title: <%= name %>
+title:
 tags: 
 linting: 
 testing: 
