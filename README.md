@@ -33,7 +33,7 @@ To add assets (such as images or fonts) to the app, place them in the `public` f
 
 ### Adding Data
 
-The data in this app is stored as individual `.md` files, which are then converted (automatically!) into `.json` for use in the application. This makes it fairly straightforward to add a new rule item or tag- it's done by adding a single `.md` file! Additionally, some generators have been created to make it even easier. 
+The data in this app is stored as individual `.md` files, which are then converted (automatically!) into `.json` for use in the application. This makes it fairly straightforward to add a new rule item or tag- it's done by adding a single `.md` file! Additionally, some generators have been created to streamline this process. (Want to see the automatic conversion in action? After you start the app locally, visit http://localhost:4200/details/all.json to see the compiled JSON output! Neat, huh?) 
 
 #### Add a new detail
 
