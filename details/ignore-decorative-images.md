@@ -14,9 +14,10 @@ Decorative images should be marked up in a way that allows assistive tech to ign
 ## Automation
 
 ### Linting
-Can be linted in a limited way- if the `alt` attribute is empty, check for `role="presentation"` or `role="none"`, and vice versa. 
+Can be linted in a limited way- if the `alt` attribute is empty, check for `role="presentation"` or `role="none"`, and vice versa. See Ember Template Lint rule [require-valid-alt-text](https://github.com/ember-template-lint/ember-template-lint/blob/master/docs/rule/require-valid-alt-text.md).
 
 ### Testing
+Potentially automatable. Adapt linting rule for testing.
 
 ### Developer Authored Test
 Developers should ensure that decorative images are marked with the role of presentation or none. A test should be written to ensure that a regression is not introduced if the code is changed.
