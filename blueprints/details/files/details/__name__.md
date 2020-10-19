@@ -22,4 +22,4 @@ See the [`axe-core`](https://github.com/dequelabs/axe-core) library for
 TBD
 
 ### Manual Test
-TBD
+Review page and ensure the point of failure does not exist, inspecting the DOM where required.
