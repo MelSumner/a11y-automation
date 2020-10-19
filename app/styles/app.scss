@@ -31,7 +31,10 @@ body {
       "footer footer"
   }
   header { grid-area: 1 / 1 / 2 / 3; }
-  main { grid-area: 2 / 1 / 4 / 2; }
+  main { 
+    grid-area: 2 / 1 / 4 / 2;
+    max-width: 64em; 
+  }
   aside { grid-area: 2 / 2 / 4 / 3; }
   footer { grid-area: 4 / 1 / 5 / 3; }
 }
