@@ -13,10 +13,10 @@ Description goes here.
 ## Automation
 
 ### Linting
-See `ember-template-lint` library for 
+See the [`ember-template-lint`](https://github.com/ember-template-lint/ember-template-lint) library for 
 
 ### Testing
-See `axe-core` library for 
+See the [`axe-core`](https://github.com/dequelabs/axe-core) library for 
 
 ### Developer Authored Test
 TBD
