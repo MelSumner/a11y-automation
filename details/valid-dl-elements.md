@@ -1,23 +1,23 @@
 ---
-title: Contentinfo as Body Descendant
+title: Valid `<dl>` Elements
 tags: 
   - wcag-1-3-1
-linting: cannotexist
+linting: couldexist
 testing: exists
 author: couldexist
 manual: exists
 ---
 
 ## Point of Failure
-The contentinfo landmark should be a direct descendant of the body element.
+Any `<dl>` elements must only contain `<dt>` and `<dd>` elements.
 
 ## Automation
 
 ### Linting
-Cannot exist yet.
+Potentially Automatable.
 
 ### Testing
-See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `landmark-contentinfo-is-top-level` rule.
+See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `definition-list` rule.
 
 ### Developer Authored Test
 TBD
