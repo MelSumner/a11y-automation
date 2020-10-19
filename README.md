@@ -47,10 +47,14 @@ To add a new tag file, you can add one manually to the `tags` folder, or you can
 
 If you have any questions, suggestions or concerns, the best way to resolve them is to file an issue on this repo and I'll respond ASAP.
 
-### Why not make a spreadsheet?
+### Inclusion in Documentation
+Although this app currently only tracks linting from `ember-template-lint` and testing from `axe-core`, PRs are welcome to add additional linting and testing libraries. Please follow the format in the existing details to allow your PR to be accepted/merged more readily.
+
+### Why
+Why did I make this an app and not a spreadsheet?
 
 1. It's depressing to work with Excel and way more interesting to work with code
-2. It's faster for me to make this in an Ember app
+2. It's faster for me to make this in an Ember app, plus receipts are handy
 3. I wanted an excuse to work with `broccoli-static-site-json` because it's an interesting lib to me
 4. Making this an open source repo means other people can contribute to it
 5. Making this an open source repo means other people can be inspired by the work that still needs to be done and maybe have some interesting ideas for how to solve them
