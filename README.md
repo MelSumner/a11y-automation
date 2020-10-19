@@ -42,3 +42,16 @@ To add a new rule file, you can add one manually to the `details` folder, or you
 #### Add a new tag
 
 To add a new tag file, you can add one manually to the `tags` folder, or you can use the generator file from the command line: `ember generate tags tag-name` where `tag-name` is a dasherized version of the criterion. For example, WCAG 1.1.1 becomes `wcag-1-1-1` and the entire command would look like this: `ember generate tags wcag-1-1-1`. Only ONE tag file should be generated per pull request unless previously coordinated.
+
+## Questions, Suggestions, or Concerns
+
+If you have any questions, suggestions or concerns, the best way to resolve them is to file an issue on this repo and I'll respond ASAP.
+
+### Why not make a spreadsheet?
+
+1. It's depressing to work with Excel and way more interesting to work with code
+2. It's faster for me to make this in an Ember app
+3. I wanted an excuse to work with `broccoli-static-site-json` because it's an interesting lib to me
+4. Making this an open source repo means other people can contribute to it
+5. Making this an open source repo means other people can be inspired by the work that still needs to be done and maybe have some interesting ideas for how to solve them
+6. I prefer to do my work in the open where other people can learn from it and also contribute to it
