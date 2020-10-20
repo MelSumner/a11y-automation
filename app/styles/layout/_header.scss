@@ -1,0 +1,33 @@
+@import "../utils/helper";
+
+header {
+  align-items: center;
+  background-color: rgb(51, 85, 139);
+  color: rgb(230, 204, 34);
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 8vh;
+  width: 100%;
+  h1 {
+    display: flex;
+    font-size: 1.85em;
+    font-weight: normal;
+    justify-content: flex-start;
+    line-height: 1;
+    margin: 0;
+    padding-left: 0.5em;
+    width: 100%;
+    a {
+      background-color: rgb(51, 85, 139);
+      color: rgb(230, 204, 34);
+      display: flex;
+      justify-content: stretch;
+      text-decoration: none;
+      width: 100%;
+    }
+  }
+
+  @include desktop {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../utils/helper";
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  p {
+    padding-left: 0.25em;
+    text-align: center;
+  }
+
+  @include desktop {
+    grid-area: 4 / 1 / 5 / 3;
+  }
+}

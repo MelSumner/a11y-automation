@@ -1,0 +1,37 @@
+article {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  > * {
+    width: 100%;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  h2,
+  h3 {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+    margin-bottom: 0;
+  }
+  footer {
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-top: 2em;
+    padding: 1em;
+    width: 100%;
+    p {
+      margin-bottom: 0;
+    }
+    ul {
+      &.list-tags {
+        list-style-position: outside;
+        margin-top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
