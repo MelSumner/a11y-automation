@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   description: 'a blueprint to generate a new detail markdown file',
 
