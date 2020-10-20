@@ -21,7 +21,7 @@ body {
   @include desktop {
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 8% 1fr 3%;
+    grid-template-rows: 8% auto 3%;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
