@@ -46,3 +46,7 @@ ul.status-list {
   background-color: $must_exist;
   color: $white;
 }
+.status-shouldexist {
+  background-color: $should_exist;
+  color: $black;
+}
