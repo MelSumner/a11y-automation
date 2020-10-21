@@ -8,9 +8,11 @@ aside {
   padding: 0;
 
   p {
-    padding-left: 0.5em;
-    font-weight: bold;
     font-family: $header_font;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 0.5em;
+    text-transform: uppercase;  
   }
 
   @include desktop {
@@ -18,11 +20,6 @@ aside {
   }
 }
 
-// Details List
-.detail-list-sort-button {
-  width: 4em;
-  margin: 0 0.5em;
-}
 ul {
   // TODO flip the naming - should be list-detail (don't forget to update the templates!)
   &.detail-list {

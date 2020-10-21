@@ -5,10 +5,8 @@
   {{outlet}}
 </main>
 <aside>
-  <p id="detail-list-title">Potential Failures ({{@model.length}})</p>
-  <button type="button" onclick={{action "changeSorting"}} class="detail-list-sort-button">
-    {{#if reverseSort }} Z-A {{else}} A-Z {{/if}}
-  </button>
+  <p id="detail-list-title">Potential Failures ({{@model.length}})
+  </p>
   <ul aria-labelledby="detail-list-title" class="detail-list">
   {{#each sortedDetails as |listitem| }}
     <li><LinkTo @route="details.detail" @model={{listitem.id}}>{{listitem.title}}</LinkTo></li>
