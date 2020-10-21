@@ -11,12 +11,12 @@ article {
   }
   h2,
   h3 {
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: $header_font;
     margin-bottom: 0;
   }
   footer {
-    background-color: aliceblue;
-    color: black;
+    background-color: $footer_background;
+    color: $black;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
