@@ -1,7 +1,7 @@
 @import "../utils/helper";
 
 aside {
-  background-color: $grey;
+  background-color: $grey-lighter;
   color: $black;
   height: auto;
   overflow-x: scroll; // TODO idk if I should do this? is this ok to do?
@@ -40,7 +40,7 @@ ul {
         font-size: 0.9em;
         justify-content: stretch;
         line-height: 1.25;
-        padding: 0.5em 0.25em;
+        padding: 0.5em 0.25em 0.5em 1em;
         text-decoration: none;
         width: 100%;
         &:hover,
