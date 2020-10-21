@@ -7,11 +7,11 @@ ul.status-list {
   padding: 0;
   width: 100%;
   .status-listitem {
-    background-color: black;
+    background-color: $black;
     border-radius: 4px;
-    color: white;
+    color: $white;
     display: inline-flex;
-    font-family: sans-serif;
+    font-family: $header_font;
     font-size: 0.8em;
     font-weight: 400;
     letter-spacing: 1px;
@@ -31,18 +31,18 @@ ul.status-list {
 }
 
 .status-exists {
-  background-color: #0ba70b;
-  color: white;
+  background-color: $exists;
+  color: $white;
 }
 .status-cannotexist {
-  background-color: #d60707;
-  color: white;
+  background-color: $cannot_exist;
+  color: $white;
 }
 .status-couldexist {
-  background-color: rgb(230, 204, 34);
-  color: black;
+  background-color:$could_exist;
+  color: $black;
 }
 .status-mustexist {
-  background-color: blue;
-  color: white;
+  background-color: $must_exist;
+  color: $white;
 }

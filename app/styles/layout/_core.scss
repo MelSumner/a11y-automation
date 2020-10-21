@@ -12,8 +12,8 @@ body {
   margin: auto;
 }
 body {
-  background-color: rgb(254, 254, 254);
-  font-family: "Piazzolla", sans-serif;
+  background-color: $background;
+  font-family: $text_font;
   font-size: 18px;
   line-height: 1.5;
   min-height: 100%;
@@ -31,7 +31,7 @@ body {
   }
 }
 code {
-  background-color: #e8e8e8;
+  background-color: $grey;
   border-radius: 3px;
   padding: 0px 4px;
 }

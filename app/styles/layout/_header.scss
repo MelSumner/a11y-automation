@@ -2,8 +2,8 @@
 
 header {
   align-items: center;
-  background-color: rgb(51, 85, 139);
-  color: rgb(230, 204, 34);
+  background-color: $primary_color;
+  color: $secondary_color;
   display: flex;
   flex-flow: row wrap;
   min-height: 8vh;
@@ -18,8 +18,8 @@ header {
     padding-left: 0.5em;
     width: 100%;
     a {
-      background-color: rgb(51, 85, 139);
-      color: rgb(230, 204, 34);
+      background-color: $primary_color;
+      color: $secondary_color;
       display: flex;
       justify-content: stretch;
       text-decoration: none;
