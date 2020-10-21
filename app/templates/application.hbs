@@ -6,8 +6,11 @@
 </main>
 <aside>
   <p id="detail-list-title">Potential Failures</p>
+  <button type="button" onclick={{action "changeSorting"}} class="detail-list-sort-button">
+    {{#if reverseSort }} Z-A {{else}} A-Z {{/if}}
+  </button>
   <ul aria-labelledby="detail-list-title" class="detail-list">
-  {{#each @model as |listitem| }}
+  {{#each sortedDetails as |listitem| }}
     <li><LinkTo @route="details.detail" @model={{listitem.id}}>{{listitem.title}}</LinkTo></li>
   {{else}}
     <li>Sorry, something went wrong.</li>

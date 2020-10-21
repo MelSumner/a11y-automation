@@ -69,8 +69,8 @@ header {
 aside {
   background-color: rgb(242,241,239);
   color: black;
-  height: auto;
-  overflow-x: scroll; // TODO idk if I should do this? is this ok to do?
+  display: flex;
+  flex-direction: column;
   padding: 0;
 
   p {
@@ -194,15 +194,20 @@ nav {
     }
   }
 }
+.detail-list-sort-button {
+  width: 4em;
+  margin: 0 0.5em;
+}
 ul {
   // TODO flip the naming - should be list-detail (don't forget to update the templates!)
   &.detail-list {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    margin: 0 auto;
+    margin: 0.5em auto 0;
     padding: 0;
     width: 100%;
+    overflow-y: scroll;
     li {
       margin: 0 auto;
       padding: 0;
