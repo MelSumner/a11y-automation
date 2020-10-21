@@ -5,6 +5,7 @@ const STATUS_TEXTS = {
   couldexist: 'Could Exist',
   cannotexist: 'Cannot Exist',
   mustexist: 'Must Exist',
+  shouldexist: 'Should Exist',
 };
 
 export default class DetailModel extends Model {
