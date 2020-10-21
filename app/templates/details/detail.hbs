@@ -18,7 +18,7 @@
 <article aria-labelledby="detail-title">
   {{{@model.html}}}
 
-  <footer>
+  <div class="footer">
     <p id="list-criteria-title">Relevant Criteria:</p>
     <ul class="list-tags" aria-labelledby="list-criteria-title">
       {{#each @model.tags as |tagitem| }}
@@ -30,9 +30,9 @@
           {{/if}}
         </li>
       {{else}}
-        <li>Sorry, something went wrong.</li>
+        <li>No relevant criterion found.</li>
       {{/each}}
-  </ul>
-  </footer>
+    </ul>
+  </div>
 </article>
 {{outlet}}

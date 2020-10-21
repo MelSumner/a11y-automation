@@ -14,17 +14,19 @@ article {
     font-family: $header_font;
     margin-bottom: 0;
   }
-  footer {
+  .footer {
     background-color: $footer_background;
+    border-left: 4px solid $primary_color;
     color: $black;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     margin-top: 2em;
-    padding: 1em;
+    padding: 0.5em;
     width: 100%;
     p {
       margin-bottom: 0;
+      font-family: $header_font;
     }
     ul {
       &.list-tags {
