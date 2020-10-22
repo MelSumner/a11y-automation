@@ -5,7 +5,7 @@ tags:
 linting: exists
 testing: couldexist
 author: couldexist
-manual: exists
+manual: shouldexist
 ---
 
 ## Point of Failure
@@ -23,4 +23,4 @@ Potentially automatable. Review the linting rule and adapt for test suite.
 TBD
 
 ### Manual Test
-Check the page for the presence of links or buttons that have "more" or "read more" as the text.
+Check the page for the presence of links or buttons that have "more", "read more", or similarly not meaningful text.

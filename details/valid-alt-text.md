@@ -6,7 +6,7 @@ tags:
 linting: exists
 testing: couldexist
 author: couldexist
-manual: exists
+manual: shouldexist
 ---
 
 ## Point of Failure
