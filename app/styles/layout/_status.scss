@@ -8,9 +8,7 @@
 
   &-item {
     margin: 0;
-    padding: 0 .25em;
-    &:first-child { padding-left: 0; }
-    &:last-child { padding-right: 0; }
+    padding: .25em .25em;
   }
 }
 
@@ -27,10 +25,12 @@
     padding: 4px 12px;
     letter-spacing: 1px;
     display: flex;
+    justify-content: center;
     align-items: center;
     text-transform: uppercase;
 
     &.status-label {
+      width: 80px;
       font-size: 0.9em;
       letter-spacing: 2px;
       background-color: $status_label_background;
