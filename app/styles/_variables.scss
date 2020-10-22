@@ -11,7 +11,8 @@ $exists: rgb(11, 167, 11);
 $cannot_exist: rgb(214, 7, 7);
 $could_exist: $secondary_color;
 $must_exist: $primary_color;
-$should_exist: rgb(255 129 0);
+$should_exist: rgb(255, 129, 0);
+$status_label_background: rgb(85, 85, 85);
 
 $header_font: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
 $text_font: "Piazzolla", sans-serif;
