@@ -1,17 +1,29 @@
 <h2 id="detail-title">{{@model.title}}</h2>
 <p id="automation-status-title">Automation Status:</p>
-<ul class="status-list" aria-labelledby="automation-status-title">
-  <li class="status-listitem">Linting:
-    <span class="status-{{@model.linting}}">{{@model.lintingText}}</span>
+<ul class="list-status" aria-labelledby="automation-status-title">
+  <li class="list-status-item">
+    <div class="status-badge">
+      <span class="status-label">Linting</span>
+      <span class="status-message status-{{@model.linting}}">{{@model.lintingText}}</span>
+    </div>
   </li>
-  <li class="status-listitem">Testing:
-    <span class="status-{{@model.testing}}">{{@model.testingText}}</span>
+  <li class="list-status-item">
+    <div class="status-badge">
+      <span class="status-label">Testing</span>
+      <span class="status-message status-{{@model.testing}}">{{@model.testingText}}</span>
+    </div>
   </li>
-  <li class="status-listitem">Author: 
-    <span class="status-{{@model.author}}">{{@model.authorText}}</span>
+  <li class="list-status-item">
+    <div class="status-badge">
+      <span class="status-label">Author</span>
+      <span class="status-message status-{{@model.author}}">{{@model.authorText}}</span>
+    </div>
   </li>
-  <li class="status-listitem">Manual:
-    <span class="status-{{@model.manual}}">{{@model.manualText}}</span>
+  <li class="list-status-item">
+    <div class="status-badge">
+      <span class="status-label">Manual</span>
+      <span class="status-message status-{{@model.manual}}">{{@model.manualText}}</span>
+    </div>
   </li>
 </ul>
 <hr>
