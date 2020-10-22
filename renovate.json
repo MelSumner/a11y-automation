@@ -1,5 +1,19 @@
 {
   "extends": [
-    "config:base"
+    "config:js-lib",
+    ":automergePatch",
+    ":dependencyDashboard",
+    ":maintainLockFilesWeekly",
+    ":semanticCommitsDisabled"
+  ],
+
+  "postUpdateOptions": ["yarnDedupeHighest"],
+
+  "packageRules": [
+    {
+      "matchCurrentVersion": ">= 1.0.0",
+      "updateTypes": ["minor"],
+      "automerge": true
+    }
   ]
 }
