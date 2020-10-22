@@ -23,6 +23,7 @@
   font-weight: 400;
 
   span {
+    color: $white;
     padding: 4px 12px;
     letter-spacing: 1px;
     display: flex;
@@ -30,15 +31,13 @@
     text-transform: uppercase;
 
     &.status-label {
-      color: white;
       font-size: 0.9em;
       letter-spacing: 2px;
-      background-color: #555;
+      background-color: $status_label_background;
       border-radius: 2px 0 0 2px;
     }
 
     &.status-message {
-      color: white;
       font-weight: bold;
       border-radius: 0 2px 2px 0;
 
