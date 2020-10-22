@@ -61,7 +61,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "broccoli-static-site-json": "^4.2.1"
+    "broccoli-static-site-json": "4.2.1"
   },
   "ember-addon": {
     "paths": [
