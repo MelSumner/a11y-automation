@@ -5,7 +5,10 @@
   {{outlet}}
 </main>
 <aside>
+   
   <p id="detail-list-title">Potential Failures ({{@model.length}})
+    <p>{{input type="text" class="search" placeholder="Search" value=search action="queryPost"}}</p>
+
   </p>
   <ul aria-labelledby="detail-list-title" class="detail-list">
   {{#each sortedDetails as |listitem| }}

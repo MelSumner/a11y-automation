@@ -28,6 +28,14 @@ ul.status-list {
       margin: -0.15em 0;
     }
   }
+
+}
+@media only screen and (max-width:400px) {
+  ul.status-list .status-listitem {
+    float: left;
+    display: inline-flex;
+    margin-top: 1rem;
+  }
 }
 
 .status-exists {
