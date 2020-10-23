@@ -1,15 +1,18 @@
 nav {
   display: flex;
   flex-flow: row wrap;
+  margin: 0;
   padding: 0;
   ul {
     display: flex;
     flex-flow: row wrap;
+    height: 100%;
     width: 100%;
     list-style: none;
-    // margin: 0;
-    // padding: 0;
+    margin: 0;
+    padding: 0;
     li {
+      align-items: center;
       display: flex;
       margin: 0;
       padding: 0;
@@ -20,15 +23,20 @@ nav {
       }
       a {
         background-color: transparent;
+        border: 2px solid transparent;
         color: $secondary_color;
         display: flex;
         font-family: $sans-serif;
         font-weight: bold;
         letter-spacing: 1px;
         padding: 0.5em 0.25em 0.5em 0.5em;
+        text-decoration: none;
         text-transform: uppercase;
-        &:hover,
-        :focus {
+
+        &:hover {
+          border: 2px dotted white;
+        }
+        &:focus {
           background-color: $primary_color;
           color: $secondary_color;
           transition: ease-in-out;
