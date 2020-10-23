@@ -1,25 +1,26 @@
 @import "../utils/helper";
 
 header {
-  align-items: center;
   background-color: $primary_color;
   color: $secondary_color;
   display: flex;
+  justify-content: space-between;
   flex-flow: row wrap;
   min-height: 60px;
   width: 100%;
+  padding: 0 0.5em;
   h1 {
     display: flex;
     font-size: 1.85em;
     font-weight: normal;
-    justify-content: flex-start;
+    justify-content: stretch;
     margin: 0;
-    padding-left: 0.5em;
-    width: 100%;
+    max-height: 100%;
+    padding: 0;
     a {
       background-color: $primary_color;
       color: $secondary_color;
-      display: flex;
+      display: inline-flex;
       justify-content: stretch;
       text-decoration: none;
       width: 100%;

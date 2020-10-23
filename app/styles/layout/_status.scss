@@ -40,20 +40,28 @@
     &.status-message {
       font-weight: bold;
       border-radius: 0 2px 2px 0;
-
-      &.status-exists { background-color: $exists; }
-      &.status-cannotexist { background-color: $cannot_exist; }
-      &.status-mustexist { background-color: $must_exist; }
-
-      &.status-couldexist {
-        color: $black;
-        background-color: $could_exist;
-      }
-
-      &.status-shouldexist {
-        color: $black;
-        background-color: $should_exist;
-      }
     }
   }
+}
+
+// Used other places too, so need to be generic
+.status-exists { 
+  background-color: $exists;
+  color: white;
+}
+.status-cannotexist { 
+  background-color: $cannot_exist;
+  color: white;
+}
+.status-mustexist { 
+  background-color: $must_exist;
+  color: white;
+}
+.status-couldexist {
+  color: $black;
+  background-color: $could_exist;
+}
+.status-shouldexist {
+  color: $black;
+  background-color: $should_exist;
 }
