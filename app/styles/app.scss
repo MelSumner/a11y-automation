@@ -19,8 +19,10 @@ table {
   }
   th {
     font-family: $sans-serif;
-    text-align: left;
+    letter-spacing: 1px;
     padding: 0 0.25em;
+    text-align: left;
+    text-transform: uppercase;
   }
   td {
     font-family: $sans-serif;
