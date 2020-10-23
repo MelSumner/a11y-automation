@@ -6,14 +6,13 @@ header {
   color: $secondary_color;
   display: flex;
   flex-flow: row wrap;
-  min-height: 8vh;
+  min-height: 60px;
   width: 100%;
   h1 {
     display: flex;
     font-size: 1.85em;
     font-weight: normal;
     justify-content: flex-start;
-    line-height: 1;
     margin: 0;
     padding-left: 0.5em;
     width: 100%;
