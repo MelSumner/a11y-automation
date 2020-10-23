@@ -1,7 +1,5 @@
 nav {
-  background-color: $grey;
   display: flex;
-  width: 100%;
   flex-flow: row wrap;
   padding: 0;
   ul {
@@ -22,9 +20,9 @@ nav {
       }
       a {
         background-color: transparent;
-        color: $primary_color;
+        color: $secondary_color;
         display: flex;
-        font-family: $nav_font;
+        font-family: $sans-serif;
         font-weight: bold;
         letter-spacing: 1px;
         padding: 0.5em 0.25em 0.5em 0.5em;

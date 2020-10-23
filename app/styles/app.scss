@@ -9,3 +9,21 @@
 @import "layout/status";
 @import "layout/nav";
 @import "layout/article";
+
+table {
+  width: 100%;
+  tr {
+    &:hover {
+      background-color: aliceblue;
+    }
+  }
+  th {
+    font-family: $sans-serif;
+    text-align: left;
+    padding: 0 0.25em;
+  }
+  td {
+    font-family: $sans-serif;
+    padding: 0.25em;
+  }
+}
