@@ -10,6 +10,6 @@ footer {
   }
 
   @include desktop {
-    grid-area: 4 / 1 / 5 / 3;
+    grid-area: footer;
   }
 }
