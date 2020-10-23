@@ -28,6 +28,6 @@ header {
   }
 
   @include desktop {
-    grid-area: 1 / 1 / 2 / 3;
+    grid-area: header;
   }
 }

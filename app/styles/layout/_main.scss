@@ -18,7 +18,7 @@ main {
   }
 
   @include desktop {
-    grid-area: 2 / 1 / 4 / 2;
+    grid-area: main;
     max-width: 64em;
   }
 }
