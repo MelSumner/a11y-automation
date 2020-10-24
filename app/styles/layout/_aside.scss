@@ -8,8 +8,6 @@ aside {
   padding: 0;
 
   #detail-list-title {
-    position: sticky;
-    top: 0;
     font-family: $header_font;
     background-color: $grey-lighter;
     font-weight: bold;
@@ -17,6 +15,10 @@ aside {
     margin: 0;
     padding: 0.5em;
     text-transform: uppercase;
+    @include desktop {
+      position: sticky;
+      top: 0;
+    }
   }
 
   @include mobile-only {
@@ -25,10 +27,41 @@ aside {
     right: 0;
     width: 60vw;
     height: 100vh;
+    overflow: visible;
+    transition: transform .4s ease-in-out;
+    transform: translateX(60vw);
+    &.active { transform: translateX(0); }
+    &.active > #detail-list-switcher:after { content: '>'; }
+
+    #detail-list-switcher {
+      cursor: pointer;
+      position: absolute;
+      top: 40px;
+      left: -30px;
+      z-index: 5;
+      width: 30px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #AAA;
+      border: 2px solid #AAA;
+      border-right: none;
+      border-radius: 4px 0 0 4px;
+      background-color: $grey-lighter;
+      &:after {
+        content: '<';
+        height: 18px;
+        font-size: 1.5em;
+        line-height: .5em;
+        transform: scaleX(.8) scaleY(1.5);
+      }
+    }
   }
 
   @include desktop {
     grid-area: aside;
+    #detail-list-switcher { display: none; }
   }
 }
 
@@ -41,6 +74,12 @@ ul {
     margin: 0;
     padding: 0;
     width: 100%;
+
+    @include mobile-only {
+      max-height: 100vh;
+      overflow: auto;
+    }
+
     li {
       margin: 0 auto;
       padding: 0;
