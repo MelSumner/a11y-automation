@@ -24,6 +24,7 @@ aside {
     overflow: visible;
     transform: translateX(60vw);
     transition: transform .4s ease-in-out;
+    border-left: 2px solid $secondary_color_darken;
     &.active { transform: translateX(0); }
     &.active > #list-detail-switcher:after { content: '>'; }
 
@@ -37,9 +38,9 @@ aside {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #AAA;
+      color: $secondary_color_darken;
       cursor: pointer;
-      border: 2px solid #AAA;
+      border: 2px solid $secondary_color_darken;
       border-right: none;
       border-radius: 4px 0 0 4px;
       background-color: $grey-lighter;
