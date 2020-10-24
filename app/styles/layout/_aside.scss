@@ -65,7 +65,7 @@ aside {
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: $header_font;
+    font-family: $sans-serif;
     background-color: $grey-lighter;
     @include mobile-only { grid-area: title; }
 
