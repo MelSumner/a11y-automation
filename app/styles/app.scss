@@ -9,13 +9,35 @@
 @import "layout/status";
 @import "layout/nav";
 @import "layout/article";
+a {
+  &:visited {
+
+  }
+}
 
 table {
   width: 100%;
+  thead {
+    tr {
+      background-color: $primary_color;
+      color: white;
+    }
+  }
+  tbody {
+    tr {
+      &:nth-of-type(2n) {
+        background-color: #eff0f1;
+      }
+    }
+  }
   tr {
     &:hover {
       background-color: aliceblue;
     }
+  }
+  th, td {
+    padding: 1em;
+    width: 10em;
   }
   th {
     font-family: $sans-serif;
