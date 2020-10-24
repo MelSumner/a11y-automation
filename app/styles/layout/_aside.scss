@@ -19,6 +19,14 @@ aside {
     text-transform: uppercase;
   }
 
+  @include mobile-only {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60vw;
+    height: 100vh;
+  }
+
   @include desktop {
     grid-area: aside;
   }
