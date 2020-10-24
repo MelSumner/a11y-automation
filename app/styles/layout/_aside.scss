@@ -4,14 +4,18 @@ aside {
   background-color: $grey-lighter;
   color: $black;
   height: auto;
-  overflow-y: scroll; // TODO idk if I should do this? is this ok to do?
+  overflow-y: auto;
   padding: 0;
 
-  p {
-    font-family: $sans-serif;
+  #detail-list-title {
+    position: sticky;
+    top: 0;
+    font-family: $header_font;
+    background-color: $grey-lighter;
     font-weight: bold;
     letter-spacing: 1px;
-    padding-left: 0.5em;
+    margin: 0;
+    padding: 0.5em;
     text-transform: uppercase;
   }
 
@@ -26,7 +30,7 @@ ul {
     display: flex;
     flex-flow: row wrap;
     list-style: none;
-    margin: 0.5em auto 0;
+    margin: 0;
     padding: 0;
     width: 100%;
     li {
