@@ -6,10 +6,10 @@
   {{outlet}}
 </main>
 <aside>
-  <div id="detail-list-switcher" aria-label="Potential Failures Menu Switcher" onclick="document.querySelector('aside').classList.toggle('active')"></div>
-  <p id="detail-list-title">Potential Failures ({{@model.length}})
+  <div id="list-detail-switcher" aria-label="Potential Failures Menu Switcher" onclick="document.querySelector('aside').classList.toggle('active')"></div>
+  <p id="list-detail-title">Potential Failures ({{@model.length}})
   </p>
-  <ul aria-labelledby="detail-list-title" class="detail-list">
+  <ul aria-labelledby="list-detail-title" class="list-detail">
   {{#each sortedDetails as |listitem| }}
     <li><LinkTo @route="details.detail" @model={{listitem.id}}>{{listitem.title}}</LinkTo></li>
   {{else}}
