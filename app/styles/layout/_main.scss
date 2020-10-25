@@ -2,6 +2,8 @@
 
 main {
   padding: 0.5em 1em;
+  grid-area: main;
+  max-width: 64em;
   section {
     display: flex;
     flex-flow: row wrap;
@@ -15,10 +17,5 @@ main {
       font-size: 1.15em;
       line-height: 1.5;
     }
-  }
-
-  @include desktop {
-    grid-area: main;
-    max-width: 64em;
   }
 }

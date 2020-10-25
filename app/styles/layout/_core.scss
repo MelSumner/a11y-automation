@@ -18,15 +18,18 @@ body {
   line-height: 1.5;
   min-height: 100%;
 
-  @include desktop {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 1fr auto 1fr;
-    grid-gap: 0 0;
-    grid-template-areas:
-      "header header"
-      "main aside"
-      "footer footer";
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 1fr auto 1fr;
+  grid-gap: 0 0;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+
+  @include mobile {
+    grid-template-columns: 65% 35%;
+    font-size: 14px;
   }
 }
 code {

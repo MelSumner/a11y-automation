@@ -6,6 +6,7 @@ aside {
   height: auto;
   overflow-y: scroll; // TODO idk if I should do this? is this ok to do?
   padding: 0;
+  grid-area: aside;
 
   p {
     font-family: $sans-serif;
@@ -13,10 +14,6 @@ aside {
     letter-spacing: 1px;
     padding-left: 0.5em;
     text-transform: uppercase;
-  }
-
-  @include desktop {
-    grid-area: aside;
   }
 }
 

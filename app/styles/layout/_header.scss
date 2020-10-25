@@ -9,6 +9,7 @@ header {
   min-height: 60px;
   width: 100%;
   padding: 0 0.5em;
+  grid-area: header;
   h1 {
     display: flex;
     font-size: 1.85em;
@@ -17,6 +18,9 @@ header {
     margin: 0;
     max-height: 100%;
     padding: 0;
+    @include mobile {
+      font-size: 1.5em;
+    }
     a {
       background-color: $primary_color;
       color: $secondary_color;
@@ -25,9 +29,5 @@ header {
       text-decoration: none;
       width: 100%;
     }
-  }
-
-  @include desktop {
-    grid-area: header;
   }
 }
