@@ -53,9 +53,7 @@ Although this app currently only tracks linting from `ember-template-lint` and t
 ### Why
 Why did I make this an app and not a spreadsheet?
 
-1. It's depressing to work with Excel and way more interesting to work with code
-2. I wanted to work with `broccoli-static-site-json` because it's an interesting lib to me
-3. If it's an open source repo means other people can contribute to it, and it can live beyond only me
-4. Other developers can be inspired by the work that still needs to be done in the accessibility space
-5. Maybe other developers will figure out how we can lint or test for a failure item and help solve the problem too
-6. I prefer to do my work in the open where other people can learn from it and also contribute to it
+1. The `broccoli-static-site-json` addon means that I can work on individual failures in `.md` files and have them automatically compiled into a `.json` file. This makes it easier to do the detailed work, and the `.json` file can be pulled into any database at a later point (most have a way to import a JSON file).
+2. I prefer to work in the open whenever possible, and this is also the nature of my work. By tracking what the failures are and what automation is possible, and doing this where everyone that wants to can also see it, everyone benefits. 
+3. This will identify gaps in automation that can be closed/solved for.
+4. Spreadsheets can only do so much. There are a lot of other ways we can sort, filter and display data if it's in an application instead.
