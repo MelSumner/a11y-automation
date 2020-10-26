@@ -17,10 +17,14 @@ a {
 
 table {
   width: 100%;
+  font-size: 1.15em;
   thead {
     tr {
       background-color: $primary_color;
       color: white;
+      th {
+        line-height: 2;
+      }
     }
   }
   tbody {
@@ -36,8 +40,8 @@ table {
     }
   }
   th, td {
-    padding: 1em;
-    width: 10em;
+    padding: 1em 0.25em 1em 1em;
+    width: 25%;
   }
   th {
     font-family: $sans-serif;
