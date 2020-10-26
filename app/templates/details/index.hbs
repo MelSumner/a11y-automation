@@ -11,9 +11,9 @@
     {{#each @model as |cellitem| }}
       <tr>
         <td><LinkTo @route="details.detail" @model={{cellitem.id}}>{{cellitem.title}}</LinkTo></td>
-        <td class="status-{{cellitem.linting}}-background status-{{cellitem.linting}}-text">{{cellitem.lintingText}}</td>
-        <td class="status-{{cellitem.testing}}-background status-{{cellitem.testing}}-text">{{cellitem.testingText}}</td>
-        <td class="status-{{cellitem.manual}}-background status-{{cellitem.manual}}-text">{{cellitem.manualText}}</td>
+        <td class="status-{{cellitem.linting}}-background">{{cellitem.lintingText}}</td>
+        <td class="status-{{cellitem.testing}}-background">{{cellitem.testingText}}</td>
+        <td class="status-{{cellitem.manual}}-background">{{cellitem.manualText}}</td>
       </tr>
     {{/each}}
   </tbody>
