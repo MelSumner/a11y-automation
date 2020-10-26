@@ -65,3 +65,24 @@
   color: $black;
   background-color: $should_exist;
 }
+
+.status-exists-background{ 
+  background-color: lighten($exists, 50%);
+  color: darken($exists, 20%);
+}
+.status-cannotexist-background {
+  background-color: lighten($cannot_exist, 50%);
+  color: darken($cannot_exist, 20%);
+}
+.status-couldexist-background{
+  background-color: lighten($could_exist, 40%);
+  color: darken($could_exist, 30%);
+}
+.status-mustexist-background{
+  background-color: lighten($must_exist, 50%);
+  color: darken($must_exist, 20%);
+}
+.status-shouldexist-background{
+  background-color: lighten($should_exist, 40%);
+  color: darken($should_exist, 30%);
+}

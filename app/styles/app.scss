@@ -29,8 +29,16 @@ table {
   }
   tbody {
     tr {
-      &:nth-of-type(2n) {
-        background-color: #eff0f1;
+      td {
+        &:first-of-type {
+          background-color: $primary_color;
+          color: $secondary_color;
+        }
+        a {
+          background-color: transparent;
+          color: lighten($secondary_color, 10%);
+          text-decoration: underline dotted;
+        }
       }
     }
   }

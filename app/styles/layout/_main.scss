@@ -1,7 +1,7 @@
 @import "../utils/helper";
 
 main {
-  padding: 0.5em 1em;
+  padding: 2em;
   section {
     display: flex;
     flex-flow: row wrap;
@@ -17,8 +17,7 @@ main {
     }
   }
 
-  @include desktop {
+  @include desktop { //TODO take out these includes, it's too difficult to maintain. Just use a media query. 
     grid-area: main;
-    max-width: 68em;
   }
 }
