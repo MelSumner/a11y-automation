@@ -6,7 +6,7 @@
   {{outlet}}
 </main>
 <aside>
-  <div id="list-detail-switcher" title="Potential Failures List" aria-label="Potential Failures Menu Switcher" onclick="document.querySelector('aside').classList.toggle('active')"></div>
+  <button id="list-detail-switcher" title="Potential Failures List" aria-label="Potential Failures Menu Switcher" onclick="document.querySelector('aside').classList.toggle('active')"></button>
   <p id="list-detail-title">Potential Failures ({{@model.length}})
   </p>
   <ul aria-labelledby="list-detail-title" class="list-detail">

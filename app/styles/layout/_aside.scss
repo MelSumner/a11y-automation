@@ -35,6 +35,7 @@ aside {
       position: absolute;
       width: 30px;
       height: 40px;
+      outline: none;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -47,7 +48,6 @@ aside {
 
       &:after {
         content: '<';
-        height: 18px;
         font-size: 1.5em;
         line-height: .5em;
         transform: scaleX(.8) scaleY(1.5);
