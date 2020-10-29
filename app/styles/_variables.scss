@@ -1,5 +1,6 @@
 $primary_color: rgb(51, 85, 139);
 $secondary_color: rgb(230, 204, 34);
+$secondary_color_darken: darken($secondary_color, 15%);
 $black: rgb(0,0,0);
 $white: rgb(254, 254, 254);
 $grey: rgb(242, 241, 239);
