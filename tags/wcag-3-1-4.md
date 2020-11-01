@@ -1,4 +1,5 @@
 ---
 title: WCAG 3.1.4
-url:
+url: https://www.w3.org/WAI/WCAG21/Understanding/abbreviations.html
 ---
+Abbreviations (Level AAA)
