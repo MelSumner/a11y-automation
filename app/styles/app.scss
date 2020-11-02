@@ -9,42 +9,48 @@
 @import "layout/status";
 @import "layout/nav";
 @import "layout/article";
-a {
-  &:visited {
-
-  }
-}
 
 table {
   width: 100%;
-  font-size: 1.15em;
+  font-size: 1em;
+  border: 1px solid $primary_color;
+  border-collapse: collapse;
   thead {
     tr {
       background-color: $primary_color;
       color: white;
       th {
         line-height: 2;
+        border: 1px solid $primary_color;
+        border-collapse: collapse;
       }
     }
   }
   tbody {
     tr {
+      &:hover {
+        background-color: aliceblue;
+        color: $primary_color;
+      }
+      &:nth-of-type(2n) {
+        td {
+          &:first-of-type {
+            background-color: #8080803b;
+          }
+        }
+      }
       td {
+        border: 1px solid $primary_color;
+        border-collapse: collapse;
         &:first-of-type {
-          background-color: $primary_color;
-          color: $secondary_color;
+          background-color: white;
+          color: $primary_color;
         }
         a {
           background-color: transparent;
-          color: lighten($secondary_color, 10%);
-          text-decoration: underline dotted;
+          color: $primary_color;
         }
       }
-    }
-  }
-  tr {
-    &:hover {
-      background-color: aliceblue;
     }
   }
   th, td {
