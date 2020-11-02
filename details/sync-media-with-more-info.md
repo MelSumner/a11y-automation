@@ -1,5 +1,5 @@
 ---
-title: Synchronized Media With More Info
+title: Synchronized Media
 tags: 
   - wcag-1-2-2
 linting: cannotexist

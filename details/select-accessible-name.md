@@ -1,5 +1,5 @@
 ---
-title: Accessible Name for Select Elements
+title: Select Elements
 tags: 
   - wcag-1-3-1
   - wcag-4-1-2
