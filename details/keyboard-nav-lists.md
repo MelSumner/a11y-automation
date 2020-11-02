@@ -1,29 +1,23 @@
 ---
-title:
+title: Keyboard Nav For Lists
 tags: 
-linting: 
-testing: 
-author: 
-manual: 
+  - wcag-2-1-1
+linting: cannotexist
+testing: cannotexist
+author: shouldexist
+manual: mustexist
 ---
 
 ## Point of Failure
+Lists should be navigable with the UP and DOWN arrow keys
 
 
 ## Automation
 
 ### Linting
-Automated linting exists. See the [`ember-template-lint`](https://github.com/ember-template-lint/ember-template-lint) library for the `xxx` rule.
-
-Potentially Automatable.
-
 Cannot Exist Yet. If you an idea about how this could be linted in an automated fashion, or are aware of an automated linting rule that already exists, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
 
 ### Testing
-Automated testing exists. See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `zzz` rule.
-
-Potentially Automatable.
-
 Cannot Exist Yet. If you an idea about how this could be tested in an automated fashion, or are aware of an automated test that already exists, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
 
 ### Developer Authored Test
