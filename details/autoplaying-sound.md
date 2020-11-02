@@ -1,5 +1,5 @@
 ---
-title: Sound Automatically Played for Longer Than Three Seconds
+title: Autoplaying Sound
 tags: 
   - wcag-1-4-2
   - failure-23
