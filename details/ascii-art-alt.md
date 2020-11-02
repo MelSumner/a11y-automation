@@ -1,5 +1,5 @@
 ---
-title: ASCII Art Must Have Text Alternative
+title: ASCII Art
 tags: 
   - wcag-1-1-1
 linting: cannotexist 
