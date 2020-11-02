@@ -31,6 +31,7 @@ table {
       &:hover {
         background-color: aliceblue;
         color: $primary_color;
+        font-weight: bold;
       }
       &:nth-of-type(2n) {
         td {
