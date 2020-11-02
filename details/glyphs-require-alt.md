@@ -1,5 +1,5 @@
 ---
-title: Text Look-Alikes Require An Alt Attribute
+title: Text Look-A-Likes
 tags: 
   - wcag-1-1-1
 linting: couldexist

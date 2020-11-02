@@ -1,5 +1,5 @@
 ---
-title: Table Header & Content Association
+title: Table Headers & Contents
 tags: 
   - wcag-1-3-1
 linting: couldexist
