@@ -23,4 +23,4 @@ See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `lis
 Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
-Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
+Review page and ensure the point of failure does not exist, inspecting the DOM where required.
