@@ -13,6 +13,8 @@
 }
 
 .status-badge {
+  background-color: $status_label_background;
+  color: $white;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -21,7 +23,6 @@
   font-weight: 400;
 
   span {
-    color: $white;
     padding: 4px 12px;
     letter-spacing: 1px;
     display: flex;
@@ -33,7 +34,6 @@
       width: 80px;
       font-size: 0.9em;
       letter-spacing: 2px;
-      background-color: $status_label_background;
       border-radius: 2px 0 0 2px;
     }
 
@@ -62,7 +62,7 @@
   background-color: $could_exist;
 }
 .status-shouldexist {
-  color: $black;
+  color: $white;
   background-color: $should_exist;
 }
 
