@@ -20,7 +20,7 @@ Potentially automatable. Check for `ul` and `ol` elements, and ensure the correc
 See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `list` rule.
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.

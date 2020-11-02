@@ -22,7 +22,7 @@ See Ember Template Lint: [require-valid-alt-text](https://github.com/ember-templ
 Potentially Automatable. Review linting equivalent and adapt for testing suite.
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Inspect DOM. If image maps exist, ensure that `<area>` elements have valid `alt` attributes.

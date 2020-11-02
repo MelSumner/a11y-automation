@@ -20,7 +20,7 @@ Cannot exist yet. How would you programmatically identify something as a charact
 see above
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.

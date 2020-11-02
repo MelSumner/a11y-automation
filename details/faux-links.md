@@ -22,8 +22,10 @@ See the [`ember-template-lint`](https://github.com/ember-template-lint/ember-tem
 ### Testing
 Potentially automatable. Evaluate the existing linting rule to see if an automated testing rule could be adapted from it.
 
+If you have any ideas about how this could be done, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
+
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Review page and ensure the point of failure does not exist, inspecting the DOM where required.

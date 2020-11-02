@@ -20,7 +20,7 @@ See `ember-template-lint` for the `no-invalid-link-text` rule.
 Potentially automatable. Review the linting rule and adapt for test suite.
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Check the page for the presence of links or buttons that have "more", "read more", or similarly not meaningful text.

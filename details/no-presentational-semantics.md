@@ -20,7 +20,7 @@ See the `ember-template-lint` library for the `no-invalid-role` rule.
 Potentially Automatable. Review linting rule and adapt rule for test suite.
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Inspect DOM. Ensure that semantic html elements do not have `role` of presentation or none.

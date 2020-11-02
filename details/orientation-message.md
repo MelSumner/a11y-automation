@@ -20,7 +20,7 @@ Potentially automatable through CSS linting.
 Potentially automatable but needs further analysis. 
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Rotate the device and ensure that a message does not appear to ask you to change your device's orientation.

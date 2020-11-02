@@ -20,7 +20,7 @@ Potentially automatable. Check interactive elements for the role of presentation
 See above
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Inspect DOM for instances of `role="presentation"` and `role="none"` and ensure that they are not attached to interactive elements.

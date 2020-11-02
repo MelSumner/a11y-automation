@@ -23,7 +23,7 @@ Potentially automatable but there are a lot of details to consider.
 See above
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Review the page. Check headings to insure they are not images of text.

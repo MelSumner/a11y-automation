@@ -20,7 +20,7 @@ See `ember-template-lint` library for [`no-duplicate-landmark-elements`](https:/
 See `axe-core` library for `landmark-unique` rule.
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 When inspecting the DOM, review for duplicate landmark elements. If there are duplicates, ensure that unique labels have been provided for each.

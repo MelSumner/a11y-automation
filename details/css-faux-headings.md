@@ -20,7 +20,7 @@ Potentially automatable with a CSS linter.
 See rule `p-as-heading` in the `axe-core` a11y testing library.
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Inspect headings and ensure that they are using the appropriate semantic equivalent (h1-h6).

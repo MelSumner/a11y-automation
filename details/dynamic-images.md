@@ -5,8 +5,8 @@ tags:
   - wcag-4-1-2
 linting: couldexist
 testing: cannotexist
-author: couldexist
-manual: exists
+author: shouldexist
+manual: mustexist
 ---
 
 ## Point of Failure
@@ -20,8 +20,10 @@ Potentially automatable. Update require-valid-alt-text to include this scenario.
 ### Testing
 How could you determine that an image was being updated dynamically? 
 
+If you have any thoughts on how to solve this problem, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
+
 ### Developer Authored Test
-TBD
+If the developer knows that images will be updated dynamically, write a test to ensure that the alt text is also updated dynamically.
 
 ### Manual Test
 Observe the page and see if any images are being updated dynamically. If they are, inspect each one to ensure that the `alt` attribute values are being updated as well.

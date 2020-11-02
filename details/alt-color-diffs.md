@@ -21,7 +21,7 @@ Potentially Automatable. Parse `alt` attribute value and determine whether or no
 Potentially Automatable. Parse `alt` attribute value and determine whether or not it uses any color words.
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 While inspecting `alt` attribute values, ensure that no information is included that conveys color differences.

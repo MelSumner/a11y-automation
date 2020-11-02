@@ -20,7 +20,7 @@ Potentially automatable through a CSS linter. Ensure there are no classes that d
 See `axe-core` library for `p-as-heading` rule.
 
 ### Developer Authored Test
-TBD
+Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 Inspect DOM where words have been given emphasis or boldness. Ensure that the appropriate HTML element has been used instead of CSS.
