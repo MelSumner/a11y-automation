@@ -62,7 +62,7 @@
   },
   "dependencies": {
     "broccoli-static-site-json": "4.2.1",
-    "ember-cli-netlify": "^0.4.1"
+    "ember-cli-netlify": "0.4.1"
   },
   "ember-addon": {
     "paths": [
