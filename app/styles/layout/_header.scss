@@ -10,14 +10,20 @@ header {
   width: 100%;
   padding: 0 0.5em;
   h1 {
+    align-items: stretch;
     display: flex;
-    font-size: 1.85em;
+    font-family: $sans-serif;
+    font-size: 1.4em;
     font-weight: normal;
     justify-content: stretch;
+    letter-spacing: 1px;
+    line-height: 1;
     margin: 0;
     max-height: 100%;
     padding: 0;
+    text-transform: uppercase;
     a {
+      align-items: center;
       background-color: $primary_color;
       color: $secondary_color;
       display: inline-flex;
