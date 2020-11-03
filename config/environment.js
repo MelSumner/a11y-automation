@@ -27,6 +27,10 @@ module.exports = function(environment) {
     //   contactEmail: 'melaniersumner@gmail.com'
 
     // }
+
+    fastboot: {
+      hostWhitelist: [/localhost:\d+/]
+    },
   };
 
   if (environment === 'development') {

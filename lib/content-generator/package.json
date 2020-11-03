@@ -1,6 +1,7 @@
 {
   "name": "content-generator",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "prember-plugin"
   ]
 }
