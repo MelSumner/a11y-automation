@@ -2,6 +2,7 @@
 title: No Blink Without Pause
 tags:
   - wcag-2-2-2
+  - failure-50
 linting: cannotexist
 testing: cannotexist
 author: couldexist

@@ -2,6 +2,7 @@
 title: Use of Blink
 tags:
   - wcag-2-2-2
+  - failure-4
 linting: couldexist
 testing: couldexist
 author: couldexist
