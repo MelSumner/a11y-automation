@@ -6,11 +6,11 @@
   {{outlet}}
 </main>
 <aside>
-  <button id="list-detail-switcher" title="Potential Failures List" aria-label="Potential Failures Menu Switcher" onclick="document.querySelector('aside').classList.toggle('active')"></button>
+  <button type="button" id="list-detail-switcher" title="Potential Failures List" aria-label="Potential Failures Menu Switcher" onclick="document.querySelector('aside').classList.toggle('active')"></button>
   <p id="list-detail-title">Potential Failures ({{@model.length}})
   </p>
   <ul aria-labelledby="list-detail-title" class="list-detail">
-  {{#each sortedDetails as |listitem| }}
+  {{#each this.sortedDetails as |listitem| }}
     <li><LinkTo @route="details.detail" @model={{listitem.id}}>{{listitem.title}}</LinkTo></li>
   {{else}}
     <li>Sorry, something went wrong.</li>
