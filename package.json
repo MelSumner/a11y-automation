@@ -63,7 +63,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "broccoli-static-site-json": "4.2.1",
+    "broccoli-static-site-json": "4.3.0",
     "ember-cli-netlify": "0.4.1"
   },
   "ember-addon": {
