@@ -2,7 +2,7 @@ const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: {
-    content: ['*.hbs'],
+    content: ['**/*.hbs', '**/*.html'],
     options: {
       safelist: ['status-exists', 'status-couldexist', 'status-cannotexist', 'status-shouldexist', 'status-mustexist'],
     },
