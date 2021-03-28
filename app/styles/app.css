@@ -6,12 +6,16 @@
 @import "tailwindcss/utilities";
 @import "utilities.css";
 
+body {
+  font-size: 18px;
+  line-height: 1.5;
+}
 
 .list-status {
   display: flex;
   flex-flow: row wrap;
   list-style: none;
-  margin: 0 auto 1em auto;
+  margin: 0 auto;
   padding: 0;
   width: 100%;
 }
