@@ -4,7 +4,10 @@ module.exports = {
   purge: {
     content: ['**/*.hbs', '**/*.html'],
     options: {
-      safelist: ['status-exists', 'status-couldexist', 'status-cannotexist', 'status-shouldexist', 'status-mustexist'],
+      safelist: {
+        greedy: [/^status/],
+        deep: [/^status/],
+      },
     },
   },
   presets: [],
