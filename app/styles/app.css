@@ -20,7 +20,7 @@
   padding: .25em .25em;
 }
 
-.status-exists {
+.status .status-exists, .status-badge .status-exists {
   @apply bg-green-100 text-green-800;
 }
 .status-couldexist {
