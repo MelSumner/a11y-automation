@@ -1,8 +1,6 @@
 .status, .status-badge {
   @apply inline-flex items-center px-3 py-0.5 text-sm font-medium bg-gray-100 rounded-full;
 }
-
-
 .status-exists, .status-exists-background {
   @apply bg-green-100 text-green-800;
 }
@@ -50,6 +48,6 @@ footer p a {
 table tbody tr {
   @apply hover:shadow-2xl md:scale-50;
 }
-table tbody tr:nth-of-type(2n) {
+tr:nth-of-type(2n) {
   @apply bg-gray-100;
 }
