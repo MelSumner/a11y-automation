@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>A11yAutomation</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
 
     {{content-for "head"}}
 
-    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link integrity="" rel="stylesheet" href="{{rootURL}}assets/vendor.css" type="text/css">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/a11y-automation.css" type="text/css">
+    <link integrity="" rel="stylesheet" href="https://rsms.me/inter/inter.css" type="text/css">
+
 
     {{content-for "head-footer"}}
   </head>
-  <body>
+  <body class="min-h-screen bg-gray-100">
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>

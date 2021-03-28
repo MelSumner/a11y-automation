@@ -14,4 +14,5 @@ Router.map(function() {
   this.route('tags', function() {
     this.route('tag', { path: '/:id' });
   });
+  this.route('about');
 });

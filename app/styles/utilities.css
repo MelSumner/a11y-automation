@@ -1,0 +1,55 @@
+.status, .status-badge {
+  @apply inline-flex items-center px-3 py-0.5 text-sm font-medium bg-gray-100 rounded-full;
+}
+
+
+.status-exists, .status-exists-background {
+  @apply bg-green-100 text-green-800;
+}
+.status-couldexist, .status-couldexist-background {
+  @apply bg-yellow-100 text-yellow-800;
+}
+.status-cannotexist, .status-cannotexist-background {
+  @apply bg-red-100 text-red-800;
+}
+.status-mustexist, .status-mustexist-background {
+  @apply bg-blue-100 text-blue-800;
+}
+.status-shouldexist, .status-shouldexist-background {
+  @apply bg-purple-100 text-purple-800;
+}
+
+h1 {
+  @apply text-3xl font-bold;
+}
+h2 {
+  @apply text-2xl font-bold leading-normal text-indigo-800;
+}
+h3 {
+  @apply text-xl font-semibold leading-normal text-indigo-900;
+}
+
+article h2:not(:first-of-type) {
+  @apply mt-6;
+}
+article h3:not(:first-of-type) {
+  @apply mt-3;
+}
+
+p code {
+  @apply text-indigo-800
+}
+
+p a, p a code {
+  @apply underline font-semibold text-indigo-700;
+}
+
+footer p a {
+  @apply text-indigo-100;
+}
+table tbody tr {
+  @apply hover:shadow-2xl md:scale-50;
+}
+table tbody tr:nth-of-type(2n) {
+  @apply bg-gray-100;
+}
