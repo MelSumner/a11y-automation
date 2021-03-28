@@ -1,22 +1,2 @@
-<header>
-  <h1><a href="/">A11y Automation Tracker</a></h1>
-  <AaNavbar />
-</header>
-<main>
-  {{outlet}}
-</main>
-<aside>
-  <button type="button" id="list-detail-switcher" title="Potential Failures List" aria-label="Potential Failures Menu Switcher" onclick="document.querySelector('aside').classList.toggle('active')"></button>
-  <p id="list-detail-title">Potential Failures ({{@model.length}})
-  </p>
-  <ul aria-labelledby="list-detail-title" class="list-detail">
-  {{#each this.sortedDetails as |listitem| }}
-    <li><LinkTo @route="details.detail" @model={{listitem.id}}>{{listitem.title}}</LinkTo></li>
-  {{else}}
-    <li>Sorry, something went wrong.</li>
-  {{/each}}
-  </ul>
-</aside>
-<footer>
-  <p><small>See an issue on this page? <a href="https://github.com/MelSumner/a11y-automation">Please file an issue in this app's GitHub repository.</a> Thank you!</small></p>
-</footer>
+{{outlet}}
+<AaFooter/>

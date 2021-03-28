@@ -1,0 +1,76 @@
+<main class="-mt-24 pb-8">
+<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+      <h1 class="sr-only">
+        Page title
+      </h1>
+      <!-- Main 3 column grid -->
+      <div class="grid grid-cols-1 gap-4 items-start lg:grid-cols-3 lg:gap-8">
+        <!-- Left column -->
+        <div class="grid grid-cols-1 gap-4 lg:col-span-2">
+          <section aria-labelledby="section-1-title">
+            <h2 class="sr-only" id="section-1-title">
+              Section title
+            </h2>
+            <div class="rounded-lg bg-white overflow-hidden shadow">
+              <div class="p-6">
+
+
+
+
+
+<section class="section-text">
+  <h2 class="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
+      Purpose
+    </h2>
+  <p class="section-text">The purpose of this website is to track the ways in which an application can have automated accessibility(a11y) linting and automated a11y testing, and provide the ways an application could fail global digital accessibility standards in a detailed way. From the perspective of engineers who wish to build automated tooling, it is not useful to merely track a success criteria, since a single success criteria could have multiple points of failure.</p>
+  <p>Here are some ways you could potentially use the information in this app:
+    <ul>
+      <li>As a developer, you could educate yourself about the ways your apps could fail accessibility conformance criteria.</li>
+      <li>As a tooling engineer, you could identify potential linting or testing rules that could be written...and write them.</li>
+      <li>As a business manager, you could use this information to demonstrate that manual testing is still necessary.</li>
+      <li>As a tester, you could use this app as a checklist.</li>
+      <li>As a browser vendor, you could identify some ways that browsers could be improved to support programmatically-determinable code.</li>
+    </ul>
+  </p>
+</section>
+<section>
+  <h2>Summary Numbers</h2>
+  <p class="section-text">Currently, it is estimated that there are <a href="https://github.com/MelSumner/a11y-automation/issues/10">over 250 different ways</a> an application could fail digital accessibility criteria. It is suspected that this number will increase as this application matures. These itemized details were pulled from <a href="https://www.w3.org/TR/WCAG21/">WCAG</a>, <a href="https://www.etsi.org/deliver/etsi_en/301500_301599/301549/02.01.02_60/en_301549v020102p.pdf">EN 301 549</a>, and <a href="https://www.section508.gov/">Section 508.</a></p>
+  <p class="section-text"><strong>Of these potential failures, initial analysis has indicated that about half of them are either already automated or are potentially automatable.</strong> This means that the rest still require manual testing, until such time as technology sufficiently advances to programmatically determine such items.</p>
+  <p class="section-text">For each detail page, we will attempt to address the potential ways a failure item could be tested- through linting, testing, developer-authored tests, or manual tests. While this app currently only tracks automation available through the <a href="https://github.com/dequelabs/axe-core">axe-core</a> testing library and the <a href="https://github.com/ember-template-lint/ember-template-lint">ember-template-lint</a> linting library, PRs are welcome that add information for other automated linting or testing libraries.</p>
+
+</section>
+ </div>
+            </div>
+          </section>
+        </div>
+        <!-- Right column -->
+        <aside class="grid grid-cols-1 gap-4">
+          <section aria-labelledby="section-2-title">
+
+            <div class="rounded-lg bg-white overflow-hidden shadow">
+              <div class="bg-white px-4 py-5 border-b border-gray-200 sm:px-6">
+                <h2 id="section-2-title" class="text-lg leading-6 font-medium text-gray-900">Potential Failures ({{@model.length}})</h2>
+              </div>
+              <div class="p-6">
+                <ul aria-labelledby="list-detail-title" class="space-y-1">
+                  {{#each this.sortedDetails as |listitem|}}
+                    <li class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
+                      <LinkTo @route="details.detail" @model={{listitem.id}}>
+                        {{listitem.title}}
+                      </LinkTo>
+                    </li>
+                  {{else}}
+                    <li class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md">
+                      Sorry, something went wrong.
+                    </li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </div>
+{{outlet}}
+</main>

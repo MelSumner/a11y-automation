@@ -1,7 +1,32 @@
-<nav>
-  <ul>
-    <li><LinkTo @route="index">Home</LinkTo></li>
-    <li role="separator"><span class="breadcrumb-separator">/</span></li>
-    <li><LinkTo @route="details">Details</LinkTo></li>
-  </ul>
+<nav class="bg-gray-900">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center">
+        <div class="flex-shrink-0">
+          <img
+            class="h-8 w-8"
+            src="/assets/images/a-logo.svg"
+            alt=""
+            role="presentation"
+          />
+        </div>
+        <div class="sm:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a
+              href="/"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Home
+            </a>
+            <a
+              href="/details"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            >
+              Details
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </nav>

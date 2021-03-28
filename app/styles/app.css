@@ -1,0 +1,22 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+@import "components.css";
+
+@import "tailwindcss/utilities";
+@import "utilities.css";
+
+
+.list-status {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  margin: 0 auto 1em auto;
+  padding: 0;
+  width: 100%;
+}
+.list-status-item {
+  margin: 0;
+  padding: .25em .25em;
+}
+

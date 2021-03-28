@@ -1,44 +1,61 @@
-<h2 id="detail-title">{{@model.title}}</h2>
-<p id="automation-status-title">Automation Status:</p>
-<ul class="list-status" aria-labelledby="automation-status-title">
-  <li class="list-status-item">
-    <div class="status-badge">
-      <span class="status-label">Linting</span>
-      <span class="status-message status-{{@model.linting}}">{{@model.lintingText}}</span>
+<div>
+  <AaNavbar />
+  <header class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+      <h1>
+        Potential A11y Violation:
+        <br/>{{@model.title}}
+      </h1>
     </div>
-  </li>
-  <li class="list-status-item">
-    <div class="status-badge">
-      <span class="status-label">Testing</span>
-      <span class="status-message status-{{@model.testing}}">{{@model.testingText}}</span>
+  </header>
+  <main class="min-h-screen">
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <div
+        class="bg-white overflow-hidden shadow rounded-lg divide-y divide-gray-200"
+      >
+        <div class="px-4 py-5 sm:px-6">
+          <h2 id="automation-status-title">
+            Automation Status:
+          </h2>
+          <ul class="list-status" aria-labelledby="automation-status-title">
+            <li class="list-status-item">
+              <span class="status-badge status-{{@model.linting}}">
+                  Linting {{@model.lintingText}}
+              </span>
+            </li>
+            <li class="list-status-item">
+              <span class="status-badge status-{{@model.testing}}">
+                Testing {{@model.testingText}}
+              </span>
+            </li>
+          </ul>
+        </div>
+        <article class="px-4 py-5 sm:p-6 article">
+            {{{@model.html}}}
+        </article>
+        <div class="px-4 py-4 sm:px-6">
+            <h3 id="list-criteria-title">
+              Relevant Criteria (external links):
+            </h3>
+            <ul class="space-y-3 list-tags" aria-labelledby="list-criteria-title">
+              {{#each @model.tags as |tagitem|}}
+                <li class="bg-white shadow overflow-hidden rounded-md px-6 py-4">
+                  {{#if tagitem.url}}
+                    <a href={{tagitem.url}} class="underline text-indigo-700 p-3 rounded-lg hover:text-indigo-800 hover:bg-gray-300 focus:border-indigo-700 focus:border-4 focus:border-dashed">
+                      {{tagitem.title}}
+                    </a>
+                  {{else}}
+                    {{tagitem.title}}
+                  {{/if}}
+                </li>
+              {{else}}
+                <li class="bg-white shadow overflow-hidden rounded-md px-6 py-4">
+                  No relevant criterion found.
+                </li>
+              {{/each}}
+            </ul>
+        </div>
+      </div>
     </div>
-  </li>
-  <li class="list-status-item">
-    <div class="status-badge">
-      <span class="status-label">Manual</span>
-      <span class="status-message status-{{@model.manual}}">{{@model.manualText}}</span>
-    </div>
-  </li>
-</ul>
-<hr>
-<article aria-labelledby="detail-title">
-  {{{@model.html}}}
-
-  <div class="footer">
-    <p id="list-criteria-title">Relevant Criteria (external links):</p>
-    <ul class="list-tags" aria-labelledby="list-criteria-title">
-      {{#each @model.tags as |tagitem| }}
-        <li>
-          {{#if tagitem.url }}
-            <a href={{tagitem.url}}>{{tagitem.title}}</a>
-          {{else}}
-            {{tagitem.title}}
-          {{/if}}
-        </li>
-      {{else}}
-        <li>No relevant criterion found.</li>
-      {{/each}}
-    </ul>
-  </div>
-</article>
-{{outlet}}
+  </main>
+</div>
