@@ -14,10 +14,7 @@
         class="bg-white overflow-hidden shadow rounded-lg divide-y divide-gray-200"
       >
         <div class="px-4 py-5 sm:px-6">
-          <h2 id="automation-status-title">
-            Automation Status:
-          </h2>
-          <ul class="list-status" aria-labelledby="automation-status-title">
+          <ul class="list-status">
             <li class="list-status-item">
               <span class="status-badge status-{{@model.linting}}">
                   Linting {{@model.lintingText}}
@@ -35,13 +32,13 @@
         </article>
         <div class="px-4 py-4 sm:px-6">
             <h3 id="list-criteria-title">
-              Relevant Criteria (external links):
+              Relevant Criteria (external link):
             </h3>
             <ul class="space-y-3 list-tags" aria-labelledby="list-criteria-title">
               {{#each @model.tags as |tagitem|}}
-                <li class="bg-white shadow overflow-hidden rounded-md px-6 py-4">
+                <li class="bg-white shadow overflow-hidden rounded-md px-4 py-4">
                   {{#if tagitem.url}}
-                    <a href={{tagitem.url}} class="underline text-indigo-700 p-3 rounded-lg hover:text-indigo-800 hover:bg-gray-300 focus:border-indigo-700 focus:border-4 focus:border-dashed">
+                    <a href={{tagitem.url}} class="underline text-indigo-800 p-3 rounded-lg hover:text-indigo-800 hover:bg-gray-300 focus:border-indigo-700 focus:border-4 focus:border-dashed">
                       {{tagitem.title}}
                     </a>
                   {{else}}

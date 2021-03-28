@@ -1,5 +1,5 @@
 <div>
-  <AaNavbar/>
+  <AaNavbar />
   <header class="bg-white shadow-sm">
     <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
       <h1>
@@ -50,33 +50,34 @@
                   {{#each @model as |cellitem|}}
                     <tr>
                       <td
-                        class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900"
+                        class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-900"
                       >
-                        <LinkTo @route="details.detail" @model={{cellitem.id}} class="underline">
+                        <LinkTo
+                          @route="details.detail"
+                          @model={{cellitem.id}}
+                          class="underline"
+                        >
                           {{cellitem.title}}
                         </LinkTo>
                       </td>
                       <td
-                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
+                        class="px-6 py-4 whitespace-nowrap text-base text-gray-500"
                       >
-                        <span
-                          class="status status-{{cellitem.linting}}">
+                        <span class="status status-{{cellitem.linting}}">
                           {{cellitem.lintingText}}
                         </span>
                       </td>
                       <td
-                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
+                        class="px-6 py-4 whitespace-nowrap text-base text-gray-500"
                       >
-                        <span
-                          class="status status-{{cellitem.testing}}">
+                        <span class="status status-{{cellitem.testing}}">
                           {{cellitem.testingText}}
                         </span>
                       </td>
                       <td
-                        class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"
+                        class="px-6 py-4 whitespace-nowrap text-base text-gray-500"
                       >
-                        <span
-                          class="status status-{{cellitem.manual}}">
+                        <span class="status status-{{cellitem.manual}}">
                           {{cellitem.manualText}}
                         </span>
                       </td>
@@ -88,7 +89,6 @@
           </div>
         </div>
       </div>
-      <!-- /End replace -->
     </div>
   </main>
 </div>
