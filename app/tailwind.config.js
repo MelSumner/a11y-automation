@@ -1,15 +1,7 @@
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-  purge: {
-    content: ['**/*.hbs', '**/*.html'],
-    options: {
-      safelist: {
-        greedy: [/^status/],
-        deep: [/^status/],
-      },
-    },
-  },
+  purge: [],
   presets: [],
   darkMode: false, // or 'media' or 'class'
   plugins: [ require('@tailwindcss/forms'),],
