@@ -3,7 +3,7 @@ import { sort } from '@ember/object/computed';
 import Controller from '@ember/controller';
 
 export default Controller.extend({
-  sortedDetails: sort('model', 'sortDefinition'),
+  sortedviolations: sort('model', 'sortDefinition'),
   sortBy: 'title',
   reverseSort: false,
   sortDefinition: computed('sortBy', 'reverseSort', function() {

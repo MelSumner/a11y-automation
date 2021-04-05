@@ -82,13 +82,13 @@
                   >
                   </div>
                   <div class="p-6">
-                    <ul aria-labelledby="list-detail-title" class="space-y-1">
-                      {{#each this.sortedDetails as |listitem|}}
+                    <ul aria-labelledby="list-violation-title" class="space-y-1">
+                      {{#each this.sortedviolations as |listitem|}}
                         <li
                           class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 flex items-center px-3 py-2 text-sm font-medium rounded-md"
                         >
                           <LinkTo
-                            @route="details.detail"
+                            @route="violations.violation"
                             @model={{listitem.id}}
                           >
                             {{listitem.title}}

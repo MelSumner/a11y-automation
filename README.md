@@ -4,9 +4,9 @@
 This app is a work in progress; improvements and collaboration are welcome.
 
 The app aims to track a few things:
-- potential violations; that is, specific ways an app could fail digital accessibility success criteria (called `details` in this app)
-- automated linting methods available for each detail
-- automated testing methods available for each detail
+- potential violations; that is, specific ways an app could fail digital accessibility success criteria (called `violations` in this app)
+- automated linting methods available for each violation
+- automated testing methods available for each violation
 - manual testing methods, if they are required
 
 **This is an Ember app**, which  means you'll need to have Ember installed (`npm install -g ember-cli`) to contribute. Contributions are welcome, and come in many different flavors:
@@ -33,11 +33,11 @@ To add assets (such as images or fonts) to the app, place them in the appropriat
 
 ### Adding Data
 
-The data in this app is stored as individual `.md` files, which are then converted (automatically!) into `.json` for use in the application. This makes it fairly straightforward to add a new rule item or tag- it's done by adding a single `.md` file! Additionally, some generators have been created to streamline this process. (Want to see the automatic conversion in action? After you start the app locally, visit http://localhost:4200/details/all.json to see the compiled JSON output! Neat, huh?)
+The data in this app is stored as individual `.md` files, which are then converted (automatically!) into `.json` for use in the application. This makes it fairly straightforward to add a new rule item or tag- it's done by adding a single `.md` file! Additionally, some generators have been created to streamline this process. (Want to see the automatic conversion in action? After you start the app locally, visit http://localhost:4200/violations/all.json to see the compiled JSON output! Neat, huh?)
 
-#### Add a new detail
+#### Add a new violation
 
-To add a new file to track a potential a11y violation, you can add one manually to the `details` folder, or you can use the generator to generate the file and put it in the correct location- `ember generate details rule-name` where `rule-name` is the name of the rule to be added. **Note: Only ONE new file should be submitted per pull request unless previously coordinated.**
+To add a new file to track a potential a11y violation, you can add one manually to the `violations` folder, or you can use the generator to generate the file and put it in the correct location- `ember generate violations rule-name` where `rule-name` is the name of the rule to be added. **Note: Only ONE new file should be submitted per pull request unless previously coordinated.**
 
 #### Add a new tag
 
@@ -48,12 +48,12 @@ To add a new tag file, you can add one manually to the `tags` folder, or you can
 If you have any questions, suggestions or concerns, the best way to resolve them is to file an issue on this repo and I'll respond ASAP. I'll also try to list questions I've already been asked, in case you are wondering about it as well.
 
 ### Inclusion in Documentation
-Although this app currently only tracks linting from `ember-template-lint` and testing from `axe-core`, PRs are welcome to add additional linting and testing libraries. Please follow the format in the existing details to allow your PR to be accepted/merged more readily.
+Although this app currently only tracks linting from `ember-template-lint` and testing from `axe-core`, PRs are welcome to add additional linting and testing libraries. Please follow the format in the existing violations to allow your PR to be accepted/merged more readily.
 
 ### Why
 Why did I make this an app and not a spreadsheet?
 
-1. The `broccoli-static-site-json` addon means that I can work on individual failures in `.md` files and have them automatically compiled into a `.json` file. This (working in a single MD file) makes it easier to do the detailed work, and the compiled JSON output can be imported into any database at a later point.
+1. The `broccoli-static-site-json` addon means that I can work on individual failures in `.md` files and have them automatically compiled into a `.json` file. This (working in a single MD file) makes it easier to do the violationed work, and the compiled JSON output can be imported into any database at a later point.
 2. I prefer to work in the open whenever possible, and this is also the nature of my work. By tracking what the failures are and what automation is possible, and doing this where everyone that wants to can also see it, everyone benefits.
 3. This will identify gaps in automation that can be closed/solved for.
 4. Spreadsheets can only do so much. There are a lot of other ways we can sort, filter and display data if it's in an application instead.

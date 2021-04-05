@@ -1,5 +1,5 @@
 module.exports = {
-  description: 'a blueprint to generate a new detail markdown file',
+  description: 'a blueprint to generate a new violation markdown file',
 
   locals(options) {
     // Return custom template variables here.
