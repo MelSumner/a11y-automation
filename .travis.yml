@@ -14,7 +14,7 @@ cache:
 
 env:
   global:
-    # See https://git.io/vdao3 for details.
+    # See https://git.io/vdao3 for violations.
     - JOBS=1
 
 branches:

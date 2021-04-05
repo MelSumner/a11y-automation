@@ -8,7 +8,7 @@ const STATUS_TEXTS = {
   shouldexist: 'Should Exist',
 };
 
-export default class DetailModel extends Model {
+export default class violationModel extends Model {
   @attr author;
   @attr content;
   @attr html;
@@ -17,10 +17,10 @@ export default class DetailModel extends Model {
   @attr testing;
   @attr title;
   @hasMany('tag') tags;
-  
+
   @attr('id', {
     function() { return this.id.split('-').slice(1).join('-'); }
-  }) detailName;
+  }) violationName;
 
   get lintingText() {
     return STATUS_TEXTS[this.linting];
