@@ -27,7 +27,7 @@ To work on this app locally, follow these steps:
 3. run `npm install` to install missing dependencies
 4. run `ember s` to build the app. If it all works, it'll be available at `http://localhost:4200/` in your browser of choice.
 
-The styles in this app are in the `app/styles/app.scss` file.
+The styles in this app are primarily provided by Tailwind.
 
 To add assets (such as images or fonts) to the app, place them in the appropriate sub-folder in the `public` folder.
 
