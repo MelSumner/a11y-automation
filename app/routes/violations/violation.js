@@ -11,4 +11,11 @@ export default class violationsviolationRoute extends Route {
     return this.store.findRecord('violation', params.id);
 
   }
+
+  // make sure that tags are loaded in ember-data before template is rendered
+  // to ensure fastboot has all data on time
+  async afterModel(model) {
+    await model.get('tags');
+    return model;
+  }
 }
