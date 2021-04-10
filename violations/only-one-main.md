@@ -1,7 +1,7 @@
 ---
 title: Single Main Landmark
-tags: 
-  - wgac-1-1-1
+tags:
+  - wcag-1-1-1
 linting: cannotexist
 testing: exists
 author: couldexist
