@@ -58,7 +58,7 @@
     "postcss-import": "14.0.1",
     "prember": "1.0.5",
     "qunit-dom": "1.6.0",
-    "tailwindcss": "2.1.1"
+    "tailwindcss": "2.1.2"
   },
   "engines": {
     "node": "10.* || >= 12"
