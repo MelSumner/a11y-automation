@@ -17,74 +17,7 @@
             <div
               class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
             >
-              <table class="min-w-full divide-y divide-gray-200">
-                <thead class="bg-gray-50">
-                  <tr>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider"
-                    >
-                      Failure
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider"
-                    >
-                      Linting Status
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider"
-                    >
-                      Testing Status
-                    </th>
-                    <th
-                      scope="col"
-                      class="px-6 py-3 text-left text-xs font-medium text-gray-800 uppercase tracking-wider"
-                    >
-                      Manual Testing Status
-                    </th>
-                  </tr>
-                </thead>
-                <tbody class="bg-white divide-y divide-gray-200">
-                  {{#each @model as |cellitem|}}
-                    <tr>
-                      <td
-                        class="px-6 py-4 whitespace-nowrap text-base font-medium text-gray-900"
-                      >
-                        <LinkTo
-                          @route="violations.violation"
-                          @model={{cellitem.id}}
-                          class="underline"
-                        >
-                          {{cellitem.title}}
-                        </LinkTo>
-                      </td>
-                      <td
-                        class="px-6 py-4 whitespace-nowrap text-base text-gray-500"
-                      >
-                        <span class="status status-{{cellitem.linting}}">
-                          {{cellitem.lintingText}}
-                        </span>
-                      </td>
-                      <td
-                        class="px-6 py-4 whitespace-nowrap text-base text-gray-500"
-                      >
-                        <span class="status status-{{cellitem.testing}}">
-                          {{cellitem.testingText}}
-                        </span>
-                      </td>
-                      <td
-                        class="px-6 py-4 whitespace-nowrap text-base text-gray-500"
-                      >
-                        <span class="status status-{{cellitem.manual}}">
-                          {{cellitem.manualText}}
-                        </span>
-                      </td>
-                    </tr>
-                  {{/each}}
-                </tbody>
-              </table>
+              <SortableTable @model={{@model}} />
             </div>
           </div>
         </div>
