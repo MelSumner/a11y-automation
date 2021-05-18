@@ -17,10 +17,17 @@ export default class SortableTableComponent extends Component {
     columnHeadings.forEach(colHeading => { colHeading.removeAttribute('aria-sort') });
     currentColHeading.setAttribute('aria-sort', `${sortOrder}ending`);
 
-    const arrowWrappers = document.querySelectorAll('.sort-arrow');
-    const targetArrow = currentColHeading.querySelector('.sort-arrow');
-    arrowWrappers.forEach(arrowWrapper => { arrowWrapper.innerHTML = '' });
-    targetArrow.innerHTML = this.reverseSort ? '&#9660' : '&#9650;' // down/up pointing triangles
+    // reset all arrows
+    const filledArrows = document.querySelectorAll('.icon-sort-filled');
+    const openArrows = document.querySelectorAll('.icon-sort-open');
+    filledArrows.forEach(arrow => arrow.classList.add('hidden'));
+    openArrows.forEach(arrow => arrow.classList.remove('hidden'));
+
+    // style target arrows
+    const targetFilledArrow = currentColHeading.querySelector(`.icon-sort-${sortOrder}.icon-sort-filled`);
+    const targetOpenArrow = currentColHeading.querySelector(`.icon-sort-${sortOrder}.icon-sort-open`);
+    targetFilledArrow.classList.remove('hidden');
+    targetOpenArrow.classList.add('hidden');
 
     const liveRegion = document.getElementById('a11y-notification');
     liveRegion.innerHTML = `Sorted by ${currentColHeading.querySelector('.col-heading').innerText} ${sortOrder}ending`;
