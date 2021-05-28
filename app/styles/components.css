@@ -1,0 +1,26 @@
+:root {
+  --col-header-color: #444;
+}
+
+@media screen and (-ms-high-contrast: active),
+screen and (forced-colors: active) {
+  :root {
+    --col-header-color: ButtonText;
+    --col-header-stroke-color: #f9fafb;
+  }
+}
+
+.sortable-table th > button svg.icon-sort-asc,
+.sortable-table th > button svg.icon-sort-desc {
+  stroke: var(--col-header-stroke-color);
+}
+
+.sortable-table [aria-sort="ascending"] > button svg.icon-sort-filled {
+  stroke: var(--col-header-color);
+  fill: var(--col-header-color);
+}
+
+.sortable-table [aria-sort="descending"] > button svg.icon-sort-filled {
+  stroke: var(--col-header-color);
+  fill: var(--col-header-color);
+}
