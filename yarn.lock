@@ -5500,7 +5500,7 @@ ember-compatibility-helpers@^1.1.1, ember-compatibility-helpers@^1.1.2, ember-co
     fs-extra "^9.1.0"
     semver "^5.4.1"
 
-ember-composable-helpers@^4.4.1:
+ember-composable-helpers@4.4.1:
   version "4.4.1"
   resolved "https://registry.npmjs.org/ember-composable-helpers/-/ember-composable-helpers-4.4.1.tgz"
   integrity sha512-MVx4KGFL6JzsYfCf9OqLCCnr7DN5tG2jFW9EvosvfgCL7gRdNxLqewR4PWPYA882wetmJ9zvcIEUJhFzZ4deaw==
