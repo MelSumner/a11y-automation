@@ -1480,10 +1480,10 @@
   resolved "https://registry.npmjs.org/@simple-dom/void-map/-/void-map-1.4.0.tgz"
   integrity sha512-VDhLEyVCbuhOBBgHol9ShzIv9O8UCzdXeH4FoXu2DOcu/nnvTjLTck+BgXsCLv5ynDiUdoqsREEVFnoyPpFKVw==
 
-"@tailwindcss/forms@0.3.2":
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.2.tgz"
-  integrity sha512-aj2/rJsGb2whAZ/BQWHWWQRSbhH0r/l1ozOByiv+ZNjBD84GMvb5dhAyfpeasFky+EJrAwX5eaqft8NQMZFWvA==
+"@tailwindcss/forms@0.3.3":
+  version "0.3.3"
+  resolved "https://registry.npmjs.org/@tailwindcss/forms/-/forms-0.3.3.tgz"
+  integrity sha512-U8Fi/gq4mSuaLyLtFISwuDYzPB73YzgozjxOIHsK6NXgg/IWD1FLaHbFlWmurAMyy98O+ao74ksdQefsquBV1Q==
   dependencies:
     mini-svg-data-uri "^1.2.3"
 
