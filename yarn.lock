@@ -1101,15 +1101,15 @@
     ember-cli-typescript "^4.0.0"
     heimdalljs "^0.3.0"
 
-"@ember-template-lint/todo-utils@^8.1.0":
-  version "8.1.0"
-  resolved "https://registry.npmjs.org/@ember-template-lint/todo-utils/-/todo-utils-8.1.0.tgz"
-  integrity sha512-fnxDli4RfYGVBXc64D0fg7ifkSrNE8J/ee4eqQLzTrsUJbisWMlmU2NTHm990XcZkulYkCnkiLKERU/k1tx5IQ==
+"@ember-template-lint/todo-utils@^9.1.2":
+  version "9.1.2"
+  resolved "https://registry.npmjs.org/@ember-template-lint/todo-utils/-/todo-utils-9.1.2.tgz"
+  integrity sha512-wHRL/YQc/CtPabV7GuYLtS2A592GCd54aY544JOH4OXnpepZkxy5dp18iaNbtErihBW/+sIJr8/JvsCxw5T3Wg==
   dependencies:
-    "@types/eslint" "^7.2.10"
+    "@types/eslint" "^7.2.12"
     fs-extra "^9.1.0"
     slash "^3.0.0"
-    tslib "^2.1.0"
+    tslib "^2.2.0"
 
 "@ember/edition-utils@^1.2.0":
   version "1.2.0"
@@ -1556,7 +1556,7 @@
   resolved "https://registry.npmjs.org/@types/cors/-/cors-2.8.10.tgz"
   integrity sha512-C7srjHiVG3Ey1nR6d511dtDkCEjxuN9W1HWAEjGq8kpcwmNM6JJkpC0xvabM7BXTG2wDq8Eu33iH9aQKa7IvLQ==
 
-"@types/eslint@^7.2.10":
+"@types/eslint@^7.2.12":
   version "7.2.13"
   resolved "https://registry.npmjs.org/@types/eslint/-/eslint-7.2.13.tgz"
   integrity sha512-LKmQCWAlnVHvvXq4oasNUMTJJb2GwSyTY8+1C7OH5ILR8mPLaljv1jxL1bXW3xB3jFbQxTKxJAvI8PyjB09aBg==
@@ -4708,7 +4708,7 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
-date-fns@^2.21.3:
+date-fns@^2.22.1:
   version "2.22.1"
   resolved "https://registry.npmjs.org/date-fns/-/date-fns-2.22.1.tgz"
   integrity sha512-yUFPQjrxEmIsMqlHhAhmxkuH769baF21Kk+nZwZGyrMoyLA+LugaQtC0+Tqf9CBUUULWwUJt6Q5ySI3LJDDCGg==
@@ -5667,15 +5667,15 @@ ember-source@3.27.5:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-template-lint@3.4.2:
-  version "3.4.2"
-  resolved "https://registry.npmjs.org/ember-template-lint/-/ember-template-lint-3.4.2.tgz"
-  integrity sha512-YorsJ5cVmrt0hm2gTVwsKsX/NpYp6X7oa+z7a2iAtwBEz4GyEImUpH3YF7ilXHMFB6d5k96LLKzF73cyBJliuQ==
+ember-template-lint@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.npmjs.org/ember-template-lint/-/ember-template-lint-3.5.0.tgz"
+  integrity sha512-wkSuR0LuYOMomZ142nX06r2d6pUWkMUwy4AbxZwcB1+ArLhgZYIuOZefd/zsWM+RuMI0w4PiNDZXNXdH7qEasg==
   dependencies:
-    "@ember-template-lint/todo-utils" "^8.1.0"
+    "@ember-template-lint/todo-utils" "^9.1.2"
     chalk "^4.1.1"
-    date-fns "^2.21.3"
-    ember-template-recast "^5.0.1"
+    date-fns "^2.22.1"
+    ember-template-recast "^5.0.3"
     find-up "^5.0.0"
     fuse.js "^6.4.6"
     get-stdin "^8.0.0"
@@ -5686,7 +5686,7 @@ ember-template-lint@3.4.2:
     v8-compile-cache "^2.3.0"
     yargs "^16.2.0"
 
-ember-template-recast@^5.0.1:
+ember-template-recast@^5.0.3:
   version "5.0.3"
   resolved "https://registry.npmjs.org/ember-template-recast/-/ember-template-recast-5.0.3.tgz"
   integrity sha512-qsJYQhf29Dk6QMfviXhUPE+byMOs6iRQxUDHgkj8yqjeppvjHaFG96hZi/NAXJTm/M7o3PpfF5YlmeaKtI9UeQ==
@@ -11650,7 +11650,7 @@ tslib@^1.9.0:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.3, tslib@^2.1.0:
+tslib@^2.0.3, tslib@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.2.0.tgz"
   integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
