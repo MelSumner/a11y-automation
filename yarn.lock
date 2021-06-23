@@ -5535,10 +5535,10 @@ ember-export-application-global@2.0.1:
   resolved "https://registry.npmjs.org/ember-export-application-global/-/ember-export-application-global-2.0.1.tgz"
   integrity sha512-B7wiurPgsxsSGzJuPFkpBWnaeuCu2PGpG2BjyrfA1VcL7//o+5RSnZqiCEY326y7qmxb2GoCgo0ft03KBU0rRw==
 
-ember-fetch@8.0.5:
-  version "8.0.5"
-  resolved "https://registry.npmjs.org/ember-fetch/-/ember-fetch-8.0.5.tgz"
-  integrity sha512-tKwSWZ2l4jKynqUuF8qgwiCfzmnRWDDO2j5l0Lrn4TgZo8YXbdM3DfgheLSZd+aybBFEAtXBgKH0qaTox28LFg==
+ember-fetch@8.1.0:
+  version "8.1.0"
+  resolved "https://registry.npmjs.org/ember-fetch/-/ember-fetch-8.1.0.tgz"
+  integrity sha512-797IPPuXrWGAecsAuCPH6+2pJCcawy7+CiRrtoe1qLhXJ6Ue0Lxu4loXxHHQNCxRvvUvx8tTDuP63sOKfi3xug==
   dependencies:
     abortcontroller-polyfill "^1.7.1"
     broccoli-concat "^4.2.5"
