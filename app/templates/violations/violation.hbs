@@ -28,7 +28,9 @@
           </ul>
         </div>
         <article class="px-4 py-5 sm:p-6 article">
+            {{!-- template-lint-disable no-triple-curlies --}}
             {{{@model.html}}}
+            {{!-- template-lint-enable no-triple-curlies --}}
         </article>
         <div class="px-4 py-4 sm:px-6">
             <h3 id="list-criteria-title">
@@ -36,13 +38,13 @@
             </h3>
             <ul class="list-tags" aria-labelledby="list-criteria-title">
               {{#each @model.tags as |tagitem|}}
-                <li class="px-4 py-4">
+                <li class="px-4 py-2">
                   {{#if tagitem.url}}
                     <a href={{tagitem.url}} class="underline text-indigo-800 p-3 rounded-lg hover:text-indigo-800 hover:bg-gray-300 focus:border-indigo-700 focus:border-4 focus:border-dashed">
-                      {{tagitem.title}}
+                      {{tagitem.title}}{{#if tagitem.level}} (Level {{tagitem.level}}) {{/if}}
                     </a>
                   {{else}}
-                    {{tagitem.title}}
+                    {{tagitem.title}}{{#if tagitem.level}} (Level {{tagitem.level}}) {{/if}}
                   {{/if}}
                 </li>
               {{else}}
