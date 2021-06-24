@@ -5018,7 +5018,7 @@ elliptic@^6.5.3:
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
-ember-a11y-refocus@^2.0.0:
+ember-a11y-refocus@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ember-a11y-refocus/-/ember-a11y-refocus-2.0.0.tgz#fca7ab929bfd8cdc54ef22eea668123069d49602"
   integrity sha512-o7TGB3/H4oT9I7i3sAs9YRQ6/chimaAeKUzdlJIMu3s45qauVtYv3OiV12UsI6zXMJw2kKXPzliWrGvEDWgdwQ==
