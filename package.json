@@ -70,6 +70,7 @@
   "dependencies": {
     "autoprefixer": "10.2.6",
     "broccoli-static-site-json": "4.3.0",
+    "ember-a11y-refocus": "^2.0.0",
     "ember-cli-netlify": "0.4.1"
   },
   "ember-addon": {
