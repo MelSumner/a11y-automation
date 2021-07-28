@@ -17,6 +17,15 @@
 .status-shouldexist {
   @apply bg-purple-100 text-purple-900 border-purple-300 bg-opacity-60;
 }
+.level-A {
+  @apply bg-green-100 text-green-900 border-green-300 bg-opacity-60;
+}
+.level-AA {
+  @apply bg-yellow-100 text-yellow-900 border-yellow-300 bg-opacity-60;
+}
+.level-AAA {
+  @apply bg-red-100 text-red-900 border-red-300 bg-opacity-60;
+}
 /* purgecss end ignore */
 h1 {
   @apply text-3xl font-bold;
