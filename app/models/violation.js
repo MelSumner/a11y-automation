@@ -37,4 +37,9 @@ export default class violationModel extends Model {
   get authorText() {
     return STATUS_TEXTS[this.author];
   }
+
+  get webAimLevel() {
+    let filteredLevels = ['A', 'AA', 'AAA'];
+    return this.tags.find(tag => filteredLevels.includes(tag?.level))?.level;
+  }
 }
