@@ -1,23 +1,19 @@
 import Component from '@glimmer/component';
 import { action } from '@ember/object';
-import { tracked } from '@glimmer/tracking';
 
 export default class SortableTableComponent extends Component {
-  @tracked sortBy = '';
-  @tracked sortOrder = 'asc';
-
   get sort() {
-    return `${this.sortBy}:${this.sortOrder}`;
+    return `${this.args.sortBy}:${this.args.sortOrder}`;
   }
 
   @action
   setSortBy(type) {
-    if (this.sortBy === type) {
+    if (this.args.sortBy === type) {
       //invert the sort order
-      this.sortOrder = this.sortOrder === 'asc' ? 'desc' : 'asc';
+      this.args.setSortOrder(this.args.sortOrder === 'asc' ? 'desc' : 'asc');
     } else {
-      this.sortBy = type;
-      this.sortOrder = 'asc';
+      this.args.setSortBy(type);
+      this.args.setSortOrder('asc');
     }
 
     const currentColHeading = event.target.parentElement;
