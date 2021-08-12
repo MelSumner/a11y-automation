@@ -1,125 +1,46 @@
 <table class="sortable-table min-w-full divide-y divide-gray-200">
   <thead class="bg-gray-50">
     <tr>
-      <th
-        scope="col"
-        class="sortable text-left"
+      <SortableTableHeader
+        @field="title"
+        @sortOrder={{@sortOrder}}
+        @sortBy={{@sortBy}}
+        @setSortBy={{this.setSortBy}}
       >
-        <button class="sort-toggle flex items-center w-full text-left px-6 py-3 text-xs tracking-wider font-medium text-gray-800 uppercase" type="button" {{on "click" (fn this.sortBy "title")}}>
-          <span class="col-heading m-2">Failure</span>
-          <div class="sort-arrow inline-block w-4" aria-hidden="true">
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-asc hidden" width="100%" height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" d="M3,9.988c-0.543,-0.007 -0.988,-0.456 -0.988,-1c0,-0.259 0.101,-0.509 0.281,-0.695l4,-4c0.388,-0.388 1.026,-0.388 1.414,-0l4,4c0.388,0.388 0.388,1.026 -0,1.414c-0.23,0.23 -0.548,0.324 -0.85,0.281l-7.857,-0l0,-0Z"/>
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-asc" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-desc" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-desc hidden" width="100%" height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" d="M3,4.012c-0.543,0.007 -0.988,0.456 -0.988,1c0,0.259 0.101,0.509 0.281,0.695l4,4c0.388,0.388 1.026,0.388 1.414,-0l4,-4c0.388,-0.388 0.388,-1.026 -0,-1.414c-0.23,-0.23 -0.548,-0.324 -0.85,-0.281l-7.857,0l0,0Z"/>
-            </svg>
-          </div>
-        </button>
-      </th>
-      <th
-        scope="col"
-        class="sortable text-left"
+        Failure
+      </SortableTableHeader>
+      <SortableTableHeader
+        @field="linting"
+        @sortOrder={{@sortOrder}}
+        @sortBy={{@sortBy}}
+        @setSortBy={{this.setSortBy}}
       >
-        <button class="sort-toggle flex items-center w-full text-left px-6 py-3 text-xs tracking-wider font-medium text-gray-800 uppercase" type="button" {{on "click" (fn this.sortBy "linting")}}>
-          <span class="col-heading m-2">Linting Status</span>
-          <div class="sort-arrow inline-block w-4" aria-hidden="true">
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-asc hidden" width="100%" height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" d="M3,9.988c-0.543,-0.007 -0.988,-0.456 -0.988,-1c0,-0.259 0.101,-0.509 0.281,-0.695l4,-4c0.388,-0.388 1.026,-0.388 1.414,-0l4,4c0.388,0.388 0.388,1.026 -0,1.414c-0.23,0.23 -0.548,0.324 -0.85,0.281l-7.857,-0l0,-0Z"/>
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-asc" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-desc" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-desc hidden" width="100%" height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" d="M3,4.012c-0.543,0.007 -0.988,0.456 -0.988,1c0,0.259 0.101,0.509 0.281,0.695l4,4c0.388,0.388 1.026,0.388 1.414,-0l4,-4c0.388,-0.388 0.388,-1.026 -0,-1.414c-0.23,-0.23 -0.548,-0.324 -0.85,-0.281l-7.857,0l0,0Z"/>
-            </svg>
-          </div>
-        </button>
-      </th>
-      <th
-        scope="col"
-        class="sortable text-left"
+        Linting Status
+      </SortableTableHeader>
+      <SortableTableHeader
+        @field="testing"
+        @sortOrder={{@sortOrder}}
+        @sortBy={{@sortBy}}
+        @setSortBy={{this.setSortBy}}
       >
-        <button class="sort-toggle flex items-center w-full text-left px-6 py-3 text-xs tracking-wider font-medium text-gray-800 uppercase" type="button" {{on "click" (fn this.sortBy "testing")}}>
-          <span class="col-heading m-2">Testing Status</span>
-          <div class="sort-arrow inline-block w-4" aria-hidden="true">
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-asc hidden" width="100%" height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" d="M3,9.988c-0.543,-0.007 -0.988,-0.456 -0.988,-1c0,-0.259 0.101,-0.509 0.281,-0.695l4,-4c0.388,-0.388 1.026,-0.388 1.414,-0l4,4c0.388,0.388 0.388,1.026 -0,1.414c-0.23,0.23 -0.548,0.324 -0.85,0.281l-7.857,-0l0,-0Z"/>
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-asc" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-desc" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-desc hidden" width="100%" height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" d="M3,4.012c-0.543,0.007 -0.988,0.456 -0.988,1c0,0.259 0.101,0.509 0.281,0.695l4,4c0.388,0.388 1.026,0.388 1.414,-0l4,-4c0.388,-0.388 0.388,-1.026 -0,-1.414c-0.23,-0.23 -0.548,-0.324 -0.85,-0.281l-7.857,0l0,0Z"/>
-            </svg>
-          </div>
-        </button>
-      </th>
-      <th scope="col" class="sortable text-left">
-        <button
-          class="sort-toggle flex items-center w-full text-left px-6 py-3 text-xs tracking-wider font-medium text-gray-800 uppercase"
-          type="button" {{on "click" (fn this.sortBy "manual" )}}>
-          <span class="col-heading m-2">Manual Testing Status</span>
-          <div class="sort-arrow inline-block w-4" aria-hidden="true">
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-asc hidden" width="100%" height="100%"
-              viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-                d="M3,9.988c-0.543,-0.007 -0.988,-0.456 -0.988,-1c0,-0.259 0.101,-0.509 0.281,-0.695l4,-4c0.388,-0.388 1.026,-0.388 1.414,-0l4,4c0.388,0.388 0.388,1.026 -0,1.414c-0.23,0.23 -0.548,0.324 -0.85,0.281l-7.857,-0l0,-0Z" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-asc"
-              viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-desc"
-              viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-desc hidden" width="100%"
-              height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-                d="M3,4.012c-0.543,0.007 -0.988,0.456 -0.988,1c0,0.259 0.101,0.509 0.281,0.695l4,4c0.388,0.388 1.026,0.388 1.414,-0l4,-4c0.388,-0.388 0.388,-1.026 -0,-1.414c-0.23,-0.23 -0.548,-0.324 -0.85,-0.281l-7.857,0l0,0Z" />
-            </svg>
-          </div>
-        </button>
-      </th>
-      <th
-        scope="col"
-        class="sortable text-left"
+        Testing Status
+      </SortableTableHeader>
+      <SortableTableHeader
+        @field="manual"
+        @sortOrder={{@sortOrder}}
+        @sortBy={{@sortBy}}
+        @setSortBy={{this.setSortBy}}
       >
-        <button class="sort-toggle flex items-center w-full text-left px-6 py-3 text-xs tracking-wider font-medium text-gray-800 uppercase" type="button" {{on "click" (fn this.sortBy "webAimLevel")}}>
-          <span class="col-heading m-2">Level</span>
-          <div class="sort-arrow inline-block w-4" aria-hidden="true">
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-asc hidden" width="100%" height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" d="M3,9.988c-0.543,-0.007 -0.988,-0.456 -0.988,-1c0,-0.259 0.101,-0.509 0.281,-0.695l4,-4c0.388,-0.388 1.026,-0.388 1.414,-0l4,4c0.388,0.388 0.388,1.026 -0,1.414c-0.23,0.23 -0.548,0.324 -0.85,0.281l-7.857,-0l0,-0Z"/>
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-asc" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-sort-open icon-sort-desc" viewBox="0 0 20 20" fill="currentColor">
-              <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-            </svg>
-            <svg focusable="false" aria-hidden="true" class="icon-sort-filled icon-sort-desc hidden" width="100%" height="100%" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
-              <path fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" d="M3,4.012c-0.543,0.007 -0.988,0.456 -0.988,1c0,0.259 0.101,0.509 0.281,0.695l4,4c0.388,0.388 1.026,0.388 1.414,-0l4,-4c0.388,-0.388 0.388,-1.026 -0,-1.414c-0.23,-0.23 -0.548,-0.324 -0.85,-0.281l-7.857,0l0,0Z"/>
-            </svg>
-          </div>
-        </button>
-      </th>
+        Manual Testing Status
+      </SortableTableHeader>
+      <SortableTableHeader
+        @field="webAimLevel"
+        @sortOrder={{@sortOrder}}
+        @sortBy={{@sortBy}}
+        @setSortBy={{this.setSortBy}}
+      >
+        Level
+      </SortableTableHeader>
     </tr>
   </thead>
   <tbody class="bg-white divide-y divide-gray-200">

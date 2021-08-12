@@ -17,7 +17,13 @@
             <div
               class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
             >
-              <SortableTable @model={{@model}} />
+              <SortableTable
+                @model={{@model}}
+                @sortBy={{this.sortBy}}
+                @sortOrder={{this.sortOrder}}
+                @setSortBy={{this.setSortBy}}
+                @setSortOrder={{this.setSortOrder}}
+              />
             </div>
           </div>
         </div>
