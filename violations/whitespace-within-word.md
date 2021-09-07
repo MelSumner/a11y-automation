@@ -2,6 +2,7 @@
 title: Whitespace Within Word
 tags: 
   - wcag-1-3-2
+  - failure-32
 linting: exists
 testing: exists
 author: couldexist
