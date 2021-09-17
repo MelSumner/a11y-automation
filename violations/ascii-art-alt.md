@@ -1,6 +1,7 @@
 ---
 title: ASCII Art
 tags: 
+  - failure-72
   - wcag-1-1-1
 linting: cannotexist 
 testing: cannotexist

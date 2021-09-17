@@ -1,6 +1,7 @@
 ---
 title: Complete Captions
 tags: 
+  - failure-8
   - wcag-1-2-2
 linting: cannotexist
 testing: cannotexist

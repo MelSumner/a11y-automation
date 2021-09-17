@@ -1,6 +1,7 @@
 ---
 title: Autocomplete Values
 tags: 
+  - failure-107
   - wcag-1-3-5
 linting: couldexist
 testing: exists
