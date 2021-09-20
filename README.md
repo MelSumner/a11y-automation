@@ -49,11 +49,3 @@ If you have any questions, suggestions or concerns, the best way to resolve them
 
 ### Inclusion in Documentation
 Although this app currently only tracks linting from `ember-template-lint` and testing from `axe-core`, PRs are welcome to add additional linting and testing libraries. Please follow the format in the existing violations to allow your PR to be accepted/merged more readily.
-
-### Why
-Why did I make this an app and not a spreadsheet?
-
-1. The `broccoli-static-site-json` addon means that I can work on individual failures in `.md` files and have them automatically compiled into a `.json` file. This (working in a single MD file) makes it easier to do the violationed work, and the compiled JSON output can be imported into any database at a later point.
-2. I prefer to work in the open whenever possible, and this is also the nature of my work. By tracking what the failures are and what automation is possible, and doing this where everyone that wants to can also see it, everyone benefits.
-3. This will identify gaps in automation that can be closed/solved for.
-4. Spreadsheets can only do so much. There are a lot of other ways we can sort, filter and display data if it's in an application instead.
