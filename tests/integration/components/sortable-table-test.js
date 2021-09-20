@@ -80,7 +80,7 @@ module('Integration | Component | sortable-table', function(hooks) {
     await click(failureBtn);
     assert.equal(table.querySelectorAll('tbody tr')[0].querySelector('td').textContent.trim(),
     'Oranges');
-    assert.dom(th[0]).hasAttribute('aria-sort', 'descending');
+    assert.dom(th[0]).hasAria('sort', 'descending');
     assert.dom(failureBtn.querySelector('.icon-sort-filled.icon-sort-desc')).doesNotHaveClass('hidden');
     assert.dom(failureBtn.querySelector('.icon-sort-open.icon-sort-desc')).hasClass('hidden');
 
@@ -88,14 +88,14 @@ module('Integration | Component | sortable-table', function(hooks) {
     await click(lintingBtn);
     assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[1].textContent.trim(),
     'a lint text');
-    assert.dom(th[1]).hasAttribute('aria-sort', 'ascending');
+    assert.dom(th[1]).hasAria('sort', 'ascending');
     assert.dom(lintingBtn.querySelector('.icon-sort-filled.icon-sort-asc')).doesNotHaveClass('hidden');
     assert.dom(lintingBtn.querySelector('.icon-sort-open.icon-sort-asc')).hasClass('hidden');
 
     await click(lintingBtn);
     assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[1].textContent.trim(),
     'o lint text');
-    assert.dom(th[1]).hasAttribute('aria-sort', 'descending');
+    assert.dom(th[1]).hasAria('sort', 'descending');
     assert.dom(lintingBtn.querySelector('.icon-sort-filled.icon-sort-desc')).doesNotHaveClass('hidden');
     assert.dom(lintingBtn.querySelector('.icon-sort-open.icon-sort-desc')).hasClass('hidden');
 
