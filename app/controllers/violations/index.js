@@ -11,10 +11,12 @@ export default class ViolationsIndexController extends Controller {
   @action
   setSortBy(value) {
     this.sortBy = value;
+    return this.sortBy;
   }
 
   @action
   setSortOrder(value) {
     this.sortOrder = value;
+    return this.sortOrder;
   }
 }
