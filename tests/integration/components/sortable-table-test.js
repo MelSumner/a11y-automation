@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { click, render, find } from '@ember/test-helpers';
+import { click, render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Component | sortable-table', function(hooks) {
@@ -39,7 +39,7 @@ module('Integration | Component | sortable-table', function(hooks) {
     },
   ];
 
-  hooks.beforeEach(function(assert) {
+  hooks.beforeEach(function() {
     this.set('model', mockModel);
   });
 
@@ -47,7 +47,6 @@ module('Integration | Component | sortable-table', function(hooks) {
     await render(hbs`<SortableTable @model={{this.model}}/>`);
 
     const table = this.element.querySelector('.sortable-table');
-    const th = table.querySelectorAll('th');
     const sortButtons = table.querySelectorAll('.sort-toggle');
     const rows = table.querySelectorAll('tbody tr');
     const liveRegion = this.element.querySelector('#a11y-notification');

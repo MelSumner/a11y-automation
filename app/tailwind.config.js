@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const colors = require('tailwindcss/colors');
 
 module.exports = {

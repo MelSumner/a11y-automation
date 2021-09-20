@@ -1,3 +1,5 @@
+/* eslint-disable ember/no-actions-hash */
+/* eslint-disable ember/no-classic-classes */
 import { computed } from '@ember/object';
 import { sort } from '@ember/object/computed';
 import Controller from '@ember/controller';

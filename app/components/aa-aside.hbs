@@ -5,31 +5,11 @@
   aria-modal="true"
 >
   <div class="absolute inset-0 overflow-hidden">
-    <!--
-      Background overlay, show/hide based on slide-over state.
-
-      Entering: "ease-in-out duration-500"
-        From: "opacity-0"
-        To: "opacity-100"
-      Leaving: "ease-in-out duration-500"
-        From: "opacity-100"
-        To: "opacity-0"
-    -->
     <div
       class="absolute inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
       aria-hidden="true"
     ></div>
     <div class="absolute inset-y-0 right-0 pl-10 max-w-full flex">
-      <!--
-        Slide-over panel, show/hide based on slide-over state.
-
-        Entering: "transform transition ease-in-out duration-500 sm:duration-700"
-          From: "translate-x-full"
-          To: "translate-x-0"
-        Leaving: "transform transition ease-in-out duration-500 sm:duration-700"
-          From: "translate-x-0"
-          To: "translate-x-full"
-      -->
       <div class="w-screen max-w-md">
         <div
           class="h-full flex flex-col py-6 bg-white shadow-xl overflow-y-scroll"
@@ -52,7 +32,6 @@
                   <span class="sr-only">
                     Close panel
                   </span>
-                  <!-- Heroicon name: outline/x -->
                   <svg
                     class="h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +52,6 @@
             </div>
           </div>
           <div class="mt-6 relative flex-1 px-4 sm:px-6">
-            <!-- Replace with your content -->
             <aside class="grid grid-cols-1 gap-4">
 
                 <div class="rounded-lg bg-white overflow-hidden shadow">
@@ -105,11 +83,9 @@
                   </div>
                 </div>
             </aside>
-            <!-- /End replace -->
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-{{yield}}
