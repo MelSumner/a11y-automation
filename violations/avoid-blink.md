@@ -1,6 +1,7 @@
 ---
 title: Blink Element Use
 tags: 
+  - failure-47
   - wcag-2-2-2
 linting: exists
 testing: couldexist

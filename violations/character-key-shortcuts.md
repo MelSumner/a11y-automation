@@ -1,6 +1,7 @@
 ---
 title: Character Shortcuts
-tags:
+tags: 
+  - failure-99
   - wcag-2-1-4
 linting: couldexist
 testing: cannotexist

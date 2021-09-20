@@ -1,6 +1,7 @@
 ---
 title: Color Differences in Alt Text
 tags: 
+  - failure-13
   - wcag-1-1-1
   - wcag-1-4-1
 linting: couldexist

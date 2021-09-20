@@ -1,6 +1,7 @@
 ---
 title: Shape & Location Identifiers
 tags: 
+  - failure-14
   - wcag-1-3-3
 linting: couldexist
 testing: couldexist

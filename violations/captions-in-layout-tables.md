@@ -1,6 +1,7 @@
 ---
 title: Caption Elements in Layout Tables
 tags: 
+  - failure-46
   - wcag-1-3-1
 linting: couldexist
 testing: couldexist

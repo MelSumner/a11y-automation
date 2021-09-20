@@ -1,6 +1,7 @@
 ---
 title: No Faux Headings
 tags: 
+  - failure-2
   - wcag-1-3-1
 linting: couldexist
 testing: exists
