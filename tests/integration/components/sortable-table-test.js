@@ -141,7 +141,19 @@ module('Integration | Component | sortable-table', function(hooks) {
   });
 
   test('it populates the live region', async function(assert) {
-    await render(hbs`<SortableTable @model={{this.model}}/>`);
+    this.set('sortBy', '');
+    this.set('sortOrder', 'asc');
+
+    this.setSortBy = (value) => {
+      this.set('sortBy', value);
+      return value;
+    }
+    this.setSortOrder = (value) => {
+      this.set('sortOrder', value);
+      return value;
+    }
+
+    await render(hbs`<SortableTable @model={{this.model}} @sortBy={{this.sortBy}} @setSortBy={{this.setSortBy}} @sortOrder={{this.sortOrder}} @setSortOrder={{this.setSortOrder}}/>`);
 
     const table = this.element.querySelector('.sortable-table');
     const sortButtons = table.querySelectorAll('.sort-toggle');
