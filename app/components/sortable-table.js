@@ -19,7 +19,7 @@ export default class SortableTableComponent extends Component {
     const currentColHeading = event.target.parentElement;
 
     const liveRegion = document.getElementById('a11y-notification');
-    liveRegion.innerHTML = `Sorted by ${currentColHeading.querySelector('.col-heading').innerText} ${this.sortBy}ending`;
+    liveRegion.innerHTML = `Sorted by ${currentColHeading.querySelector('.col-heading').innerText} ${this.args.sortOrder}ending`;
     setTimeout(function () {
       liveRegion.innerHTML = '';
     }, 1000);
