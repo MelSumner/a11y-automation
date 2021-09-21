@@ -12,15 +12,48 @@ screen and (forced-colors: active) {
 
 .sortable-table th > button svg.icon-sort-asc,
 .sortable-table th > button svg.icon-sort-desc {
-  stroke: var(--col-header-stroke-color);
+  stroke: transparent;
+  display: inline-flex;
 }
 
 .sortable-table [aria-sort="ascending"] > button svg.icon-sort-filled {
-  stroke: var(--col-header-color);
+  stroke: transparent;
   fill: var(--col-header-color);
 }
 
 .sortable-table [aria-sort="descending"] > button svg.icon-sort-filled {
-  stroke: var(--col-header-color);
+  stroke: transparent;
   fill: var(--col-header-color);
+  margin-top: -8px;
 }
+
+.sort-icon-bottom {
+  margin-top: -8px;
+}
+
+.sort-toggle {
+  @apply
+  flex 
+  font-semibold
+  items-center 
+  px-6
+  py-3
+  text-gray-800
+  text-left 
+  text-base
+  tracking-wider
+  uppercase
+  w-full;
+}
+.sort-arrow {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  @apply
+  w-4;
+}
+
