@@ -47,11 +47,9 @@ module('Integration | Component | sortable-table', function(hooks) {
     await render(hbs`<SortableTable @model={{this.model}}/>`);
 
     const table = this.element.querySelector('.sortable-table');
-    const sortButtons = table.querySelectorAll('.sort-toggle');
     const rows = table.querySelectorAll('tbody tr');
-    const liveRegion = this.element.querySelector('#a11y-notification');
 
-    assert.equal(sortButtons.length, 4);
+    assert.dom('.sort-toggle').exists({count: 5});
     assert.equal(rows.length, 3);
     assert.equal(rows[0].querySelector('td').textContent.trim(), 'Apples');
     assert.equal(rows[1].querySelector('td').textContent.trim(), 'Oranges');
@@ -59,7 +57,7 @@ module('Integration | Component | sortable-table', function(hooks) {
     assert.equal(rows[0].querySelectorAll('td')[1].textContent.trim(), 'a lint text');
     assert.equal(rows[0].querySelectorAll('td')[2].textContent.trim(), 'a test text');
     assert.equal(rows[0].querySelectorAll('td')[3].textContent.trim(), 'a manual text');
-    assert.dom(liveRegion).exists();
+    assert.dom('#a11y-notification').exists();
   });
 
   test('it sorts headings as expected', async function(assert) {
