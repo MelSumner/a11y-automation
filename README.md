@@ -24,7 +24,7 @@ To work on this app locally, follow these steps:
 
 1. clone this repository -- `git clone https://github.com/MelSumner/a11y-automation.git`
 2. switch to this app's directory -- `cd a11y-automation`
-3. run `npm install` to install missing dependencies
+3. run `yarn` to install missing dependencies
 4. run `ember s` to build the app. If it all works, it'll be available at `http://localhost:4200/` in your browser of choice.
 
 The styles in this app are primarily provided by Tailwind.
