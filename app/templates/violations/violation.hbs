@@ -1,6 +1,6 @@
 <div>
   <AaNavbar />
-  <header class="bg-white shadow-sm">
+  <header class="bg-white dark:bg-gray-800 shadow-sm">
     <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
       <h1>
         Potential A11y Violation:
@@ -11,7 +11,7 @@
   <main class="min-h-screen">
     <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
       <div
-        class="bg-white overflow-hidden shadow rounded-lg divide-y divide-gray-200"
+        class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow rounded-lg divide-y divide-gray-200"
       >
         <div class="px-4 py-5 sm:px-6">
           <ul class="list-status">
@@ -40,7 +40,7 @@
               {{#each @model.tags as |tagitem|}}
                 <li class="px-4 py-2">
                   {{#if tagitem.url}}
-                    <a href={{tagitem.url}} class="underline text-indigo-800 p-3 rounded-lg hover:text-indigo-800 hover:bg-gray-300 focus:border-indigo-700 focus:border-4 focus:border-dashed">
+                    <a href={{tagitem.url}} class="underline text-indigo-800 p-3 rounded-lg hover:text-indigo-800 hover:bg-gray-300 focus:border-indigo-700 focus:border-4 focus:border-dashed dark:text-yellow-400 dark:hover:text-yellow-400 dark:focus:border-yellow-300 dark:hover:bg-gray-700">
                       {{tagitem.title}}{{#if tagitem.level}} (Level {{tagitem.level}}) {{/if}}
                     </a>
                   {{else}}
@@ -48,7 +48,7 @@
                   {{/if}}
                 </li>
               {{else}}
-                <li class="bg-white shadow overflow-hidden rounded-md px-6 py-4">
+                <li class="bg-white dark:bg-gray-700 shadow overflow-hidden rounded-md px-6 py-4">
                   No relevant criterion found.
                 </li>
               {{/each}}

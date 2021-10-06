@@ -3,7 +3,7 @@
   class="sortable text-left"
   aria-sort={{if (eq @field @sortBy) (concat @sortOrder 'ending')}}
 >
-  <button class="sort-toggle" type="button" {{on "click" (fn @setSortBy @field)}}>
+  <button class="sort-toggle dark:text-white" type="button" {{on "click" (fn @setSortBy @field)}}>
     <span class="col-heading m-2">{{yield}}</span>
     <div class="sort-arrow" aria-hidden="true">
       {{#if (and (eq @field @sortBy) (eq @sortOrder "asc"))}}
