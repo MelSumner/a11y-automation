@@ -8,4 +8,13 @@ module('Unit | Route | violations/index', function(hooks) {
     let route = this.owner.lookup('route:violations/index');
     assert.ok(route);
   });
+
+  test('Manual testing status is valid',async function(assert) {
+    let route = this.owner.lookup('route:violations/index');
+
+    let model = await route.model();
+    model.forEach(violation => {
+      assert.notOk(!['exists', 'shouldexist', 'mustexist'].includes(violation.manual), `${violation.id} has invalid manual value: '${violation.manual}'`);
+    });
+  });
 });
