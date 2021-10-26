@@ -20,6 +20,7 @@
 /yarn-error.log
 /.vscode
 *.DS_Store
+/.idea/
 
 # ember-try
 /.node_modules.ember-try/
