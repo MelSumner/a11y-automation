@@ -14,7 +14,7 @@ The `alt` attribute should not be missing on `<img>` elements, `<area>` elements
 ## Automation
 
 ### Linting
-See the [`ember-template-lint`](https://github.com/ember-template-lint/ember-template-lint) library for the `require-valid-alt` rule.
+See the [`ember-template-lint`](https://github.com/ember-template-lint/ember-template-lint) library for the `require-valid-alt-text` rule.
 
 ### Testing
 See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `role-img-alt`, `input-image-alt`, `image-alt rules`.
