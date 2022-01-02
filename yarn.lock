@@ -5489,10 +5489,10 @@ ember-cli-version-checker@^5.1.1, ember-cli-version-checker@^5.1.2:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-cli@3.28.5:
-  version "3.28.5"
-  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-3.28.5.tgz#9c91266e412f6d537b47a88e4b63a2b56db35483"
-  integrity sha512-Y/UdbUOTeKHGMCP3XtE5g14JUTYyeQTdjPvHuv11FFx5HQBtHqqWLY6U1ivMDukDkQ4i2v6TyaUcKVo4e8PtyQ==
+ember-cli@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/ember-cli/-/ember-cli-4.0.1.tgz#2f5fc81a0aa6b3003addb064e00e5e41372bd58b"
+  integrity sha512-5FYStQlpdF1Qn7+iPe3YCpq131Sjey8LTilLb5xp+L+GpGE4b+9/8hzI3dIHh7WQSvoeuR5AAluP9nNq1ENgSw==
   dependencies:
     "@babel/core" "^7.13.8"
     "@babel/plugin-transform-modules-amd" "^7.12.1"
@@ -5582,7 +5582,7 @@ ember-cli@3.28.5:
     tree-sync "^2.1.0"
     uuid "^8.3.2"
     walk-sync "^2.2.0"
-    watch-detector "^1.0.0"
+    watch-detector "^1.0.1"
     workerpool "^6.1.4"
     yam "^1.0.0"
 
@@ -12250,7 +12250,7 @@ walker@~1.0.5:
   dependencies:
     makeerror "1.0.12"
 
-watch-detector@^1.0.0:
+watch-detector@^1.0.0, watch-detector@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/watch-detector/-/watch-detector-1.0.1.tgz#3106a6b489284ec2ecaef0e65cf1b8ec9117296e"
   integrity sha512-8sJ8rvNfg2ciqCa5IxIdmdxU/vuUe9V/jw+thXbdreELSv3+Cq6k8K42cLEL86W2td1PMmfNCWZuAhrZ/sD4mw==
