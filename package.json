@@ -68,7 +68,7 @@
     "edition": "octane"
   },
   "dependencies": {
-    "autoprefixer": "10.4.0",
+    "autoprefixer": "10.4.2",
     "broccoli-static-site-json": "4.4.1",
     "ember-a11y-refocus": "2.1.0",
     "ember-cli-netlify": "0.4.1"
