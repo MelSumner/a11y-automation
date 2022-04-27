@@ -5096,10 +5096,10 @@ elliptic@^6.5.3:
     minimalistic-assert "^1.0.1"
     minimalistic-crypto-utils "^1.0.1"
 
-ember-a11y-refocus@2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/ember-a11y-refocus/-/ember-a11y-refocus-2.2.1.tgz#bb0af7f9fa670240051b4182fc45ac64577b56f2"
-  integrity sha512-Cnr5u5uisItwGxssfiz+FKybLXDRurvA4P0ZAXJ+ElD0/gKNVs3sy93ceusmfKNmsoweIaQ7M7Uk0RTjNgH+Qw==
+ember-a11y-refocus@2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/ember-a11y-refocus/-/ember-a11y-refocus-2.3.0.tgz#c7c0b00506ca55d2670c028683fdd952e5d76a76"
+  integrity sha512-gbD9IiSPSbXnCh6YFQ5iJUwbsFvvI/0rwQy+tXrH2d/5dfOnBT3rV2XhCmCrWsK1UTBL8HNYhuKNN74vllSQDA==
   dependencies:
     ember-cli-babel "^7.26.11"
     ember-cli-htmlbars "^6.0.1"
