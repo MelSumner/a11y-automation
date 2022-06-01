@@ -28,7 +28,7 @@
     "@tailwindcss/typography": "0.5.0",
     "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
-    "ember-auto-import": "1.12.1",
+    "ember-auto-import": "1.12.2",
     "ember-cli": "4.1.0",
     "ember-cli-app-version": "5.0.0",
     "ember-cli-babel": "7.26.11",
