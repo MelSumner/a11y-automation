@@ -24,10 +24,10 @@ The `alt` attribute should not be missing on `<img>` elements, `<area>` elements
 
 These are the available linting rules for this violation:
 
-* axe Accessibility Linter: [`image-alt`](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter#:~:text=html%2Dhas%2Dlang-,image%2Dalt,-input%2Dbutton%2Dname) (VS Code extension)
-* Ember:  [`require-valid-alt-text`](https://github.com/ember-template-lint/ember-template-lint/blob/master/docs/rule/require-valid-alt-text.md)
-* Lit: [`alt-text`](https://github.com/open-wc/open-wc/blob/master/docs/docs/linting/eslint-plugin-lit-a11y/rules/alt-text.md)
-* React/JSX: [`alt-text`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/alt-text.md)
+* axe Accessibility Linter: [image-alt](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter#:~:text=html%2Dhas%2Dlang-,image%2Dalt,-input%2Dbutton%2Dname) (VS Code extension)
+* Ember:  [require-valid-alt-text](https://github.com/ember-template-lint/ember-template-lint/blob/master/docs/rule/require-valid-alt-text.md)
+* Lit: [alt-text (lit)](https://github.com/open-wc/open-wc/blob/master/docs/docs/linting/eslint-plugin-lit-a11y/rules/alt-text.md)
+* React/JSX: [alt-text (jsx)](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/alt-text.md)
 
 ### Testing
 
