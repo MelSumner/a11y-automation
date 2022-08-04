@@ -162,6 +162,6 @@ module('Integration | Component | sortable-table', function(hooks) {
     assert.dom(liveRegion).hasText('');
 
     await click(sortButtons[0]);
-    assert.dom(liveRegion).hasText('Sorted by FAILURE ascending');
+    assert.dom(liveRegion).hasText('Sorted by Failure ascending');
   });
 });

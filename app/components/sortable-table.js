@@ -16,14 +16,15 @@ export default class SortableTableComponent extends Component {
       this.args.setSortOrder("asc");
     }
 
-    const currentColHeading = event.target.parentElement;
+    const currentColHeading = event.target;
+    console.log(`${currentColHeading} is the current col heading`);
+    const currColHeadingText = currentColHeading.textContent;
+    console.log(`${currColHeadingText}`);
 
-    const liveRegion = document.getElementById("a11y-notification");
-    liveRegion.innerHTML = `Sorted by ${
-      currentColHeading.querySelector(".col-heading").innerText
-    } ${this.args.sortOrder}ending`;
+    const liveRegion = document.querySelector('#a11y-notification');
+    liveRegion.textContent = `Sorted by ${currColHeadingText} ${this.args.sortOrder}ending`;
     setTimeout(function () {
-      liveRegion.innerHTML = "";
-    }, 1000);
+      liveRegion.textContent = "";
+    }, 2000);
   }
 }
