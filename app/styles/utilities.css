@@ -27,44 +27,4 @@
   @apply bg-red-100 text-red-900 border-red-300 bg-opacity-60 dark:bg-red-700 dark:text-red-100 dark:bg-opacity-100;
 }
 /* purgecss end ignore */
-h1 {
-  @apply text-3xl font-bold dark:text-white;
-}
-h2 {
-  @apply text-2xl font-semibold leading-normal dark:text-white;
-}
-h3 {
-  @apply text-xl font-semibold leading-normal mb-1 dark:text-white;
-}
 
-article h2:not(:first-of-type) {
-  @apply mt-6;
-}
-article h3 {
-  @apply mt-3;
-}
-p {
-  line-height: 1.8;
-}
-
-p code {
-  @apply text-indigo-900 bg-gray-100 px-2 py-2 dark:bg-gray-700 dark:text-yellow-400;
-}
-
-p a, p a code, main article ul li a {
-  @apply underline text-indigo-800 dark:text-yellow-400;
-}
-/* p a {
-  @apply px-0 py-2 border-4 border-dashed border-opacity-0 hover:shadow-xl hover:border-opacity-100 hover:border-indigo-800;
-} */
-
-
-footer p a {
-  @apply text-indigo-100;
-}
-/* table tbody tr {
-  @apply hover:shadow-2xl md:scale-50;
-} */
-tr:nth-of-type(2n) {
-  @apply bg-gray-100 dark:bg-gray-800;
-}

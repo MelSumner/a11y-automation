@@ -6,6 +6,19 @@
 @import "tailwindcss/utilities";
 @import "utilities.css";
 
+:root {
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.33rem;
+  --size-600: 1.77rem;
+  --size-700: 2.36rem;
+  --size-800: 3.15rem;
+  --size-900: 4.2rem;
+}
+
+body {
+  line-height: 1.5;
+}
 
 .list-status {
   display: flex;
@@ -20,13 +33,13 @@
   padding: .25em .25em;
 }
 
-main article.article ul {
+main article ul {
   @apply
   list-disc
   list-inside;
 }
 
-main article.article ul li a {
+main article ul li a {
   @apply 
   underline;
 }
@@ -34,4 +47,83 @@ main article.article ul li a {
 .list-tags {
   list-style: disc;
   list-style-position: inside;
+}
+
+main article {
+  --flow-space: 1rem;
+}
+main article > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.measure-h1,
+.measure-h2,
+.measure-h3,
+main article h1, 
+main article h2, 
+main article h3 {
+  line-height: 1.3;
+}
+
+.measure-h1,
+main article h1, 
+.measure-h2, 
+main article h2 {
+  font-weight: 700;
+}
+
+.measure-h1, h1 {
+  font-size: var(--size-700);
+}
+
+h1 {
+  @apply dark:text-white;
+}
+
+.measure-h2, main article h2 {
+  font-size: var(--size-600);
+}
+
+main article h2:not(:first-of-type) {
+  margin-top: 1.77rem;
+}
+
+h2 {
+  @apply dark:text-white;
+}
+
+.measure-h3, main article h3 {
+  font-size: var(--size-500);
+  font-weight: 600;
+  margin-top: 1.77rem;
+}
+
+h3 {
+  @apply dark:text-white;
+}
+
+main p, 
+main ul li {
+  max-width: 80ch;
+}
+p code {
+  @apply text-indigo-900 bg-gray-100 px-2 py-2 dark:bg-gray-700 dark:text-yellow-400;
+}
+
+p a, p a code, main article ul li a {
+  @apply underline text-indigo-800 dark:text-yellow-400;
+}
+/* p a {
+  @apply px-0 py-2 border-4 border-dashed border-opacity-0 hover:shadow-xl hover:border-opacity-100 hover:border-indigo-800;
+} */
+
+
+footer p a {
+  @apply text-indigo-100;
+}
+/* table tbody tr {
+  @apply hover:shadow-2xl md:scale-50;
+} */
+tr:nth-of-type(2n) {
+  @apply bg-gray-100 dark:bg-gray-800;
 }

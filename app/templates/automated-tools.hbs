@@ -1,30 +1,41 @@
-<div class="h-screen">
+
   <AaNavbar />
   <header class="bg-white dark:bg-gray-800 shadow-sm">
-      <h1 class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
+      <h1 class="measure-h1 max-w-6xl mx-auto py-6 sm:px-14 lg:px-16">
         Automated A11y Tools
       </h1>
   </header>
   <main id="main">
-    <div class="max-w-7xl mx-auto py-6 sm:px-14 lg:px-16">
-      <div class="flex flex-col overflow-x-auto sm:-mx-6 lg:-mx-8 p-8 min-w-full shadow overflow-hidden border-b border-gray-200 dark:bg-gray-800 sm:rounded-lg bg-gray-50">
-        <h2>Dynamic Analysis (Testing)</h2>
-        <ul class="list-disc pl-4 dark:text-white mb-8">
-          <li><a href="https://github.com/dequelabs/axe-core" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline" target="_blank" rel="noopener noreferrer">Deque axe-core</a></li>
-          <li><a href="https://github.com/ember-a11y/ember-a11y-testing" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline" target="_blank" rel="noopener noreferrer">ember-a11y-testing</a></li>
-          <li><a href="https://accessibilityinsights.io/" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline" target="_blank" rel="noopener noreferrer">Microsoft Accessibility Insights</a></li>
-          <li><a href="https://github.com/GoogleChrome/lighthouse" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline" target="_blank" rel="noopener noreferrer">Google Chrome Lighthouse</a></li>
+    <div class="max-w-6xl mx-auto py-6 sm:px-14 lg:px-16">
+      <div class="flex flex-col overflow-x-auto sm:-mx-6 lg:-mx-8 p-8 min-w-full shadow overflow-hidden border-b border-gray-200 dark:bg-gray-800 sm:rounded-lg bg-gray-50 h-screen">
+        <article>
+          <p>These are some of the automated tools available, no endorsement implied. If you know of one that exists but is not listed here, please <a href="https://github.com/MelSumner/a11y-automation/issues/new" rel="external">file an issue</a> and let us know!</p>
+        <h2 class="measure-h2">Dynamic Analysis (Testing)</h2>
+        <ul class="list-disc pl-4 dark:text-white mb-8 ">
+          <li class="py-2">
+            <a href="https://github.com/dequelabs/axe-core" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline py-3 px-2" target="_blank" rel="noopener noreferrer">Deque axe-core</a>
+          </li>
+          <li class="py-2">
+            <a href="https://github.com/ember-a11y/ember-a11y-testing" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline py-3 px-2" target="_blank" rel="noopener noreferrer">ember-a11y-testing</a>
+          </li>
+          <li class="py-2">
+            <a href="https://accessibilityinsights.io/" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline py-3 px-2" target="_blank" rel="noopener noreferrer">Microsoft Accessibility Insights</a>
+          </li>
+          <li class="py-2">
+            <a href="https://github.com/GoogleChrome/lighthouse" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline py-3 px-2" target="_blank" rel="noopener noreferrer">Google Chrome Lighthouse</a>
+          </li>
         </ul>
 
-        <h2>Static Analysis (Linting)</h2>
+        <h2 class="measure-h2">Static Analysis (Linting)</h2>
         <ul class="list-disc pl-4 dark:text-white">
-          <li><a href="https://github.com/ember-template-lint/ember-template-lint" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline" target="_blank" rel="noopener noreferrer">ember-template-lint</a></li>
-          <li><a href="https://github.com/jsx-eslint/eslint-plugin-jsx-a11y" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline" target="_blank" rel="noopener noreferrer">eslint-plugin-jsx-a11y</a></li>
-          <li><a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline" target="_blank" rel="noopener noreferrer">eslint-plugin-vuejs-accessibility</a></li>
+          <li class="py-2"><a href="https://github.com/ember-template-lint/ember-template-lint" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline py-3 px-2" target="_blank" rel="noopener noreferrer">ember-template-lint</a></li>
+          <li class="py-2"><a href="https://github.com/jsx-eslint/eslint-plugin-jsx-a11y" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline py-3 px-2" target="_blank" rel="noopener noreferrer">eslint-plugin-jsx-a11y</a></li>
+          <li class="py-2"><a href="https://github.com/vue-a11y/eslint-plugin-vuejs-accessibility" class="text-blue-600 dark:text-yellow-400 visited:text-purple-600 dark:visited:text-green-400 underline py-3 px-2" target="_blank" rel="noopener noreferrer">eslint-plugin-vuejs-accessibility</a></li>
         </ul>
+        </article>
       </div>
     </div>
   </main>
-</div>
+
 
 {{outlet}}

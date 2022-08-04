@@ -49,14 +49,13 @@ module('Integration | Component | sortable-table', function(hooks) {
     const table = this.element.querySelector('.sortable-table');
     const rows = table.querySelectorAll('tbody tr');
 
-    assert.dom('.sort-toggle').exists({count: 5});
+    assert.dom('.sort-toggle').exists({count: 4});
     assert.equal(rows.length, 3);
     assert.equal(rows[0].querySelector('th').textContent.trim(), 'Apples');
     assert.equal(rows[1].querySelector('th').textContent.trim(), 'Oranges');
     assert.equal(rows[2].querySelector('th').textContent.trim(), 'Bananas');
     assert.equal(rows[0].querySelectorAll('td')[0].textContent.trim(), 'a lint text');
     assert.equal(rows[0].querySelectorAll('td')[1].textContent.trim(), 'a test text');
-    assert.equal(rows[0].querySelectorAll('td')[2].textContent.trim(), 'a manual text');
     assert.dom('#a11y-notification').exists();
   });
 
@@ -124,20 +123,6 @@ module('Integration | Component | sortable-table', function(hooks) {
     assert.dom(testingBtn.querySelector('.icon-sort-filled.icon-sort-desc')).exists();
     assert.dom(testingBtn.querySelector('.icon-sort-open.icon-sort-desc')).doesNotExist();
 
-    const manualBtn = sortButtons[3];
-    await click(manualBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[2].textContent.trim(),
-    'a manual text');
-    assert.dom(th[3]).hasAttribute('aria-sort', 'ascending');
-    assert.dom(manualBtn.querySelector('.icon-sort-filled.icon-sort-asc')).exists();
-    assert.dom(manualBtn.querySelector('.icon-sort-open.icon-sort-asc')).doesNotExist();
-
-    await click(manualBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[2].textContent.trim(),
-    'o manual text');
-    assert.dom(th[3]).hasAttribute('aria-sort', 'descending');
-    assert.dom(manualBtn.querySelector('.icon-sort-filled.icon-sort-desc')).exists();
-    assert.dom(manualBtn.querySelector('.icon-sort-open.icon-sort-desc')).doesNotExist();
   });
 
   test('it populates the live region', async function(assert) {
