@@ -17,9 +17,7 @@ export default class SortableTableComponent extends Component {
     }
 
     const currentColHeading = event.target;
-    console.log(`${currentColHeading} is the current col heading`);
     const currColHeadingText = currentColHeading.textContent;
-    console.log(`${currColHeadingText}`);
 
     const liveRegion = document.querySelector('#a11y-notification');
     liveRegion.textContent = `Sorted by ${currColHeadingText} ${this.args.sortOrder}ending`;
