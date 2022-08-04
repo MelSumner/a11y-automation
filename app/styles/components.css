@@ -31,11 +31,18 @@ screen and (forced-colors: active) {
   margin-top: -8px;
 }
 
+.sortable {
+  @apply
+  p-1;
+}
+
 .sort-toggle {
   @apply
+  border-2
+  border-transparent
   flex 
   font-semibold
-  items-center 
+  items-center
   px-6
   py-3
   text-gray-800
@@ -44,6 +51,12 @@ screen and (forced-colors: active) {
   tracking-wider
   uppercase
   w-full;
+}
+
+.sort-toggle:hover {
+  border-style: dashed;
+  text-decoration: underline;
+
 }
 .sort-arrow {
   display: flex;
