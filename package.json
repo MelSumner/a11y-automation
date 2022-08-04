@@ -2,7 +2,7 @@
   "name": "a11y-automation",
   "version": "0.0.0",
   "private": true,
-  "description": "a work in progress",
+  "description": "a project to track available accessibility automation tools",
   "repository": "https://github.com/MelSumner/a11y-automation",
   "license": "MIT",
   "author": "Melanie Sumner <melaniersumner@gmail.com>",
@@ -62,7 +62,7 @@
     "tailwindcss": "2.2.19"
   },
   "engines": {
-    "node": "10.* || >= 12"
+    "node": "12.* || >= 14"
   },
   "ember": {
     "edition": "octane"
