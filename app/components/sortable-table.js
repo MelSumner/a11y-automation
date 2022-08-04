@@ -1,5 +1,5 @@
-import Component from '@glimmer/component';
-import { action } from '@ember/object';
+import Component from "@glimmer/component";
+import { action } from "@ember/object";
 
 export default class SortableTableComponent extends Component {
   get sort() {
@@ -10,18 +10,19 @@ export default class SortableTableComponent extends Component {
   setSortBy(type) {
     if (this.args.sortBy === type) {
       //invert the sort order
-      this.args.setSortOrder(this.args.sortOrder === 'asc' ? 'desc' : 'asc');
+      this.args.setSortOrder(this.args.sortOrder === "asc" ? "desc" : "asc");
     } else {
       this.args.setSortBy(type);
-      this.args.setSortOrder('asc');
+      this.args.setSortOrder("asc");
     }
 
-    const currentColHeading = event.target.parentElement;
+    const currentColHeading = event.target;
+    const currColHeadingText = currentColHeading.textContent;
 
-    const liveRegion = document.getElementById('a11y-notification');
-    liveRegion.innerHTML = `Sorted by ${currentColHeading.querySelector('.col-heading').innerText} ${this.args.sortOrder}ending`;
+    const liveRegion = document.querySelector('#a11y-notification');
+    liveRegion.textContent = `Sorted by ${currColHeadingText} ${this.args.sortOrder}ending`;
     setTimeout(function () {
-      liveRegion.innerHTML = '';
-    }, 1000);
+      liveRegion.textContent = "";
+    }, 2000);
   }
 }

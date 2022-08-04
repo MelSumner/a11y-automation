@@ -19,3 +19,19 @@
   margin: 0;
   padding: .25em .25em;
 }
+
+main article.article ul {
+  @apply
+  list-disc
+  list-inside;
+}
+
+main article.article ul li a {
+  @apply 
+  underline;
+}
+
+.list-tags {
+  list-style: disc;
+  list-style-position: inside;
+}

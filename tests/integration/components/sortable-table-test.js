@@ -51,12 +51,12 @@ module('Integration | Component | sortable-table', function(hooks) {
 
     assert.dom('.sort-toggle').exists({count: 5});
     assert.equal(rows.length, 3);
-    assert.equal(rows[0].querySelector('td').textContent.trim(), 'Apples');
-    assert.equal(rows[1].querySelector('td').textContent.trim(), 'Oranges');
-    assert.equal(rows[2].querySelector('td').textContent.trim(), 'Bananas');
-    assert.equal(rows[0].querySelectorAll('td')[1].textContent.trim(), 'a lint text');
-    assert.equal(rows[0].querySelectorAll('td')[2].textContent.trim(), 'a test text');
-    assert.equal(rows[0].querySelectorAll('td')[3].textContent.trim(), 'a manual text');
+    assert.equal(rows[0].querySelector('th').textContent.trim(), 'Apples');
+    assert.equal(rows[1].querySelector('th').textContent.trim(), 'Oranges');
+    assert.equal(rows[2].querySelector('th').textContent.trim(), 'Bananas');
+    assert.equal(rows[0].querySelectorAll('td')[0].textContent.trim(), 'a lint text');
+    assert.equal(rows[0].querySelectorAll('td')[1].textContent.trim(), 'a test text');
+    assert.equal(rows[0].querySelectorAll('td')[2].textContent.trim(), 'a manual text');
     assert.dom('#a11y-notification').exists();
   });
 
@@ -81,14 +81,14 @@ module('Integration | Component | sortable-table', function(hooks) {
 
     const failureBtn = sortButtons[0];
     await click(failureBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelector('td').textContent.trim(),
+    assert.equal(table.querySelectorAll('tbody tr')[0].querySelector('th').textContent.trim(),
       'Apples');
     assert.dom(th[0]).hasAttribute('aria-sort', 'ascending');
     assert.dom(failureBtn.querySelector('.icon-sort-filled.icon-sort-asc')).exists();
     assert.dom(failureBtn.querySelector('.icon-sort-open.icon-sort-asc')).doesNotExist();
 
     await click(failureBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelector('td').textContent.trim(),
+    assert.equal(table.querySelectorAll('tbody tr')[0].querySelector('th').textContent.trim(),
     'Oranges');
     assert.dom(th[0]).hasAria('sort', 'descending');
     assert.dom(failureBtn.querySelector('.icon-sort-filled.icon-sort-desc')).exists();
@@ -96,14 +96,14 @@ module('Integration | Component | sortable-table', function(hooks) {
 
     const lintingBtn = sortButtons[1];
     await click(lintingBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[1].textContent.trim(),
+    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[0].textContent.trim(),
     'a lint text');
     assert.dom(th[1]).hasAria('sort', 'ascending');
     assert.dom(lintingBtn.querySelector('.icon-sort-filled.icon-sort-asc')).exists();
     assert.dom(lintingBtn.querySelector('.icon-sort-open.icon-sort-asc')).doesNotExist();
 
     await click(lintingBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[1].textContent.trim(),
+    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[0].textContent.trim(),
     'o lint text');
     assert.dom(th[1]).hasAria('sort', 'descending');
     assert.dom(lintingBtn.querySelector('.icon-sort-filled.icon-sort-desc')).exists();
@@ -111,14 +111,14 @@ module('Integration | Component | sortable-table', function(hooks) {
 
     const testingBtn = sortButtons[2];
     await click(testingBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[2].textContent.trim(),
+    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[1].textContent.trim(),
     'a test text');
     assert.dom(th[2]).hasAttribute('aria-sort', 'ascending');
     assert.dom(testingBtn.querySelector('.icon-sort-filled.icon-sort-asc')).exists();
     assert.dom(testingBtn.querySelector('.icon-sort-open.icon-sort-asc')).doesNotExist();
 
     await click(testingBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[2].textContent.trim(),
+    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[1].textContent.trim(),
     'o test text');
     assert.dom(th[2]).hasAttribute('aria-sort', 'descending');
     assert.dom(testingBtn.querySelector('.icon-sort-filled.icon-sort-desc')).exists();
@@ -126,14 +126,14 @@ module('Integration | Component | sortable-table', function(hooks) {
 
     const manualBtn = sortButtons[3];
     await click(manualBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[3].textContent.trim(),
+    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[2].textContent.trim(),
     'a manual text');
     assert.dom(th[3]).hasAttribute('aria-sort', 'ascending');
     assert.dom(manualBtn.querySelector('.icon-sort-filled.icon-sort-asc')).exists();
     assert.dom(manualBtn.querySelector('.icon-sort-open.icon-sort-asc')).doesNotExist();
 
     await click(manualBtn);
-    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[3].textContent.trim(),
+    assert.equal(table.querySelectorAll('tbody tr')[0].querySelectorAll('td')[2].textContent.trim(),
     'o manual text');
     assert.dom(th[3]).hasAttribute('aria-sort', 'descending');
     assert.dom(manualBtn.querySelector('.icon-sort-filled.icon-sort-desc')).exists();
@@ -162,6 +162,6 @@ module('Integration | Component | sortable-table', function(hooks) {
     assert.dom(liveRegion).hasText('');
 
     await click(sortButtons[0]);
-    assert.dom(liveRegion).hasText('Sorted by FAILURE ascending');
+    assert.dom(liveRegion).hasText('Sorted by Failure ascending');
   });
 });
