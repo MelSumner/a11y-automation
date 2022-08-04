@@ -20,6 +20,8 @@ The `alt` attribute should not be missing on `<img>` elements, `<area>` elements
 
 ## Automation
 
+Automation exists for this WCAG violation, so that's super helpful for us!
+
 ### Linting
 
 These are the available linting rules for this violation:
@@ -38,10 +40,6 @@ The [axe-core testing library](https://github.com/dequelabs/axe-core) offers sev
 * [input-image-alt](https://dequeuniversity.com/rules/axe/3.2/input-image-alt)
 * [area-alt](https://dequeuniversity.com/rules/axe/3.2/area-alt)
 
-### Developer Authored Test
+### Manual Testing
 
-Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
-
-### Manual Test
-
-Review page and ensure the point of failure does not exist, inspecting the DOM where required.
+If you are able to use the linting and testing libraries mentioned here, then you will need to manually test for this point of failure. Inspect the DOM, checking for the elements listed in the point of failure, and ensure that each have an `alt` attribute.
