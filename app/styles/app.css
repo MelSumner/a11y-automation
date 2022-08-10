@@ -33,7 +33,7 @@ body {
   padding: .25em .25em;
 }
 
-main article ul {
+main article ul:not(.grid) {
   @apply
   list-disc
   list-inside;
