@@ -14,7 +14,7 @@ module('Unit | Route | violations/index', function(hooks) {
 
     let model = await route.model();
     model.forEach(violation => {
-      assert.ok(['exists', 'shouldexist', 'mustexist'].includes(violation.manual), `${violation.id} has invalid manual value: '${violation.manual}'`);
+      assert.ok(['exists', 'shouldexist', 'mustexist', 'couldexist'].includes(violation.manual), `${violation.id} has invalid manual value: '${violation.manual}'`);
     });
   });
 });
