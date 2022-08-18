@@ -16,8 +16,6 @@ If a page does not have a page title, then it would fail Success Criterion 2.4.2
 
 ### Linting
 
-Automated linting exists in some JS frameworks:
-
 Potentially automatable, but a non-priority for two reasons: first, there is a test available. Second, the benefit of a JS framework is that a page or app-level template is used which typically contains the meta info, including the title element. It is not typical for a developer to change this file nor is it typical for a linter to check this file.
 
 ### Testing
