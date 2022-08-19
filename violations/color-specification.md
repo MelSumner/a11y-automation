@@ -12,18 +12,23 @@ manual: mustexist
 ---
 
 ## Point of Failure
+
 If the `color` property is specified; the `background-color` must also be specified, and vice-versa.
 
 ## Automation
 
 ### Linting
+
 Potentially Automatable with CSS linting.
 
 ### Testing
+
 Potentially Automatable.
 
 ### Developer Authored Test
-Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
+
+Ideally, developers can train themselves to always declare a color and a background color in their CSS.
 
 ### Manual Test
+
 Review page and ensure the point of failure does not exist, inspecting the DOM where required.
