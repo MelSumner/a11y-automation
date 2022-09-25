@@ -72,6 +72,46 @@ export default class AutomatedToolsRoute extends Route {
         category: 'Testing Engine',
         description: 'A accessibility testing engine for JavaScript.',
         link: 'https://github.com/dequelabs/axe-core'
+      }, {
+        title: 'alfa',
+        category: 'Testing Tool',
+        description: 'Suite of open and standards-based tools for performing reliable accessibility conformance testing at scale.',
+        link: 'https://github.com/Siteimprove/alfa'
+      }, {
+        title: 'AccessLint',
+        category: 'Code Linter (Static)',
+        description: 'AccessLint brings automated web accessibility testing into your development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live.',
+        link: 'https://github.com/marketplace/accesslint'
+      }, {
+        title: 'equal-access',
+        category: 'Testing Tool',
+        description: 'IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment.',
+        link: 'https://github.com/IBMa/equal-access'
+      }, {
+        title: 'JAWS Inspect',
+        category: 'Testing Tool',
+        description: 'A screen reader testing tool that vastly simplifies accessibility and JAWS® compatibility testing by providing a text output of JAWS speech.',
+        link: 'https://www.tpgi.com/arc-platform/jaws-inspect/'
+      }, {
+        title: 'AccessLint/screenreaders',
+        category: 'Testing Tool',
+        description: 'Screen reader automation tools by AccessLint, including VoiceOver.js and Auto-VO.',
+        link: 'https://github.com/AccessLint/screenreaders'
+      }, {
+        title: 'Assistive-Webdriver',
+        category: 'Testing Tool',
+        description: 'Assistive-Webdriver is a tool to automate end-to-end web application tests with a screen reader.',
+        link: 'https://github.com/AmadeusITGroup/Assistive-Webdriver'
+      }, {
+        title: 'screen-reader-testing-library',
+        category: 'Testing Tool',
+        description: 'Utilities to match the speech output of screen readers when replaying user interactions.',
+        link: 'https://github.com/eps1lon/screen-reader-testing-library'
+      }, {
+        title: 'keyboard-testing-library',
+        category: 'Testing Tool',
+        description: 'An extension of Testing Library focused on simulating keyboard-only users behaviors ',
+        link: 'https://www.npmjs.com/package/keyboard-testing-library'
       },
       
     ];
