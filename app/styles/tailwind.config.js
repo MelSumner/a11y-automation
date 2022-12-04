@@ -4,7 +4,7 @@ const colors = require('tailwindcss/colors');
 module.exports = {
   purge: [],
   presets: [],
-  darkMode: 'media', // or 'media' or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   plugins: [ require('@tailwindcss/forms'),],
   theme: {
     screens: {
