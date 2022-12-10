@@ -13,7 +13,7 @@
             width="32"
           />
         </div>
-        <div class="sm:block">
+        <div class="sm:flex">
           <div class="ml-10 flex items-baseline space-x-4">
             <a
               href="/"
@@ -39,11 +39,27 @@
             >
               GitHub Repo
             </a>
-            <button onclick={{action "onToggle"}}
-              class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-              Theme
-            </button>
           </div>
+          <button onclick={{action "onToggle"}}
+              class="bg-white px-3 py-2 rounded-md ml-80">
+              {{#if this.selectedTheme}}
+                <img
+                  src="/assets/images/light-theme.svg"
+                  alt=""
+                  role="presentation"
+                  height="20"
+                  width="20"
+                />
+              {{else}}
+                <img
+                  src="/assets/images/dark-theme.svg"
+                  alt=""
+                  role="presentation"
+                  height="20"
+                  width="20"
+                />
+              {{/if}}
+            </button>
         </div>
       </div>
     </div>
