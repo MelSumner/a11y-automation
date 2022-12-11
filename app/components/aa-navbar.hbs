@@ -15,24 +15,21 @@
         </div>
         <div class="sm:flex">
           <div class="ml-10 flex items-baseline space-x-4">
-            <a
-              href="/"
+            <LinkTo @route="application"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Home
-            </a>
-            <a
-              href="/violations"
+            </LinkTo>
+            <LinkTo @route="violations"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Potential Violations
-            </a>
-            <a
-              href="/automated-tools"
+            </LinkTo>
+            <LinkTo @route="automated-tools"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Automated Tools
-            </a>
+            </LinkTo>
             <a
               href="https://github.com/MelSumner/a11y-automation" rel="external"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
