@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <script>
-      if (localStorage.theme === 'dark' || (!('theme' in localStorage) && matchMedia('(prefers-color-scheme: dark)').matches)) {
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage))) {
           localStorage.theme = 'dark';
           document.querySelector('html').classList.toggle('dark', true);
       } else {

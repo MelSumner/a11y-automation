@@ -40,9 +40,9 @@
               GitHub Repo
             </a>
           </div>
-          <button onclick={{action "onToggle"}}
+          <button onclick={{action "onChangeTheme"}}
               class="bg-white px-3 py-2 rounded-md ml-80">
-              {{#if this.selectedTheme}}
+              {{#if this.isDarkTheme}}
                 <img
                   src="/assets/images/light-theme.svg"
                   alt=""
