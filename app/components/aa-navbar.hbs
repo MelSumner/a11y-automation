@@ -37,7 +37,10 @@
               GitHub Repo
             </a>
           </div>
-          <button onclick={{action "onChangeTheme"}}
+          <button 
+              type="button"
+              aria-label="toggle dark/light mode"
+              onclick={{action "onChangeTheme"}}
               class="bg-white px-3 py-2 rounded-md ml-80">
               {{#if this.isDarkTheme}}
                 <img
