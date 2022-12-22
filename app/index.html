@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      if (localStorage.theme === 'dark' || (!('theme' in localStorage)) && matchMedia('(prefers-color-scheme: dark)').matches) {
+          localStorage.theme = 'dark';
+          document.querySelector('html').classList.toggle('dark', true);
+      } else {
+          localStorage.theme = 'light';
+          document.querySelector('html').classList.toggle('dark', false);
+      }
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>A11yAutomation</title>
