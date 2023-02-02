@@ -40,7 +40,7 @@
           <button 
               type="button"
               aria-label="toggle dark/light mode"
-              onclick={{action "onChangeTheme"}}
+              {{on "click" this.onChangeTheme}}
               class="bg-white px-3 py-2 rounded-md ml-80">
               {{#if this.isDarkTheme}}
                 <img
