@@ -112,10 +112,6 @@ p code {
 p a, p a code, main article ul li a {
   @apply underline text-indigo-800 dark:text-yellow-400;
 }
-/* p a {
-  @apply px-0 py-2 border-4 border-dashed border-opacity-0 hover:shadow-xl hover:border-opacity-100 hover:border-indigo-800;
-} */
-
 
 footer p a {
   @apply text-indigo-100;
