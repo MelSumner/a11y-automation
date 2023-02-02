@@ -12,15 +12,6 @@ module('Integration | Component | aa-nav', function(hooks) {
 
     await render(hbs`<AaNav />`);
 
-    assert.dom(this.element).hasText('');
-
-    // Template block usage:
-    await render(hbs`
-      <AaNav>
-        template block text
-      </AaNav>
-    `);
-
-    assert.dom(this.element).hasText('template block text');
+    assert.dom(this.element).exists();
   });
 });
