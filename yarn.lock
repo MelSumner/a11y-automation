@@ -5323,10 +5323,10 @@ ember-cli-path-utils@^1.0.0:
   resolved "https://registry.yarnpkg.com/ember-cli-path-utils/-/ember-cli-path-utils-1.0.0.tgz#4e39af8b55301cddc5017739b77a804fba2071ed"
   integrity sha512-Qq0vvquzf4cFHoDZavzkOy3Izc893r/5spspWgyzLCPTaG78fM3HsrjZm7UWEltbXUqwHHYrqZd/R0jS08NqSA==
 
-ember-cli-postcss@7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/ember-cli-postcss/-/ember-cli-postcss-7.0.2.tgz#b7df580296cbffad4db943c7d2be739b7f68148b"
-  integrity sha512-nlr5glZlk6VN0nZuxO5yBbhofHo2waoCHYqTQH2CennDgdC0Fph4Kp+VHtif3qCgMyMXTqqvvgkBz2YpOBgsgw==
+ember-cli-postcss@7.2.0:
+  version "7.2.0"
+  resolved "https://registry.yarnpkg.com/ember-cli-postcss/-/ember-cli-postcss-7.2.0.tgz#81f7922b382283e91637982a9db7d49e311f358f"
+  integrity sha512-UyqPieUZ2bcQG+cKAs03suDujFBq0ibK+NYXqd7m7uLJX4UNUigDQtDlZPxtRxzY64eN2x04qhfburt1QvgE3g==
   dependencies:
     broccoli-merge-trees "^4.0.0"
     broccoli-postcss "^6.0.0"
