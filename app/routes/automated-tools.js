@@ -73,7 +73,12 @@ export default class AutomatedToolsRoute extends Route {
         description: 'A accessibility testing engine for JavaScript.',
         link: 'https://github.com/dequelabs/axe-core'
       },
-      
+      {
+        title: 'keyboard-testing-library',
+        category: 'Testing Tool',
+        description: 'An extension of Testing Library focused on simulating keyboard-only users behaviors ',
+        link: 'https://www.npmjs.com/package/keyboard-testing-library'
+      },
     ];
 
     tools.sort((a, b) => (a.category > b.category) ? 1 : -1)
