@@ -3,12 +3,11 @@ name: CI
 on:
   push:
     branches:
-      - master
       - main
   pull_request:
 
 env:
-  NODE_VERSION: 12
+  NODE_VERSION: 16.5.0
   FORCE_COLOR: 1
 
 jobs:

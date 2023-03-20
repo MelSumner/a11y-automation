@@ -1,9 +1,9 @@
-<nav class="bg-gray-900">
-  <NavigationNarrator/>
+<nav class="aa-navbar bg-gray-900">
+  <NavigationNarrator />
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <div class="flex items-center">
-        <div class="flex-shrink-0">
+        <div class="shrink-0">
           <img
             class="h-8 w-8"
             src="/assets/images/a-logo.svg"
@@ -13,34 +13,63 @@
             width="32"
           />
         </div>
-        <div class="sm:block">
+        <div class="sm:flex">
           <div class="ml-10 flex items-baseline space-x-4">
-            <a
-              href="/"
+            <LinkTo
+              @route="application"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Home
-            </a>
-            <a
-              href="/violations"
+            </LinkTo>
+            <LinkTo
+              @route="violations"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Potential Violations
-            </a>
-            <a
-              href="/automated-tools"
+            </LinkTo>
+            <LinkTo
+              @route="automated-tools"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               Automated Tools
-            </a>
+            </LinkTo>
             <a
-              href="https://github.com/MelSumner/a11y-automation" rel="external"
+              href="https://github.com/MelSumner/a11y-automation"
+              rel="external"
               class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               GitHub Repo
             </a>
           </div>
         </div>
+      </div>
+      <div class="button__wrapper sm:flex">
+        <button
+          type="button"
+          aria-label="toggle dark/light mode"
+          {{on "click" this.onChangeTheme}}
+          class="bg-white px-3 py-2 rounded-md flex items-center shrink-0"
+        >
+          {{#if this.isDarkTheme}}
+            <img
+              src="/assets/images/light-theme.svg"
+              alt=""
+              role="presentation"
+              height="20"
+              width="20"
+              class="shrink-0"
+            />
+          {{else}}
+            <img
+              src="/assets/images/dark-theme.svg"
+              alt=""
+              role="presentation"
+              height="20"
+              width="20"
+              class="shrink-0"
+            />
+          {{/if}}
+        </button>
       </div>
     </div>
   </div>

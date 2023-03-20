@@ -25,7 +25,6 @@ body {
   flex-flow: row wrap;
   list-style: none;
   margin: 0 auto;
-  padding: 0;
   width: 100%;
 }
 .list-status-item {
@@ -40,7 +39,7 @@ main article ul:not(.grid) {
 }
 
 main article ul li a {
-  @apply 
+  @apply
   underline;
 }
 
@@ -59,15 +58,15 @@ main article > * + * {
 .measure-h1,
 .measure-h2,
 .measure-h3,
-main article h1, 
-main article h2, 
+main article h1,
+main article h2,
 main article h3 {
   line-height: 1.3;
 }
 
 .measure-h1,
-main article h1, 
-.measure-h2, 
+main article h1,
+.measure-h2,
 main article h2 {
   font-weight: 700;
 }
@@ -102,7 +101,7 @@ h3 {
   @apply dark:text-white;
 }
 
-main p, 
+main p,
 main ul li {
   max-width: 80ch;
 }
@@ -113,10 +112,6 @@ p code {
 p a, p a code, main article ul li a {
   @apply underline text-indigo-800 dark:text-yellow-400;
 }
-/* p a {
-  @apply px-0 py-2 border-4 border-dashed border-opacity-0 hover:shadow-xl hover:border-opacity-100 hover:border-indigo-800;
-} */
-
 
 footer p a {
   @apply text-indigo-100;

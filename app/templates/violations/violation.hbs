@@ -1,32 +1,28 @@
 <div>
-  <AaNavbar />
+  <AaNav />
   <header class="bg-white dark:bg-gray-800 shadow-sm">
-    <div class="max-w-6xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-      <h1 class="measure-h1">
-        Potential A11y Violation:
-        <br/>{{@model.title}}
-      </h1>
-    </div>
+    <h1 class="max-w-6xl mx-auto py-4 px-4 sm:px-6 lg:px-8 measure-h1">
+      Potential A11y Violation:
+      <br/>{{@model.title}}
+    </h1>
   </header>
   <main id="main">
     <div class="max-w-6xl mx-auto py-6 sm:px-6 lg:px-8">
       <div
         class="bg-white dark:bg-gray-800 dark:text-white overflow-hidden shadow rounded-lg divide-y divide-gray-200 min-h-screen"
       >
-        <div class="px-4 py-5 sm:px-6">
-          <ul class="list-status">
-            <li class="list-status-item">
-              <span class="status-badge status-{{@model.linting}}">
-                  Linting {{@model.lintingText}}
-              </span>
-            </li>
-            <li class="list-status-item">
-              <span class="status-badge status-{{@model.testing}}">
-                Testing {{@model.testingText}}
-              </span>
-            </li>
-          </ul>
-        </div>
+        <ul class="px-4 py-5 sm:px-6 list-status">
+          <li class="list-status-item">
+            <span class="status-badge status-{{@model.linting}}">
+                Linting {{@model.lintingText}}
+            </span>
+          </li>
+          <li class="list-status-item">
+            <span class="status-badge status-{{@model.testing}}">
+              Testing {{@model.testingText}}
+            </span>
+          </li>
+        </ul>
         <article class="px-4 py-5 sm:p-6 article">
             {{!-- template-lint-disable no-triple-curlies --}}
             {{{@model.html}}}
@@ -48,7 +44,7 @@
                   {{/if}}
                 </li>
               {{else}}
-                <li class="bg-white dark:bg-gray-700 shadow overflow-hidden rounded-md px-6 py-4">
+                <li class="flex-auto py-2">
                   No relevant criterion found.
                 </li>
               {{/each}}

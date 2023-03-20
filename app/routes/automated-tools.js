@@ -63,7 +63,7 @@ export default class AutomatedToolsRoute extends Route {
         description: 'Custom Jest matcher for axe for testing accessibility.',
         link: 'https://github.com/nickcolley/jest-axe#readme'
       }, {
-        title: 'Pally',
+        title: 'Pa11y',
         category: 'Testing Tool',
         description: 'A command-line tool for testing the accessibility of any URL.',
         link: 'https://pa11y.org/'
@@ -107,7 +107,12 @@ export default class AutomatedToolsRoute extends Route {
         category: 'AT Automation',
         description: 'Utilities to match the speech output of screen readers when replaying user interactions.',
         link: 'https://github.com/eps1lon/screen-reader-testing-library'
-      }, 
+      }, {
+        title: 'keyboard-testing-library',
+        category: 'Testing Library',
+        description: 'An extension of Testing Library focused on simulating keyboard-only users behaviors ',
+        link: 'https://www.npmjs.com/package/keyboard-testing-library'
+      },
     ];
 
     tools.sort((a, b) => (a.category > b.category) ? 1 : -1)
