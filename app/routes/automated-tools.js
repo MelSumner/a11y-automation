@@ -83,9 +83,19 @@ export default class AutomatedToolsRoute extends Route {
         description: 'AccessLint brings automated web accessibility testing into your development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live.',
         link: 'https://github.com/marketplace/accesslint'
       }, {
-        title: 'equal-access',
-        category: 'Browser Extension, Testing Engine, Testing Library',
-        description: 'IBM Equal Access Accessibility Checker contains tools to automate accessibility checking from a browser or in a continuous development/build environment.',
+        title: 'equal-access accessibility-checker extension',
+        category: 'Browser Extension',
+        description: 'Adds automated accessibility checking capabilities to Firefox and Chromium browsers. Part of the IBM Equal Access Accessibility Checker suite.',
+        link: 'https://github.com/IBMa/equal-access'
+      }, {
+        title: 'equal-access accessibility-checker engine',
+        category: 'Testing Engine',
+        description: 'IBM accessibility rules and evaluation engine to help users to check their web pages to identify and report accessibility issues. Part of the IBM Equal Access Accessibility Checker suite.',
+        link: 'https://github.com/IBMa/equal-access/blob/master/accessibility-checker-engine/README.md'
+      }, {
+        title: 'equal-access accessibility-checker testing libraries',
+        category: 'Testing Library',
+        description: 'Automated accessibility testing for Node.js-based, Cypress, or Karma test runners. Part of the IBM Equal Access Accessibility Checker suite.',
         link: 'https://github.com/IBMa/equal-access'
       }, {
         title: 'JAWS Inspect',
