@@ -72,12 +72,16 @@ export default class AutomatedToolsRoute extends Route {
         category: 'Testing Engine',
         description: 'A accessibility testing engine for JavaScript.',
         link: 'https://github.com/dequelabs/axe-core'
-      },
-      {
+      }, {
         title: 'keyboard-testing-library',
-        category: 'Testing Tool',
-        description: 'An extension of Testing Library focused on simulating keyboard-only users behaviors ',
+        category: 'Testing Library',
+        description: 'An extension of Testing Library focused on simulating keyboard-only users behaviors.',
         link: 'https://www.npmjs.com/package/keyboard-testing-library'
+      }, {
+        title: 'Luma',
+        category: 'Testing Tool',
+        description: 'A powerful and accurate photosensitive epilepsy seizure triggers detection tool.',
+        link: 'https://www.includia.com/luma/upload'
       },
     ];
 
