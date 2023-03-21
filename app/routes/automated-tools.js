@@ -72,10 +72,54 @@ export default class AutomatedToolsRoute extends Route {
         category: 'Testing Engine',
         description: 'A accessibility testing engine for JavaScript.',
         link: 'https://github.com/dequelabs/axe-core'
-      },
-      {
-        title: 'keyboard-testing-library',
+      }, {
+        title: 'alfa',
+        category: 'Testing Engine',
+        description: 'Suite of open and standards-based tools for performing reliable accessibility conformance testing at scale.',
+        link: 'https://github.com/Siteimprove/alfa'
+      }, {
+        title: 'AccessLint',
+        category: 'Code Linter (Static)',
+        description: 'AccessLint brings automated web accessibility testing into your development workflow. When a pull request is opened, AccessLint reviews the changes and comments with any new accessibility issues, giving you quick, timely, and targeted feedback, before code goes live.',
+        link: 'https://github.com/marketplace/accesslint'
+      }, {
+        title: 'equal-access accessibility-checker extension',
+        category: 'Browser Extension',
+        description: 'Adds automated accessibility checking capabilities to Firefox and Chromium browsers. Part of the IBM Equal Access Accessibility Checker suite.',
+        link: 'https://github.com/IBMa/equal-access'
+      }, {
+        title: 'equal-access accessibility-checker engine',
+        category: 'Testing Engine',
+        description: 'IBM accessibility rules and evaluation engine to help users to check their web pages to identify and report accessibility issues. Part of the IBM Equal Access Accessibility Checker suite.',
+        link: 'https://github.com/IBMa/equal-access/blob/master/accessibility-checker-engine/README.md'
+      }, {
+        title: 'equal-access accessibility-checker testing libraries',
+        category: 'Testing Library',
+        description: 'Automated accessibility testing for Node.js-based, Cypress, or Karma test runners. Part of the IBM Equal Access Accessibility Checker suite.',
+        link: 'https://github.com/IBMa/equal-access'
+      }, {
+        title: 'JAWS Inspect',
         category: 'Testing Tool',
+        description: 'A screen reader testing tool that vastly simplifies accessibility and JAWS® compatibility testing by providing a text output of JAWS speech.',
+        link: 'https://www.tpgi.com/arc-platform/jaws-inspect/'
+      }, {
+        title: 'AccessLint/screenreaders',
+        category: 'AT Automation',
+        description: 'Screen reader automation tools by AccessLint, including VoiceOver.js and Auto-VO.',
+        link: 'https://github.com/AccessLint/screenreaders'
+      }, {
+        title: 'Assistive-Webdriver',
+        category: 'AT Automation',
+        description: 'Assistive-Webdriver is a tool to automate end-to-end web application tests with a screen reader.',
+        link: 'https://github.com/AmadeusITGroup/Assistive-Webdriver'
+      }, {
+        title: 'screen-reader-testing-library',
+        category: 'AT Automation',
+        description: 'Utilities to match the speech output of screen readers when replaying user interactions.',
+        link: 'https://github.com/eps1lon/screen-reader-testing-library'
+      }, {
+        title: 'keyboard-testing-library',
+        category: 'Testing Library',
         description: 'An extension of Testing Library focused on simulating keyboard-only users behaviors ',
         link: 'https://www.npmjs.com/package/keyboard-testing-library'
       },
