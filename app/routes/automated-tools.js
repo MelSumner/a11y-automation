@@ -127,7 +127,12 @@ export default class AutomatedToolsRoute extends Route {
         category: 'Testing Tool',
         description: 'A powerful and accurate photosensitive epilepsy seizure triggers detection tool.',
         link: 'https://www.includia.com/luma/upload'
-      },
+      }, {
+        title: 'Guidepup',
+        category: 'AT Automation',
+        description: 'Screen reader driver for test automation, including VoiceOver and NVDA.',
+        link: 'https://www.guidepup.dev/'
+      }
     ];
 
     tools.sort((a, b) => (a.category > b.category) ? 1 : -1)
