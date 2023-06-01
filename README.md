@@ -48,4 +48,4 @@ To add a new tag file, you can add one manually to the `tags` folder, or you can
 If you have any questions, suggestions or concerns, the best way to resolve them is to file an issue on this repo and I'll respond ASAP. I'll also try to list questions I've already been asked, in case you are wondering about it as well.
 
 ### Inclusion in Documentation
-Although this app currently only tracks linting from `ember-template-lint` and testing from `axe-core`, PRs are welcome to add additional linting and testing libraries. Please follow the format in the existing violations to allow your PR to be accepted/merged more readily.
+Although this app currently tracks linting from ember-template-lint and testing from axe-core, we have expanded support to include linting for other JavaScript frameworks. If you want to contribute linting support for other frameworks, please follow the format in the existing violations to allow your PR to be accepted/merged more readily.
