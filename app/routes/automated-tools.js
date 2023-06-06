@@ -127,6 +127,16 @@ export default class AutomatedToolsRoute extends Route {
         category: 'Testing Tool',
         description: 'A powerful and accurate photosensitive epilepsy seizure triggers detection tool.',
         link: 'https://www.includia.com/luma/upload'
+      }, {
+        title: 'Sa11y',
+        category: 'Testing Tool',
+        description: 'A customizable, framework-agnostic content accessibility checker geared towards content authors. Sa11y straightforwardly identifies errors or warnings at the source with a simple tooltip on how to fix them.',
+        link: 'https://sa11y.netlify.app/'
+      }, {
+        title: 'Editoria11y',
+        category: 'Testing Tool',
+        description: 'A user-friendly automatic content accessibility checker.',
+        link: 'https://editoria11y.princeton.edu/'
       },
     ];
 
