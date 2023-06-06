@@ -46,7 +46,7 @@
     "ember-get-config": "1.1.0",
     "ember-load-initializers": "2.1.2",
     "ember-maybe-import-regenerator": "1.0.0",
-    "ember-qunit": "4.6.0",
+    "ember-qunit": "6.2.0",
     "ember-resolver": "8.1.0",
     "ember-source": "3.28.11",
     "ember-template-lint": "3.16.0",
