@@ -128,6 +128,11 @@ export default class AutomatedToolsRoute extends Route {
         description: 'A powerful and accurate photosensitive epilepsy seizure triggers detection tool.',
         link: 'https://www.includia.com/luma/upload'
       }, {
+        title: 'Guidepup',
+        category: 'AT Automation',
+        description: 'Screen reader driver for test automation, including VoiceOver and NVDA.',
+        link: 'https://www.guidepup.dev/'
+      }, {
         title: 'Sa11y',
         category: 'Testing Tool',
         description: 'A customizable, framework-agnostic content accessibility checker geared towards content authors. Sa11y straightforwardly identifies errors or warnings at the source with a simple tooltip on how to fix them.',
