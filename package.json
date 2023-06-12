@@ -40,7 +40,7 @@
     "ember-cli-sri": "2.1.1",
     "ember-cli-terser": "4.0.2",
     "ember-composable-helpers": "5.0.0",
-    "ember-data": "3.28.10",
+    "ember-data": "5.0.0",
     "ember-export-application-global": "2.0.1",
     "ember-fetch": "8.1.2",
     "ember-get-config": "1.1.0",
