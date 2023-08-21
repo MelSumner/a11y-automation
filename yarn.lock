@@ -3648,10 +3648,10 @@ broccoli-sri-hash@^2.1.0:
     sri-toolbox "^0.2.0"
     symlink-or-copy "^1.0.1"
 
-broccoli-static-site-json@4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/broccoli-static-site-json/-/broccoli-static-site-json-4.4.1.tgz#56b5373822db4156842fd59fbe13d91da26565c9"
-  integrity sha512-5XzFxOHYvY/x9kaW4fQl3BTu7wvlEKCW79XiIYNR7y6K47VUbXIznwmlJeC7dEArVamUjMqf+UAnVJmK1EowUQ==
+broccoli-static-site-json@4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/broccoli-static-site-json/-/broccoli-static-site-json-4.5.0.tgz#dc194eeacf92c640e0472cebef7b2e375fcc39a8"
+  integrity sha512-7lJUSQo8ESi+APskyKTaBBhk1wm1b0aWFv7G593TFIMDhlwxik48dbCvR47wzSCRQNnV/3k8iIzUp3Bz+BE4/w==
   dependencies:
     broccoli-funnel "^3.0.0"
     broccoli-merge-trees "^4.0.0"
