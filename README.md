@@ -5,7 +5,6 @@
 
 * [Introduction](#introduction)
 * [Installation](#installation)
-* [Usage](#usage)
 * [Contributing](#contributing)
 * [Questions, Suggestions, or Concerns](#questions-suggestions-or-concerns)
 
