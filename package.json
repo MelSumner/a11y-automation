@@ -24,8 +24,6 @@
     "@fullhuman/postcss-purgecss": "5.0.0",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
-    "@tailwindcss/forms": "0.5.7",
-    "@tailwindcss/typography": "0.5.10",
     "babel-eslint": "10.1.0",
     "broccoli-asset-rev": "3.0.0",
     "ember-auto-import": "1.12.2",
@@ -58,11 +56,10 @@
     "npm-run-all": "4.1.5",
     "postcss-import": "14.1.0",
     "prember": "2.0.0",
-    "qunit-dom": "2.0.0",
-    "tailwindcss": "2.2.19"
+    "qunit-dom": "2.0.0"
   },
   "engines": {
-    "node": "14.* || 16.* || >= 18"
+    "node": "18.* || >= 20"
   },
   "ember": {
     "edition": "octane"

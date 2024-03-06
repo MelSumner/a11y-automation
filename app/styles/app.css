@@ -1,9 +1,5 @@
-@import "tailwindcss/base";
-
-@import "tailwindcss/components";
+@import "refactor-me.css";
 @import "components.css";
-
-@import "tailwindcss/utilities";
 @import "utilities.css";
 
 :root {
