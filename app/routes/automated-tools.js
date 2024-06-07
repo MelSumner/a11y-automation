@@ -6,7 +6,7 @@ export default class AutomatedToolsRoute extends Route {
       { title: 'ember-a11y-testing',
         category: 'Testing Library',
         description: 'Accessibility testing for Ember apps; provides middleware that allows the browser to talk to the node process running the tests via testem.',
-        link: 'https://github.com/ember-a11y/ember-a11y-testing' 
+        link: 'https://github.com/ember-a11y/ember-a11y-testing'
       },
       { title: 'ember-template-lint',
         category: 'Code Linter (Static)',
@@ -143,6 +143,12 @@ export default class AutomatedToolsRoute extends Route {
         description: 'A user-friendly automatic content accessibility checker.',
         link: 'https://editoria11y.princeton.edu/'
       },
+      {
+        title: 'ANDI (Accessible Name & Description Inspector)',
+        category: 'Browser Extension',
+        description: 'ANDI is a free open-source tool that can be used to test websites for conformance to the Web Content Accessibility Guidelines (WCAG) 2.0 Level A and AA success criteria.',
+        link: 'https://www.ssa.gov/accessibility/andi/help/install.html'
+      }
     ];
 
     tools.sort((a, b) => (a.category > b.category) ? 1 : -1)
