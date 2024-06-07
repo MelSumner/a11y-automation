@@ -14,7 +14,7 @@
             {{#each @model as |tool|}}
             <li class="col-span-1 bg-white rounded-lg shadow divide-y divide-gray-200 flex flex-col justify-between">
               <div class="grow shrink-0 w-full flex flex-row flex-wrap p-6">
-                <a href={{tool.link}} class="w-full items-center justify-center py-2 text-sm font-medium border border-transparent text-indigo-700 visited:text-purple-800 hover:text-indigo-800 underline">{{tool.title}}</a>
+                <a href={{tool.link}} class="w-full items-center justify-center py-2 text-sm font-medium border border-transparent text-indigo-700 dark:text-indigo-700 visited:text-purple-800 hover:text-indigo-800 underline">{{tool.title}}</a>
                 <p class="mt-1 mb-2 text-gray-500 text-sm w-full">{{tool.description}}</p>
               </div>
               <div class="grow-0 w-full flex flex-row justify-end divide-x divide-gray-200 py-4 px-2 place-self-end self-end h-fit">
