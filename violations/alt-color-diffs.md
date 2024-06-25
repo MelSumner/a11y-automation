@@ -1,5 +1,5 @@
 ---
-title: Color Differences in Alt Text
+title: Incorrect `alt` attribute value
 tags: 
   - failure-13
   - wcag-1-1-1
