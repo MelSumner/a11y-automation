@@ -1,5 +1,5 @@
 ---
-title: Blink Element Use
+title: Obsolete `blink` use
 tags: 
   - failure-47
   - wcag-2-2-2
