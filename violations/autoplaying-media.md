@@ -1,5 +1,5 @@
 ---
-title: Autoplaying Media
+title: Incorrect media element attribute (autoplay)
 tags: 
   - wcag-1-4-2
   - failure-93
