@@ -1,5 +1,5 @@
 ---
-title: Area Elements Missing Alt Attribute
+title: Missing `area` attribute (`alt`)
 tags:
   - wcag-1-1-1
   - wcag-2-4-4
