@@ -1,5 +1,5 @@
 ---
-title: Background Image Lacks Contrast
+title: Invalid image background color contrast
 tags: 
   - wcag-1-4-3
   - wcag-1-4-6
@@ -13,6 +13,8 @@ manual: mustexist
 ## Point of Failure
 
 Background images should provide sufficient contrast with foreground text.
+
+Practically speaking, why use an image of text, anyway? Just use text.
 
 ## Automation
 
