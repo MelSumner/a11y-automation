@@ -1,5 +1,5 @@
 ---
-title: Invalid Text for Buttons and Links
+title: Invalid button/link text
 tags: 
   - failure-84
   - wcag-1-3-1
@@ -11,7 +11,7 @@ manual: shouldexist
 
 ## Point of Failure
 
-Buttons and links should not use "more" as the text
+Buttons and links should not use non-descriptive, non-unique words or phrases as the element's text content. Examples include "read more", "more", "read about it here", "click here". 
 
 ## Automation
 
