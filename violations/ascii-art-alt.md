@@ -1,5 +1,5 @@
 ---
-title: ASCII Art Missing Text Alternative
+title: Missing ASCII art text alternative
 tags: 
   - failure-72
   - wcag-1-1-1
