@@ -2,7 +2,7 @@
 title: Missing table header text
 tags: 
   - wcag-1-3-1
-  - wcag-4-2-1
+  - wcag-4-1-2
 linting: couldexist
 testing: couldexist
 author: couldexist
