@@ -1,5 +1,5 @@
 ---
-title: Character Entities Without Text Alternative
+title: Missing character entity text alternative
 tags: 
   - wcag-1-1-1
 linting: couldexist

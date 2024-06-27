@@ -1,5 +1,5 @@
 ---
-title: Interactive Elements & Focus
+title: Missing interactive element focus
 tags: 
   - wcag-2-1-1
 linting: couldexist

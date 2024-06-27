@@ -1,5 +1,5 @@
 ---
-title: Server-side Image Maps
+title: Invalid server-side image map use
 tags: 
   - wcag-2-1-1
 linting: cannotexist

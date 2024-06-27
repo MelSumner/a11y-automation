@@ -1,5 +1,5 @@
 ---
-title: Text Spacing
+title: Obscured text when spacing is adjusted
 tags: 
   - wcag-1-4-12
   - failure-104

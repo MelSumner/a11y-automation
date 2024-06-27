@@ -1,5 +1,5 @@
 ---
-title: Hoverable Content Is Unusable
+title: Unusable hoverable content
 tags: 
   - wcag-1-4-13
   - failure-95

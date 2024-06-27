@@ -1,5 +1,5 @@
 ---
-title: Missing Bypass Block
+title: Missing bypass block
 tags:
   - wcag-2-4-1
 linting: couldexist

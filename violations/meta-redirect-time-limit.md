@@ -1,5 +1,5 @@
 ---
-title: Meta Redirect with Time Limit
+title: Invalid meta redirect
 tags: 
   - wcag-2-2-1
   - wcag-2-2-4

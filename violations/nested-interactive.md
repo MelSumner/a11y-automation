@@ -1,5 +1,5 @@
 ---
-title: Nested Interactive Elements
+title: Nested interactive elements
 tags:
   - wcag-4-1-2
 linting: exists

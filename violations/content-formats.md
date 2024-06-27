@@ -1,5 +1,5 @@
 ---
-title: Multiple Content Formats Causing Trap
+title: Keyboard trap due to multiple content formats
 tags: 
   - wcag-2-1-2
   - failure-10
@@ -25,7 +25,7 @@ Cannot Exist Yet. If you an idea about how this could be tested in an automated 
 
 ### Developer Authored Test
 
-Developers should avoid doing this- it increases the chance that something will go terribly wrong and will take weeks to debug. But if developers choose to engage in risky behavior, they should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
+Developers should avoid using multiple content formats- it increases the chance that something will go terribly wrong and will take weeks to debug. But if developers choose to engage in risky behavior, they should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
 

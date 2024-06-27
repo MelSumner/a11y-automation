@@ -1,5 +1,5 @@
 ---
-title: Use of Obsolete Elements
+title: Use of obsolete elements
 tags:
   - wcag-2-2-2
 linting: exists

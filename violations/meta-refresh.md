@@ -1,5 +1,5 @@
 ---
-title: Meta Refresh For Page Reload
+title: Invalid meta refresh
 tags: 
   - wcag-2-2-1
   - wcag-2-2-4

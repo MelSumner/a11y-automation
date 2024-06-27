@@ -1,5 +1,5 @@
 ---
-title: Multiple Main Landmark Elements
+title: Multiple main landmark elements exist
 tags:
   - wcag-1-1-1
 linting: cannotexist

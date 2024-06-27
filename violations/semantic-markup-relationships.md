@@ -1,5 +1,5 @@
 ---
-title: Structural Markup
+title: Malformed structural markup
 tags: 
   - wcag-1-3-1
 linting: couldexist

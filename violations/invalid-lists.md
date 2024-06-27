@@ -1,5 +1,5 @@
 ---
-title: Incorrectly Structured Lists
+title: Malformed list element
 tags: 
   - wcag-1-3-1
 linting: couldexist

@@ -1,5 +1,5 @@
 ---
-title: No Blink Without Pause
+title: Missing element pause when blink is used
 tags:
   - wcag-2-2-2
   - failure-50

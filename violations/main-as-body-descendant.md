@@ -1,5 +1,5 @@
 ---
-title: Main As Body Descendant
+title: Misplaced main element
 tags: 
   - wcag-1-3-1
 linting: cannotexist

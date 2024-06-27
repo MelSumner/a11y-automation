@@ -1,5 +1,5 @@
 ---
-title: Keyboard Interaction (Tabs)
+title: Missing tab element keyboard support
 tags: 
   - wcag-2-1-1
 linting: cannotexist

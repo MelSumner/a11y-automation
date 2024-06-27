@@ -1,5 +1,5 @@
 ---
-title: Focus Removed
+title: Missing element focus
 tags: 
   - wcag-2-1-1
   - wcag-1-4-7

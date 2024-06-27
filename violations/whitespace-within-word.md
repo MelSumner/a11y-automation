@@ -1,5 +1,5 @@
 ---
-title: Whitespace Within Word
+title: Invalid use of whitespace within word
 tags: 
   - wcag-1-3-2
   - failure-32

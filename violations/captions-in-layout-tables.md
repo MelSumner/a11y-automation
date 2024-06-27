@@ -1,5 +1,5 @@
 ---
-title: Caption Elements in Layout Tables
+title: Invalid caption elements in layout tables
 tags: 
   - failure-46
   - wcag-1-3-1

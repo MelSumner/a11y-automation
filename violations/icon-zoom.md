@@ -1,5 +1,5 @@
 ---
-title: Icons & Active Browser Zoom
+title: Missing icon scaling on zoom
 tags: 
   - wcag-1-4-4
 linting: cannotexist

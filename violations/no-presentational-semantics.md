@@ -1,5 +1,5 @@
 ---
-title: Presentational Semantic Elements
+title: Invalid semantic element role
 tags: 
   - wcag-1-3-1
 linting: exists
@@ -9,7 +9,7 @@ manual: exists
 ---
 
 ## Point of Failure
-The `role="presentation"` or `"none"` should not be used on content that conveys semantic information. 
+The `role="presentation"` or `"none"` should not be used on content that conveys semantic information.
 
 ## Automation
 

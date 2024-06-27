@@ -1,5 +1,5 @@
 ---
-title: CSS Positioning Changes Content Meaning
+title: Inconsistent content meaning from CSS positioning changes
 tags: 
   - wcag-1-3-2
   - failure-1

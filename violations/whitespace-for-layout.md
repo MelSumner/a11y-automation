@@ -1,5 +1,5 @@
 ---
-title: Whitespace For Layout
+title: Invalid use of whitespace for layout
 tags: 
   - wcag-1-3-1
   - wcag-1-3-2

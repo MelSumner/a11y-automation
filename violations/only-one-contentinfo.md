@@ -1,5 +1,5 @@
 ---
-title: Only One Contentinfo Landmark
+title: Mulitple contentinfo landmark elements exist
 tags: 
 - wcag-1-3-1
 linting: cannotexist

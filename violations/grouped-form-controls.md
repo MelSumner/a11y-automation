@@ -1,5 +1,5 @@
 ---
-title: Grouped Form Controls
+title: Missing form control groups
 tags: 
   - wcag-1-3-1
 linting: couldexist

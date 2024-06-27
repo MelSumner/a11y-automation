@@ -1,5 +1,5 @@
 ---
-title: Synchronized Media
+title: Missing synchronized media captions
 tags: 
   - wcag-1-2-2
 linting: cannotexist

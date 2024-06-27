@@ -1,5 +1,5 @@
 ---
-title: Missing Alt Attribute
+title: Missing element alt attribute
 tags: 
   - wcag-1-1-1
   - failure-20

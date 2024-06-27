@@ -1,5 +1,5 @@
 ---
-title: Multiple Landmarks
+title: Missing unique landmark element titles
 tags: 
   - wcag-1-3-1
 linting: exists

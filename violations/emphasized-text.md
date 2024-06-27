@@ -1,5 +1,5 @@
 ---
-title: CSS for Visual Emphasis
+title: Invalid visual emphasis through CSS
 tags: 
   - wcag-1-3-1
 linting: couldexist

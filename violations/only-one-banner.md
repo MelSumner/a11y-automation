@@ -1,5 +1,5 @@
 ---
-title: Single Banner Landmark
+title: Multiple banner landmarks exist
 tags: 
   - wcag-1-3-1
 linting: cannotexist

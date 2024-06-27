@@ -1,5 +1,5 @@
 ---
-title: Form Elements & Labels
+title: Missing form element label
 tags: 
   - wcag-1-3-1
   - wcag-4-1-2

@@ -1,5 +1,5 @@
 ---
-title: Missing H1 Element
+title: Missing H1 element
 tags:
   - wcag-2-4-6
   - best-practice

@@ -1,5 +1,5 @@
 ---
-title: The pre Element & Tables
+title: Invalid pre element use for tabular data
 tags: 
   - wcag-1-3-1
 linting: cannotexist

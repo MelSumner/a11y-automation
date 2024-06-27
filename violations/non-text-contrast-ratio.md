@@ -1,5 +1,5 @@
 ---
-title: Non-text Contrast Ratio
+title: Invalid non-text contrast ratio
 tags: 
   - wcag-1-4-1
 linting: couldexist

@@ -1,5 +1,5 @@
 ---
-title: Missing Page Title
+title: Missing page title
 tags:
   - wcag-2-4-2
 linting: exists
