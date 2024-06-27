@@ -1,7 +1,8 @@
 ---
-title: Blank Table Header Elements
+title: Missing table header text
 tags: 
   - wcag-1-3-1
+  - wcag-4-1-2
 linting: couldexist
 testing: couldexist
 author: couldexist
@@ -20,7 +21,7 @@ Potentially Automatable.
 
 ### Testing
 
-Potentially Automatable.
+See the [axe-core](https://github.com/dequelabs/axe-core) library for the [empty-table-header](https://dequeuniversity.com/rules/axe/4.9/empty-table-header?application=RuleDescription) rule.
 
 ### Developer Authored Test
 
