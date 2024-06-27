@@ -1,5 +1,5 @@
 ---
-title: Invalid Roles
+title: Invalid element role
 tags: 
   - wcag-1-3-1
 linting: exists

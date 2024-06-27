@@ -1,5 +1,5 @@
 ---
-title: Faux Headings Via CSS
+title: Faux headings via CSS
 tags: 
   - failure-2
   - wcag-1-3-1

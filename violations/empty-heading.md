@@ -1,5 +1,5 @@
 ---
-title: Empty Heading
+title: Missing heading text
 tags:
   - wcag-1-3-1
   - wcag-2-4-6

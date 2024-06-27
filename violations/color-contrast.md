@@ -1,5 +1,5 @@
 ---
-title: Color Contrast Insufficient
+title: Insufficient color contrast
 tags: 
   - wcag-1-4-3
 linting: couldexist

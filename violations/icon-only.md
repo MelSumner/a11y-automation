@@ -1,5 +1,5 @@
 ---
-title: Icon Only
+title: Missing icon text (ACCNAME)
 tags: 
   - wcag-1-3-3
 linting: couldexist

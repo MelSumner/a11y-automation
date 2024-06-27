@@ -1,5 +1,5 @@
 ---
-title: Color Specification
+title: Missing color/background-color property specification
 tags: 
   - wcag-1-4-3
   - wcag-1-4-6

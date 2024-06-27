@@ -1,5 +1,5 @@
 ---
-title: Table Titles
+title: Malformed table elements
 tags: 
   - wcag-1-3-1
 linting: couldexist

@@ -1,5 +1,5 @@
 ---
-title: Use of Blink
+title: Invalid use of text-decoration
 tags:
   - wcag-2-2-2
   - failure-4

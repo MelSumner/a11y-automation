@@ -1,5 +1,5 @@
 ---
-title: Complementary Landmark Misplaced
+title: Misplaced complementary landmark
 tags: 
   - wcag-1-3-1
 linting: cannotexist

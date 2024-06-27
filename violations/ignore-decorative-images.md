@@ -1,5 +1,5 @@
 ---
-title: Ignore Decorative Images
+title: Malformed image markup for decorative images
 tags: 
   - wcag-1-1-1
 linting: exists 

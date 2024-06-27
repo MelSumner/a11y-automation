@@ -1,5 +1,5 @@
 ---
-title: Interactive Elements (Keyboard)
+title: Missing interactive element keyboard support
 tags: 
   - wcag-2-1-1
 linting: cannotexist

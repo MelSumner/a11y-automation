@@ -1,5 +1,5 @@
 ---
-title: Links Styled As Text
+title: Incorrect link styling
 tags: 
   - wcag-1-4-1
 linting: couldexist

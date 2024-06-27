@@ -1,5 +1,5 @@
 ---
-title: Incorrect Page Title
+title: Incorrect page title
 tags:
     - failure-25
     - wcag-2-4-2

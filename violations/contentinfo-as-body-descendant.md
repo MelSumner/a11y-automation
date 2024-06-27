@@ -1,5 +1,5 @@
 ---
-title: Contentinfo Element Incorrectly Placed
+title: Misplaced contentinfo landmark element
 tags: 
   - wcag-1-3-1
 linting: cannotexist

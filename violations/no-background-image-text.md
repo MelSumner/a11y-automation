@@ -1,5 +1,5 @@
 ---
-title: Text in Background Images
+title: Invalid background image
 tags: 
   - wcag-1-1-1
 linting: cannotexist 

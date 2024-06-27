@@ -1,5 +1,5 @@
 ---
-title: Invalid Interactive Elements
+title: Invalid interactive elements
 tags:
   - wcag-1-3-1
   - wcag-4-1-2
@@ -11,7 +11,7 @@ manual: shouldexist
 
 ## Point of Failure
 
-There are only certain elements that are eligibile to receive interactions (and focus), and these are specified by the HTML specification. Specifically, name and role must be able to be programmatically determined.
+There are only certain elements that are eligible to receive interactions (and focus), and these are specified by the HTML specification. Specifically, name and role must be able to be programmatically determined.
 
 ## Automation
 

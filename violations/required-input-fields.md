@@ -1,5 +1,5 @@
 ---
-title: Required Attribute Use
+title: Missing input element required attribute
 tags: 
   - wcag-1-3-1
 linting: couldexist
@@ -9,18 +9,23 @@ manual: mustexist
 ---
 
 ## Point of Failure
-Required `input` fields should use the HTML `required` attribute correctly 
+
+Required `input` fields should use the HTML `required` attribute correctly. This attribute is used to indicate that a field must be filled out before submitting a form.
 
 ## Automation
 
 ### Linting
+
 Potentially automatable.  
 
 ### Testing
+
 Potentially automatable. Check for presence of common required indicators and make sure the `required` attribute also exists.
 
 ### Developer Authored Test
+
 Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
 
 ### Manual Test
+
 Review input fields for common required indicators. Inspect the DOM to ensure that the `required` attribute is present on those fields.

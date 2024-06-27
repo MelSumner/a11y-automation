@@ -1,5 +1,5 @@
 ---
-title: Main Landmark Exists
+title: Missing main element
 tags:
   - wcag-1-3-1
 linting: cannotexist

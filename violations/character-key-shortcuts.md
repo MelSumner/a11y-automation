@@ -1,5 +1,5 @@
 ---
-title: Character Shortcuts Lack User Control
+title: Missing character shortcut controls
 tags: 
   - failure-99
   - wcag-2-1-4

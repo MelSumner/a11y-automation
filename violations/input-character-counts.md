@@ -1,5 +1,5 @@
 ---
-title: Input Character Counts
+title: Missing input character count availability
 tags: 
   - wcag-1-3-1
 linting: cannotexist

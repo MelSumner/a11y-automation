@@ -1,5 +1,5 @@
 ---
-title: Linearized Table Data
+title: Illogical table data when linearized
 tags:
   - failure-49
   - wcag-1-3-2

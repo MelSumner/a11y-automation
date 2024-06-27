@@ -1,5 +1,5 @@
 ---
-title: Positive Tabindex
+title: Invalid element tabindex attribute value
 tags:
   - wcag-2-4-3
   - failure-44

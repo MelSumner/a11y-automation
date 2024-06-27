@@ -1,5 +1,5 @@
 ---
-title: Shape & Location Only Identifiers
+title: Incorrect element identifiers (shape/location)
 tags: 
   - failure-14
   - wcag-1-3-3

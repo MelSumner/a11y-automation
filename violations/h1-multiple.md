@@ -1,5 +1,5 @@
 ---
-title: Multiple H1 Elements
+title: Multiple H1 elements
 tags:
   - wcag-2-4-6
   - best-practice

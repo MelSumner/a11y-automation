@@ -1,5 +1,5 @@
 ---
-title: Synchronized Media Text Alt
+title: Missing synchronized media text alternatives
 tags: 
   - wcag-1-2-2
   - wcag-1-2-8

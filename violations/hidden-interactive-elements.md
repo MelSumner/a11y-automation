@@ -1,5 +1,5 @@
 ---
-title: Hidden Interactive Elements
+title: Hidden interactive elements
 tags: 
   - wcag-1-3-1
   - wcag-4-1-2

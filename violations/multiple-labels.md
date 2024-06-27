@@ -1,5 +1,5 @@
 ---
-title: Multiple Labels for a Single Form Field
+title: Multiple input field labels
 tags:
   - wcag-3-2-2
 linting: exists

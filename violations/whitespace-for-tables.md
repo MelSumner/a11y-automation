@@ -1,5 +1,5 @@
 ---
-title: Whitespace for Table Formatting
+title: Invalid table formatting
 tags: 
   - wcag-1-3-1
   - wcag-1-3-2

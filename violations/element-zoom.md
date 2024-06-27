@@ -1,5 +1,5 @@
 ---
-title: Elements Overlap on Zoom
+title: Overlapped elements when zoom is used
 tags: 
   - wcag-1-4-4
 linting: cannotexist

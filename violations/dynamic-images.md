@@ -1,5 +1,5 @@
 ---
-title: Dynamic Images Missing Dynamic Alts
+title: Missing image dynamic alt attribute
 tags: 
   - wcag-1-1-1
   - wcag-4-1-2

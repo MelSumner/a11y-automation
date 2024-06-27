@@ -1,5 +1,5 @@
 ---
-title: Incomplete Captions
+title: Incomplete captions
 tags: 
   - failure-8
   - wcag-1-2-2
