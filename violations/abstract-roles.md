@@ -1,5 +1,5 @@
 ---
-title: Abstract Role Use
+title: Invalid use of abstract role
 tags:
   - wcag-1-3-1
 linting: exists
