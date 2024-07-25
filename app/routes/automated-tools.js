@@ -148,6 +148,12 @@ export default class AutomatedToolsRoute extends Route {
         category: 'Browser Extension',
         description: 'ANDI is a free open-source tool that can be used to test websites for conformance to the Web Content Accessibility Guidelines (WCAG) 2.0 Level A and AA success criteria.',
         link: 'https://www.ssa.gov/accessibility/andi/help/install.html'
+      },
+      {
+        title: 'Stark for Figma',
+        category: 'Design Tool',
+        description: 'Contrast & Accessibility Checker',
+        link: 'https://www.figma.com/community/plugin/732603254453395948/stark-contrast-accessibility-checker'
       }
     ];
 
