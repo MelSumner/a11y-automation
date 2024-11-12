@@ -20,7 +20,7 @@
     "test:ember": "ember test"
   },
   "devDependencies": {
-    "@ember/optional-features": "2.1.0",
+    "@ember/optional-features": "2.2.0",
     "@fullhuman/postcss-purgecss": "5.0.0",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
