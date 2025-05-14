@@ -1,7 +1,7 @@
 {
   "name": "a11y-automation",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "description": "an open-source project to track available accessibility automation tools",
   "repository": "https://github.com/MelSumner/a11y-automation",
   "license": "MIT",
