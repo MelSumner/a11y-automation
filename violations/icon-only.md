@@ -8,19 +8,42 @@ author: couldexist
 manual: mustexist
 ---
 
+<script setup>
+  const normalize = (value) => {
+    const v = (value || '').toLowerCase()
+    if (v === 'exists') return 'Exists'
+    if (v === 'couldexist') return 'Could Exist'
+    if (v === 'cannotexist') return 'Cannot Exist'
+    if (v === 'shouldexist') return 'Should Exist'
+    if (v === 'mustexist') return 'Must Exist'
+    return '—'
+  }
+</script>
+
+# Potential A11y Violation:<br/>{{ $frontmatter.title }}
+
 ## Point of Failure
 An icon should not be the only thing that conveys information to the user.
 
-## Automation
+## Available Automation Evaluation
 
-### Linting
-Potentially automatable. Search template for text nodes where the only item is an icon.
+In checking known available linting and testing tools, these are our findings.
 
-### Testing
-Potentially automatable. Search text nodes for icons and determine if they are the only item in the node.
+### Linting <Badge type="info">{{ normalize($frontmatter.linting) }}</Badge>
+It's possible that a linting rule could be created for this potential failure. Search template for text nodes where the only item is an icon.
 
-### Developer Authored Test
-Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
+### Testing <Badge type="info">{{ normalize($frontmatter.testing) }}</Badge>
+It's possible that a linting rule could be created for this potential failure. Search text nodes for icons and determine if they are the only item in the node.
 
-### Manual Test
+## Other Test Methods
+
+In addition to automated tests, there are other types of tests that could be conducted to prevent this potential violation.
+
+### Developer Authored Test <Badge type="info">{{ normalize($frontmatter.author) }}</Badge>
+Developers should make sure that their code does not violate this rule, and try to write a test that would prevent a regression in accessibility if the code is later changed.
+
+### Manual Test <Badge type="info">{{ normalize($frontmatter.manual) }}</Badge>
 Review page and ensure the point of failure does not exist, inspecting the DOM where required.
+
+
+<TagLinks />

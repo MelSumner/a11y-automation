@@ -2,80 +2,20 @@
   "name": "a11y-automation",
   "version": "0.0.0",
   "private": true,
-  "description": "a project to track available accessibility automation tools",
+  "description": "an open-source project to track available accessibility automation tools",
   "repository": "https://github.com/MelSumner/a11y-automation",
   "license": "MIT",
   "author": "Melanie Sumner <melaniersumner@gmail.com>",
-  "directories": {
-    "doc": "doc",
-    "test": "tests"
-  },
+  "contributors": [
+    "Joseph Sumner <josephdsumner@gmail.com>"
+  ],
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39",
   "scripts": {
-    "build": "ember build --environment=production",
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*",
-    "lint:hbs": "ember-template-lint .",
-    "lint:js": "eslint .",
-    "start": "ember serve",
-    "test": "npm-run-all lint:* test:*",
-    "test:ember": "ember test"
+    "docs:dev": "vitepress dev .",
+    "docs:build": "vitepress build .",
+    "docs:preview": "vitepress preview ."
   },
   "devDependencies": {
-    "@ember/optional-features": "2.1.0",
-    "@fullhuman/postcss-purgecss": "5.0.0",
-    "@glimmer/component": "1.1.2",
-    "@glimmer/tracking": "1.1.2",
-    "@tailwindcss/forms": "0.5.7",
-    "@tailwindcss/typography": "0.5.15",
-    "babel-eslint": "10.1.0",
-    "broccoli-asset-rev": "3.0.0",
-    "ember-auto-import": "1.12.2",
-    "ember-cli": "4.1.1",
-    "ember-cli-app-version": "6.0.1",
-    "ember-cli-babel": "7.26.11",
-    "ember-cli-dependency-checker": "3.3.2",
-    "ember-cli-fastboot": "4.1.5",
-    "ember-cli-htmlbars": "6.3.0",
-    "ember-cli-inject-live-reload": "2.1.0",
-    "ember-cli-postcss": "8.2.0",
-    "ember-cli-sri": "2.1.1",
-    "ember-cli-terser": "4.0.2",
-    "ember-composable-helpers": "5.0.0",
-    "ember-data": "3.28.13",
-    "ember-export-application-global": "2.0.1",
-    "ember-fetch": "8.1.2",
-    "ember-get-config": "2.1.1",
-    "ember-load-initializers": "2.1.2",
-    "ember-maybe-import-regenerator": "1.0.0",
-    "ember-qunit": "4.6.0",
-    "ember-resolver": "11.0.1",
-    "ember-source": "3.28.12",
-    "ember-template-lint": "3.16.0",
-    "ember-truth-helpers": "3.1.1",
-    "eslint": "7.32.0",
-    "eslint-plugin-ember": "10.6.1",
-    "eslint-plugin-node": "11.1.0",
-    "loader.js": "4.7.0",
-    "npm-run-all2": "5.0.2",
-    "postcss-import": "14.1.0",
-    "prember": "2.0.0",
-    "qunit-dom": "2.0.0",
-    "tailwindcss": "2.2.19"
-  },
-  "engines": {
-    "node": "14.* || 16.* || >= 18"
-  },
-  "ember": {
-    "edition": "octane"
-  },
-  "dependencies": {
-    "autoprefixer": "10.4.20",
-    "broccoli-static-site-json": "4.5.0",
-    "ember-a11y-refocus": "3.0.2",
-    "ember-cli-netlify": "0.4.1"
-  },
-  "ember-addon": {
-    "paths": [
-      "lib/content-generator"
-    ]
+    "vitepress": "2.0.0-alpha.5"
   }
 }

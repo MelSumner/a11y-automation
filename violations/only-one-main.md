@@ -8,24 +8,47 @@ author: couldexist
 manual: exists
 ---
 
+<script setup>
+  const normalize = (value) => {
+    const v = (value || '').toLowerCase()
+    if (v === 'exists') return 'Exists'
+    if (v === 'couldexist') return 'Could Exist'
+    if (v === 'cannotexist') return 'Cannot Exist'
+    if (v === 'shouldexist') return 'Should Exist'
+    if (v === 'mustexist') return 'Must Exist'
+    return '—'
+  }
+</script>
+
+# Potential A11y Violation:<br/>{{ $frontmatter.title }}
+
 ## Point of Failure
 
 A document should not have more than one `main` landmark.
 
-## Automation
+## Available Automation Evaluation
 
-### Linting
+In checking known available linting and testing tools, these are our findings.
 
-Cannot exist yet. We would need a way to identify that a specific template was a "page" template, and that it was the primary page template for the site.
+### Linting <Badge type="info">{{ normalize($frontmatter.linting) }}</Badge>
 
-### Testing
+It does not seem possible to have an automated test for this potential failure, yet. We would need a way to identify that a specific template was a "page" template, and that it was the primary page template for the site.
+
+### Testing <Badge type="info">{{ normalize($frontmatter.testing) }}</Badge>
 
 See the [`axe-core`](https://github.com/dequelabs/axe-core) library for the `landmark-no-duplicate-main` rule.
 
-### Developer Authored Test
+## Other Test Methods
 
-Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
+In addition to automated tests, there are other types of tests that could be conducted to prevent this potential violation.
 
-### Manual Test
+### Developer Authored Test <Badge type="info">{{ normalize($frontmatter.author) }}</Badge>
+
+Developers should make sure that their code does not violate this rule, and try to write a test that would prevent a regression in accessibility if the code is later changed.
+
+### Manual Test <Badge type="info">{{ normalize($frontmatter.manual) }}</Badge>
 
 Review page and ensure the point of failure does not exist, inspecting the DOM where required.
+
+
+<TagLinks />

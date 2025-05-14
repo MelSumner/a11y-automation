@@ -9,24 +9,47 @@ author: shouldexist
 manual: mustexist
 ---
 
+<script setup>
+  const normalize = (value) => {
+    const v = (value || '').toLowerCase()
+    if (v === 'exists') return 'Exists'
+    if (v === 'couldexist') return 'Could Exist'
+    if (v === 'cannotexist') return 'Cannot Exist'
+    if (v === 'shouldexist') return 'Should Exist'
+    if (v === 'mustexist') return 'Must Exist'
+    return '—'
+  }
+</script>
+
+# Potential A11y Violation:<br/>{{ $frontmatter.title }}
+
 ## Point of Failure
 
 ASCII art should not be used without providing a text alternative.
 
-## Automation
+## Available Automation Evaluation
 
-### Linting
+In checking known available linting and testing tools, these are our findings.
 
-There is no programmatic way to determine if something is ASCII art. Cannot Exist Yet. If you think it can, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
+### Linting <Badge type="info">{{ normalize($frontmatter.linting) }}</Badge>
 
-### Testing
+There is no programmatic way to determine if something is ASCII art. It does not seem possible to have an automated test for this potential failure, yet. If you think it can, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
 
-There is no programmatic way to determine if something is ASCII art, so this test cannot exist yet. If you think it can, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
+### Testing <Badge type="info">{{ normalize($frontmatter.testing) }}</Badge>
 
-### Developer Authored Test
+There is no programmatic way to determine if something is ASCII art, so it does not seem possible to have an automated test for this potential failure, yet. If you think it can, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
+
+## Other Test Methods
+
+In addition to automated tests, there are other types of tests that could be conducted to prevent this potential violation.
+
+### Developer Authored Test <Badge type="info">{{ normalize($frontmatter.author) }}</Badge>
 
 Developers should provide alternative text if ASCII art is used, and write a test to ensure that this code does not regress if changed.
 
-### Manual Test
+### Manual Test <Badge type="info">{{ normalize($frontmatter.manual) }}</Badge>
 
 A manual test must exist. Review the page, and determine if ASCII art exists. If it does, inspect the DOM and look for an appropriate `alt` attribute.
+
+
+<TagLinks />
