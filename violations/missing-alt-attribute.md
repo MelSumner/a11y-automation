@@ -14,15 +14,31 @@ author: couldexist
 manual: exists
 ---
 
+<script setup>
+  const normalize = (value) => {
+    const v = (value || '').toLowerCase()
+    if (v === 'exists') return 'Exists'
+    if (v === 'couldexist') return 'Could Exist'
+    if (v === 'cannotexist') return 'Cannot Exist'
+    if (v === 'shouldexist') return 'Should Exist'
+    if (v === 'mustexist') return 'Must Exist'
+    return '—'
+  }
+</script>
+
+# Potential A11y Violation:<br/>{{ $frontmatter.title }}
+
 ## Point of Failure
 
 The `alt` attribute should not be missing on `<img>` elements, `<area>` elements, `<object>` elements, `<input type="image"/>` elements, or elements with the `role` of img (such as `<svg>`).
 
-## Automation
+## Available Automation Evaluation
+
+In checking known available linting and testing tools, these are our findings.
 
 Automation exists for this WCAG violation, so that's super helpful for us!
 
-### Linting
+### Linting <Badge type="info">{{ normalize($frontmatter.linting) }}</Badge>
 
 These are the available linting rules for this violation:
 
@@ -31,7 +47,7 @@ These are the available linting rules for this violation:
 * Lit: [alt-text (lit)](https://github.com/open-wc/open-wc/blob/master/docs/docs/linting/eslint-plugin-lit-a11y/rules/alt-text.md)
 * React/JSX: [alt-text (jsx)](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/main/docs/rules/alt-text.md)
 
-### Testing
+### Testing <Badge type="info">{{ normalize($frontmatter.testing) }}</Badge>
 
 The [axe-core testing library](https://github.com/dequelabs/axe-core) offers several separate rules to support testing for this WCAG violation:
 
@@ -40,6 +56,9 @@ The [axe-core testing library](https://github.com/dequelabs/axe-core) offers sev
 * [input-image-alt](https://dequeuniversity.com/rules/axe/3.2/input-image-alt)
 * [area-alt](https://dequeuniversity.com/rules/axe/3.2/area-alt)
 
-### Manual Testing
+### Manual Test <Badge type="info">{{ normalize($frontmatter.manual) }}</Badge>ing
 
 If you are able to use the linting and testing libraries mentioned here, then you will need to manually test for this point of failure. Inspect the DOM, checking for the elements listed in the point of failure, and ensure that each have an `alt` attribute.
+
+
+<TagLinks />

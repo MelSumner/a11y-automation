@@ -9,28 +9,51 @@ author: couldexist
 manual: mustexist
 ---
 
+<script setup>
+  const normalize = (value) => {
+    const v = (value || '').toLowerCase()
+    if (v === 'exists') return 'Exists'
+    if (v === 'couldexist') return 'Could Exist'
+    if (v === 'cannotexist') return 'Cannot Exist'
+    if (v === 'shouldexist') return 'Should Exist'
+    if (v === 'mustexist') return 'Must Exist'
+    return '—'
+  }
+</script>
+
+# Potential A11y Violation:<br/>{{ $frontmatter.title }}
+
 ## Point of Failure
 
 Long descriptions for non-text content should serve the same purpose and present the same information (not more or less)
 
-## Automation
+## Available Automation Evaluation
 
-### Linting
+In checking known available linting and testing tools, these are our findings.
 
-Cannot exist yet. How would we programmatically be able to not only identify what should be compared but also compare the two and determine that they are the same?
+### Linting <Badge type="info">{{ normalize($frontmatter.linting) }}</Badge>
 
-If you have any thoughts on how to solve this problem, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
-
-### Testing
-
-Cannot exist yet. How would we programmatically be able to not only identify what should be compared but also compare the two and determine that they are the same?
+It does not seem possible to have an automated test for this potential failure, yet. How would we programmatically be able to not only identify what should be compared but also compare the two and determine that they are the same?
 
 If you have any thoughts on how to solve this problem, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
 
-### Developer Authored Test
+### Testing <Badge type="info">{{ normalize($frontmatter.testing) }}</Badge>
+
+It does not seem possible to have an automated test for this potential failure, yet. How would we programmatically be able to not only identify what should be compared but also compare the two and determine that they are the same?
+
+If you have any thoughts on how to solve this problem, please [file an issue on this app's GitHub Repository](https://github.com/MelSumner/a11y-automation/issues).
+
+## Other Test Methods
+
+In addition to automated tests, there are other types of tests that could be conducted to prevent this potential violation.
+
+### Developer Authored Test <Badge type="info">{{ normalize($frontmatter.author) }}</Badge>
 
 When adding long descriptions for non-text content, ensure that it presents the same information as is visible. Developers could even write a test that ensures the long description text is not changed.
 
-### Manual Test
+### Manual Test <Badge type="info">{{ normalize($frontmatter.manual) }}</Badge>
 
 A manual test must exist. Observe if there is any non-text content on the page, and inspect the DOM for long descriptions. Ensure that they serve the same purpose and present the same information, not more or less.
+
+
+<TagLinks />

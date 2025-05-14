@@ -8,19 +8,42 @@ author: cannotexist
 manual: mustexist
 ---
 
+<script setup>
+  const normalize = (value) => {
+    const v = (value || '').toLowerCase()
+    if (v === 'exists') return 'Exists'
+    if (v === 'couldexist') return 'Could Exist'
+    if (v === 'cannotexist') return 'Cannot Exist'
+    if (v === 'shouldexist') return 'Should Exist'
+    if (v === 'mustexist') return 'Must Exist'
+    return '—'
+  }
+</script>
+
+# Potential A11y Violation:<br/>{{ $frontmatter.title }}
+
 ## Point of Failure
 Synchronized media that provides more information than is presented in text on the page should have captions.
 
-## Automation
+## Available Automation Evaluation
 
-### Linting
-Cannot exist yet.
+In checking known available linting and testing tools, these are our findings.
 
-### Testing
-Cannot exist yet.
+### Linting <Badge type="info">{{ normalize($frontmatter.linting) }}</Badge>
+It does not seem possible to have an automated test for this potential failure, yet.
 
-### Developer Authored Test
-Developers should ensure that their code does not violate this rule, and write a test that prevents regressions in code if it is later changed.
+### Testing <Badge type="info">{{ normalize($frontmatter.testing) }}</Badge>
+It does not seem possible to have an automated test for this potential failure, yet.
 
-### Manual Test
+## Other Test Methods
+
+In addition to automated tests, there are other types of tests that could be conducted to prevent this potential violation.
+
+### Developer Authored Test <Badge type="info">{{ normalize($frontmatter.author) }}</Badge>
+Developers should make sure that their code does not violate this rule, and try to write a test that would prevent a regression in accessibility if the code is later changed.
+
+### Manual Test <Badge type="info">{{ normalize($frontmatter.manual) }}</Badge>
 Review media. If more information is presented in the media than is presented in the text on the page, ensure the media has captions.
+
+
+<TagLinks />

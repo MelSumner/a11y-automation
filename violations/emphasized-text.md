@@ -8,6 +8,20 @@ author: couldexist
 manual: exists
 ---
 
+<script setup>
+  const normalize = (value) => {
+    const v = (value || '').toLowerCase()
+    if (v === 'exists') return 'Exists'
+    if (v === 'couldexist') return 'Could Exist'
+    if (v === 'cannotexist') return 'Cannot Exist'
+    if (v === 'shouldexist') return 'Should Exist'
+    if (v === 'mustexist') return 'Must Exist'
+    return '—'
+  }
+</script>
+
+# Potential A11y Violation:<br/>{{ $frontmatter.title }}
+
 ## Point of Failure
 
 CSS should not be used to visually emphasize a word or phrase without conveying that emphasis through semantic HTML.
@@ -32,20 +46,29 @@ CSS should not be used to visually emphasize a word or phrase without conveying 
 <h1>Page Title</h1>
 ```
 
-## Automation
+## Available Automation Evaluation
 
-### Linting
+In checking known available linting and testing tools, these are our findings.
+
+### Linting <Badge type="info">{{ normalize($frontmatter.linting) }}</Badge>
 
 Potentially automatable through a CSS linter. Ensure there are no classes that do the same thing the `<strong>` or `<em>` elements do.
 
-### Testing
+### Testing <Badge type="info">{{ normalize($frontmatter.testing) }}</Badge>
 
 See `axe-core` library for `p-as-heading` rule.
 
-### Developer Authored Test
+## Other Test Methods
+
+In addition to automated tests, there are other types of tests that could be conducted to prevent this potential violation.
+
+### Developer Authored Test <Badge type="info">{{ normalize($frontmatter.author) }}</Badge>
 
 Developers should ensure that their code does not violate this rule.
 
-### Manual Test
+### Manual Test <Badge type="info">{{ normalize($frontmatter.manual) }}</Badge>
 
 Inspect DOM where words have been given emphasis or boldness. Ensure that the appropriate HTML element has been used instead of CSS.
+
+
+<TagLinks />

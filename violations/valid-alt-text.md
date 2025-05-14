@@ -1,5 +1,5 @@
 ---
-title: Invalid alt attribute value
+title: Invalid 'alt' attribute value
 tags:
   - wcag-1-1-1
   - wcag-1-2-1
@@ -9,24 +9,47 @@ author: couldexist
 manual: shouldexist
 ---
 
+<script setup>
+  const normalize = (value) => {
+    const v = (value || '').toLowerCase()
+    if (v === 'exists') return 'Exists'
+    if (v === 'couldexist') return 'Could Exist'
+    if (v === 'cannotexist') return 'Cannot Exist'
+    if (v === 'shouldexist') return 'Should Exist'
+    if (v === 'mustexist') return 'Must Exist'
+    return '—'
+  }
+</script>
+
+# Potential A11y Violation:<br/>{{ $frontmatter.title }}
+
 ## Point of Failure
 
-Alt text should not contain filenames or placeholder text
+The 'alt' attribute value should not contain filenames or placeholder text.
 
-## Automation
+## Available Automation Evaluation
 
-### Linting
+In checking known available linting and testing tools, these are our findings.
+
+### Linting <Badge type="info">{{ normalize($frontmatter.linting) }}</Badge>
 
 Ember Template Lint: [require-valid-alt-text](https://github.com/ember-template-lint/ember-template-lint/blob/master/docs/rule/require-valid-alt-text.md)
 
-### Testing
+### Testing <Badge type="info">{{ normalize($frontmatter.testing) }}</Badge>
 
-Potentially Automatable. Review require-valid-alt-text linting rule and adapt for testing.
+It's possible that a check could be created for this potential failure. Review require-valid-alt-text linting rule and adapt for testing.
 
-### Developer Authored Test
+## Other Test Methods
+
+In addition to automated tests, there are other types of tests that could be conducted to prevent this potential violation.
+
+### Developer Authored Test <Badge type="info">{{ normalize($frontmatter.author) }}</Badge>
 
 The developer should ensure that they do not use filenames or placeholder text for alt attribute values. A test should be written to ensure that the code does not regress if changed.
 
-### Manual Test
+### Manual Test <Badge type="info">{{ normalize($frontmatter.manual) }}</Badge>
 
-Observe if there are images on the page. If there are, inspect the DOM and ensure that the alt text does not contain filenames or placeholder text.
+Observe if there are images on the page. If there are, inspect the DOM and ensure that the alt attribute value does not contain filenames or placeholder text.
+
+
+<TagLinks />

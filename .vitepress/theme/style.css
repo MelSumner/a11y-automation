@@ -1,0 +1,492 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+/**
+ * Colors
+ *
+ * Each colors have exact same color scale system with 3 levels of solid
+ * colors with different brightness, and 1 soft color.
+ *
+ * - `XXX-1`: The most solid color used mainly for colored text. It must
+ *   satisfy the contrast ratio against when used on top of `XXX-soft`.
+ *
+ * - `XXX-2`: The color used mainly for hover state of the button.
+ *
+ * - `XXX-3`: The color for solid background, such as bg color of the button.
+ *   It must satisfy the contrast ratio with pure white (#ffffff) text on
+ *   top of it.
+ *
+ * - `XXX-soft`: The color used for subtle background such as custom container
+ *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
+ *   on top of it.
+ *
+ *   The soft color must be semi transparent alpha channel. This is crucial
+ *   because it allows adding multiple "soft" colors on top of each other
+ *   to create a accent, such as when having inline code block inside
+ *   custom containers.
+ *
+ * - `default`: The color used purely for subtle indication without any
+ *   special meanings attached to it such as bg color for menu hover state.
+ *
+ * - `brand`: Used for primary brand colors, such as link text, button with
+ *   brand theme, etc.
+ *
+ * - `tip`: Used to indicate useful information. The default theme uses the
+ *   brand color for this by default.
+ *
+ * - `warning`: Used to indicate warning to the users. Used in custom
+ *   container, badges, etc.
+ *
+ * - `danger`: Used to show error, or dangerous message to the users. Used
+ *   in custom container, badges, etc.
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-c-default-1: var(--vp-c-gray-1);
+  --vp-c-default-2: var(--vp-c-gray-2);
+  --vp-c-default-3: var(--vp-c-gray-3);
+  --vp-c-default-soft: var(--vp-c-gray-soft);
+
+  --vp-c-brand-1: var(--vp-c-indigo-1);
+  --vp-c-brand-2: var(--vp-c-indigo-2);
+  --vp-c-brand-3: var(--vp-c-indigo-3);
+  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+
+  --vp-c-warning-1: var(--vp-c-yellow-1);
+  --vp-c-warning-2: var(--vp-c-yellow-2);
+  --vp-c-warning-3: var(--vp-c-yellow-3);
+  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+
+  --vp-c-danger-1: var(--vp-c-red-1);
+  --vp-c-danger-2: var(--vp-c-red-2);
+  --vp-c-danger-3: var(--vp-c-red-3);
+  --vp-c-danger-soft: var(--vp-c-red-soft);
+}
+
+/**
+ * Component: Button
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--vp-c-white);
+  --vp-button-brand-bg: var(--vp-c-brand-3);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--vp-c-white);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--vp-c-white);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+}
+
+/**
+ * Component: Home
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #bd34fe 30%,
+    #41d1ff
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #bd34fe 50%,
+    #47caff 50%
+  );
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+@media (min-width: 640px) {
+  :root {
+    --vp-home-hero-image-filter: blur(56px);
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --vp-home-hero-image-filter: blur(68px);
+  }
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-custom-block-tip-border: transparent;
+  --vp-custom-block-tip-text: var(--vp-c-text-1);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
+  --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
+}
+
+/**
+ * Component: Algolia
+ * -------------------------------------------------------------------------- */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+/**
+ * Typography
+ * -------------------------------------------------------------------------- */
+
+ body {
+  font-size: 18px;
+  line-height: 2;
+ }
+
+ /* .vp-doc h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+ }
+ .vp-doc h2 {
+  font-size: 1.75rem;
+  line-height: 1.2;
+ }
+ .vp-doc h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+ } */
+
+ /**
+ * Search
+ * -------------------------------------------------------------------------- */
+.search-input--violations {
+  margin: 1rem 0;
+}
+.search--violations {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.25rem 0.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+ /**
+ * Table -- Violations
+ * -------------------------------------------------------------------------- */
+
+#VPContent .VPDoc {
+  width: 100%;
+  padding: 0;
+}
+
+/* overriding default container so the table can be wider */
+@media (min-width: 960px) {
+  #VPContent .VPDoc:not(.has-sidebar) .content {
+    max-width: 100%;
+  }
+}
+.table-container {
+  margin: 0 auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table-violations td {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1.25rem;
+}
+
+.table-violations td a {
+  text-decoration-offset: 2px;
+  text-decoration-style: dotted;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid transparent;
+}
+
+.vp-doc .table-violations th {
+  font-size: 1rem;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+/**
+* Value Indicator Badges
+*
+*/
+.badge {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  font-size: 0.875em;
+  font-weight: 500;
+  border-radius: 4px;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Light mode (default, no extra class on <html>) */
+.badge.exists {
+  background-color: #2e7d32; /* dark green */
+  color: #ffffff;
+}
+
+.badge.couldexist {
+  background-color: #ffd54f; /* amber */
+  color: #000000;
+}
+
+.badge.shouldexist {
+  background-color: #4fc3f7; /* light blue */
+  color: #000000;
+}
+
+.badge.mustexist {
+  background-color: #6a1b9a; /* deep purple */
+  color: #ffffff;
+}
+
+.badge.cannotexist {
+  background-color: #d32f2f; /* red */
+  color: #ffffff;
+}
+
+/* Dark mode (html has class="dark") */
+html.dark .badge.exists {
+  background-color: #81c784; /* light green */
+  color: #1b1b1f;
+}
+
+html.dark .badge.couldexist {
+  background-color: #ffecb3; /* light amber */
+  color: #1b1b1f;
+}
+
+html.dark .badge.shouldexist {
+  background-color: #b3e5fc; /* lighter blue */
+  color: #1b1b1f;
+}
+
+html.dark .badge.mustexist {
+  background-color: #ce93d8; /* light purple */
+  color: #1b1b1f;
+}
+
+html.dark .badge.cannotexist {
+  background-color: #ef9a9a; /* light red */
+  color: #1b1b1f;
+}
+
+/**
+* Sort buttons
+*
+*/
+.button-sort {
+  all: unset;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.button-sort:hover,
+.button-sort:focus-visible {
+
+}
+
+.button-sort:focus-visible {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+
+/* Optional: Improve contrast on hover/focus for dark mode */
+html.dark .button-sort:focus-visible {
+  outline-color: #90cdf4; /* Lighter blue for dark background */
+}
+
+.button-sort span {
+  font-size: 1.25rem;
+  color: #666666;
+}
+
+html.dark .button-sort span {
+  color: #9c8fed;
+}
+
+.button-sort .inactive-sort {
+  opacity: 0.4;
+}
+
+/**
+* SR-ONLY visually hides content but keeps it available for assistive technology
+*
+*/
+/* Visually hide content but keep it accessible to screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/**
+ * Component: Cards
+ * -------------------------------------------------------------------------- */
+
+.automated-tools-container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .automated-tools-container {
+      padding-left: 3.5rem;
+      padding-right: 3.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .automated-tools-container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  min-width: 100%;
+  min-height: 100vh;
+  height: fit-content;
+  /* background-color: #f9fafb; */
+  /* border-bottom: 1px solid #e5e7eb; */
+  /* box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1); */
+}
+
+
+
+@media (min-width: 640px) {
+  .cards-container {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (min-width: 960px) {
+  .cards-container {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+}
+
+ul.cards {
+  display: grid;
+  gap: 1.5rem;
+  padding: 0rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {  
+  ul.cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 960px) {
+  ul.cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* li for card: needs to be more specific than '.vp-doc li + li */
+li.card, li.card + li {
+  grid-column: span 1 / span 1;
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 0.5rem;
+  /* box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+              0 1px 2px -1px rgb(0 0 0 / 0.1); */
+  /* border-top: 1px solid #e5e7eb; */
+  /* border-bottom: 1px solid #e5e7eb; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  max-width: 80ch;
+}
+
+/* Contains Link and Description */
+.card-content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 1.5rem;
+}
+
+/* Link to Tool Webpage */
+a.card-link {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  text-decoration: underline;
+  line-height: 1.25rem;
+}
+/* 
+
+/* Synopsis of Tool */
+/* More specific than .vp-doc p */
+p.card-description {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  width: 100%;
+  line-height: 1.25rem;
+}
+
+/* Contains Badge */
+.card-footer {
+  flex-grow: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-top: 1px solid var(--vp-c-default-soft);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  place-self: end;
+  align-self: flex-end;
+  height: fit-content;
+}
+
